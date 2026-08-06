@@ -65,19 +65,16 @@
     {
       "repo_name": "circato-ocean-plastic-tfw-dashboard",
       "name": "CIRCATO Circular Construction Case Study",
-      "summary": "Studio-created case study demonstrating geospatial analysis, commercial modelling, traceability, thermal-performance comparison, and evidence generation for a circular-construction concept.",
-      "description": "An independent NebulaCloud Studio technology case study showing how a complex sustainability and construction concept can be transformed into a multidisciplinary digital evidence package. Studio created capabilities covering geospatial opportunity analysis, commercial modelling, traceability architecture, thermal comparison, and automated reporting. The complete interactive demonstrator is maintained privately and access is available upon request for qualified evaluation.",
+      "summary": "Studio-created evidence package covering geospatial analysis, commercial modelling, traceability, thermal-performance comparison, and automated reporting.",
+      "description": "An independent NebulaCloud Studio technology case study. The complete interactive demonstrator is maintained privately.",
       "primaryCategory": "climate-environment-sustainability",
       "industry": ["climate-environment", "marine-circular-economy", "construction-infrastructure"],
-      "tags": ["Circular Economy", "Plastic Waste", "Construction Materials", "Geospatial Analysis", "Traceability", "Decision Intelligence"],
+      "tags": ["Circular Economy", "Plastic Waste", "Construction Materials", "Geospatial Analysis", "Traceability"],
       "technologyStack": ["Python", "Leaflet", "Chart.js", "NebulaCloud Studio"],
       "maturity": "case-study",
       "repoUrl": "https://github.com/studio-public-demos/circato-ocean-plastic-tfw-dashboard",
-      "pagesUrl": null,
-      "accessMode": "request",
-      "requestAccessUrl": "mailto:contact@nebulacloud.studio?subject=Request%20for%20CIRCATO%20Interactive%20Demo%20Access",
       "dataProvenance": "Publicly available information and representative assumptions",
-      "title": "CIRCATO — Controlled-Access Studio Case Study"
+      "title": "CIRCATO — Repo-Only Case Study"
     },
     {
       "repo_name": "royal-biryani",
