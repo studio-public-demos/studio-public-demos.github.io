@@ -270,7 +270,7 @@ function bindAll(){
   document.querySelectorAll('.tech-chip').forEach(ch=>{ch.addEventListener('click',()=>{if(ch.classList.contains('active')){ch.classList.remove('active');activeFilters.technology=null}else{document.querySelectorAll('.tech-chip').forEach(c=>c.classList.remove('active'));ch.classList.add('active');activeFilters.technology=ch.dataset.tech}updateGrid()})});
   document.querySelectorAll('.ind-chip').forEach(ch=>{ch.addEventListener('click',()=>{if(ch.classList.contains('active')){ch.classList.remove('active');activeFilters.industry=null}else{document.querySelectorAll('.ind-chip').forEach(c=>c.classList.remove('active'));ch.classList.add('active');const k=Object.entries(IND_LOOKUP).find(([,v])=>v===ch.dataset.ind)?.[0];activeFilters.industry=k||null}updateGrid()})});
   const si=document.getElementById('search-input');if(si)si.addEventListener('input',()=>{searchQuery=si.value;updateGrid()});
-  document.querySelectorAll('.demo-card').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('a'))return;const rn=card.dataset.repo;if(rn)window.location.href='/?demo='+rn;});});
+  document.querySelectorAll('.demo-card').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('a'))return;const am=card.dataset.accessmode;const ru=card.dataset.repourl;if(am==='request'&&ru){window.open(ru,'_blank');return;}const rn=card.dataset.repo;if(rn)window.location.href='/?demo='+rn;});});
 }
 function observeReveal(){document.querySelectorAll('.reveal').forEach(el=>{const io2=new IntersectionObserver(([e])=>{if(e.isIntersecting){e.target.classList.add('visible');io2.unobserve(e.target)}},{threshold:0.1});io2.observe(el);});}
 
@@ -284,13 +284,13 @@ function updateGrid(){
   if(!f.length){grid.innerHTML=`<div class="no-results"><h3>No matching demos</h3><p>Try adjusting filters or search terms.</p></div>`;return}
   grid.innerHTML=f.map(d=>renderCard(d)).join('');
   observeReveal();
-  document.querySelectorAll('.demo-card').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('a'))return;const rn=card.dataset.repo;if(rn)window.location.href='/?demo='+rn;});});
+  document.querySelectorAll('.demo-card').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('a'))return;const am=card.dataset.accessmode;const ru=card.dataset.repourl;if(am==='request'&&ru){window.open(ru,'_blank');return;}const rn=card.dataset.repo;if(rn)window.location.href='/?demo='+rn;});});
 }
 
 function renderCard(d){
   const cm=CATEGORY_META[d.primaryCategory]||{name:d.primaryCategory};
   const ics=d.industry.map(i=>IND_LOOKUP[i]||i).join(' · ');
-  return `<div class="demo-card reveal" data-repo="${d.repo_name}">
+  return `<div class="demo-card reveal" data-repo="${d.repo_name}" data-repourl="${d.repoUrl||''}" data-accessMode="${d.accessMode||''}">
     <div class="demo-head"><div class="demo-name">${d.name}</div><span class="badge badge-${d.maturity}">${d.maturity}</span></div>
     <div class="demo-meta-row"><span class="meta-cat">${cm.name}</span><span class="meta-ind">${ics}</span></div>
     <div class="demo-desc">${d.summary}</div>
@@ -317,8 +317,7 @@ function renderDetail(repoName){
     </div>
     <div class="detail-desc">${d.description}</div>
     <div class="detail-links">
-      ${d.pagesUrl?`<a href="${d.pagesUrl}" target="_blank" class="btn btn-primary">Launch Live Demo →</a>`:d.accessMode==='request'?`<a href="${d.requestAccessUrl||'mailto:contact@nebulacloud.studio'}" class="btn btn-primary" style="background:#d97706;">Request Demo Access</a>`:''}
-      <a href="${d.repoUrl}" target="_blank" class="btn btn-secondary">View Repository →</a>
+      ${d.pagesUrl?`<a href="${d.pagesUrl}" target="_blank" class="btn btn-primary">Launch Live Demo →</a>`:d.accessMode==='request'?`<a href="${d.requestAccessUrl||'mailto:contact@nebulacloud.studio'}" class="btn btn-primary" style="background:#d97706;">Request Demo Access</a><a href="${d.repoUrl}" target="_blank" class="btn btn-secondary">View Case Study →</a>`:<a href="${d.repoUrl}" target="_blank" class="btn btn-secondary">View Repository →</a>`}
     </div>
     <div class="detail-section"><h4>Capability Tags</h4><div class="detail-tags">${d.tags.map(t=>`<span class="demo-tag" style="font-size:12px;padding:4px 12px">${t}</span>`).join('')}</div></div>
     <div class="detail-section"><h4>Technology Stack</h4><div class="detail-stack">${d.technologyStack.map(t=>`<span class="stack-chip">${t}</span>`).join('')}</div></div>
