@@ -1,0 +1,31 @@
+repo_name,github_pages_url,github_pages_status,pages_branch,has_index_html,has_custom_domain,other_deployments,broken_links_found,notes
+studio-public-demos.github.io,https://studio-public-demos.github.io/,built,main,TRUE,FALSE,"Python HTTP localhost:8080 (dev)",NONE,"Central catalogue — org-level landing page"
+open-london-3d-showcase,https://studio-public-demos.github.io/open-london-3d-showcase/,built,gh-pages,TRUE,FALSE,NONE,NONE,"Uses gh-pages branch (only repo doing so)"
+open-london-3d-drive,—,404,feature/open-london-3d-drive,TRUE,FALSE,NONE,NONE,"Pages broken — unusual branch name. Default branch is feature/open-london-3d-drive, no main/master. Implementation repo with full stack (app/, data/, pipeline/, docker-compose). Needs branch fix to enable Pages."
+nexustwin-industrial-digital-twin,https://studio-public-demos.github.io/nexustwin-industrial-digital-twin/,built,master,TRUE,FALSE,NONE,NONE,"Large repo (3MB). No index.html at root — assets only."
+circato-ocean-plastic-tfw-dashboard,https://studio-public-demos.github.io/circato-ocean-plastic-tfw-dashboard/,built,main,TRUE,FALSE,NONE,NONE,"No index.html at root — docs/ folder may contain HTML"
+royal-biryani,https://studio-public-demos.github.io/royal-biryani/,built,main,TRUE,FALSE,NONE,NONE,"Vite+React project — index.html at root"
+factory-bim,https://studio-public-demos.github.io/factory-bim/,built,main,TRUE,FALSE,NONE,NONE,"Static HTML + server.js for dev"
+car-concept-3d-dashboard,https://studio-public-demos.github.io/car-concept-3d-dashboard/,built,main,TRUE,FALSE,NONE,NONE,"Large repo (9.5MB) due to CarConcept.glb (3D model)"
+guntur-change-detection-dashboard,https://studio-public-demos.github.io/guntur-change-detection-dashboard/,built,main,TRUE,FALSE,NONE,NONE,"Has ATTRIBUTIONS.md and LICENSE"
+3d-gis-globe,https://studio-public-demos.github.io/3d-gis-globe/,built,main,TRUE,FALSE,NONE,NONE,"Includes GeoJSON data files"
+metro-station-simulator,https://studio-public-demos.github.io/metro-station-simulator/,built,main,TRUE,FALSE,NONE,NONE,"Smallest repo (92KB)"
+stadium-digital-twin,https://studio-public-demos.github.io/stadium-digital-twin/,built,main,TRUE,FALSE,NONE,NONE,"Standard structure: index.html + assets/"
+seaplane-outpost-showcase,https://studio-public-demos.github.io/seaplane-outpost-showcase/,built,master,TRUE,FALSE,NONE,NONE,"Largest repo (106MB) — likely large 3D assets. Two HTML files."
+vlm-aerodynamics-demo,https://studio-public-demos.github.io/vlm-aerodynamics-demo/,built,master,TRUE,FALSE,NONE,NONE,"Contains Python script (wing_vlm.py) alongside HTML"
+geovision-pro-showcase,https://studio-public-demos.github.io/geovision-pro-showcase/,built,master,TRUE,FALSE,NONE,NONE,"Minimal: index.html + assets/"
+nefertiti-viewer,https://studio-public-demos.github.io/nefertiti-viewer/,built,main,TRUE,FALSE,NONE,NONE,"Contains Nefertiti.glb (1.5MB 3D model)"
+sponza-viewer,https://studio-public-demos.github.io/sponza-viewer/,built,main,TRUE,FALSE,NONE,NONE,"Large repo (42MB) — Sponza.gltf + Sponza.bin"
+salesflow-crm-showcase,—,404,master,TRUE,FALSE,NONE,NONE,"Pages broken — has index.html but returns 404. May need branch switch to main."
+salesflow-crm-deploy,—,404,master,FALSE,FALSE,NONE,NONE,"Backend only — FastAPI app, no static HTML. Not suitable for GitHub Pages."
+
+summary
+total_repos_with_pages,18
+total_live_pages,16
+total_broken_pages,2
+repos_with_custom_domain,0
+repos_with_external_deployments,0
+repos_using_main_branch_pages,10
+repos_using_master_branch_pages,5
+repos_using_gh_pages_branch,1
+repos_using_unusual_branch,1
