@@ -199,6 +199,9 @@ footer p{font-size:.875rem}footer a{color:var(--accent-sky);font-weight:600}
 </script>
 
 <script>
+// Global helpers
+function bgDecor(type){return `<div class="sec-bg"><canvas class="sbg-canvas" data-bg="${type}"></canvas><div class="sbg-orb sbg-orb1"></div><div class="sbg-orb sbg-orb2"></div><div class="sbg-ring sbg-r1"></div><div class="sbg-ring sbg-r2"></div></div>`}
+function bgDark(type){return `<div class="sec-bg"><canvas class="sbg-canvas" data-bg="${type}"></canvas><div class="sbg-grid"></div><div class="sbg-orb sbg-orb1"></div><div class="sbg-orb sbg-orb2"></div><div class="sbg-ring sbg-r1"></div><div class="sbg-glow sbg-g1"></div><div class="sbg-glow sbg-g2"></div></div>`}
 const CATALOGUE_URL='catalogue.json';
 const IND_LOOKUP={'defence-aerospace':'Defence & Aerospace','geospatial-smart-cities':'Geospatial & Smart Cities','manufacturing':'Manufacturing','climate-environment':'Climate & Environment','transportation':'Transportation','energy-utilities':'Energy & Utilities','construction-infrastructure':'Construction & Infrastructure','government':'Government','enterprise':'Enterprise','marine-circular-economy':'Marine & Circular Economy'};
 const CATEGORY_META={
@@ -250,7 +253,7 @@ function buildHome(){
 }
 
 function buildFacet(field,options,prefix,label,sbgType){
-  return `<section id="sec-${prefix}" class="section" style="background:var(--bg-dark)"><div class="section-bg-dark"><canvas class="sbg-canvas" data-bg="${sbgType}"></canvas><div class="sbg-grid"></div><div class="sbg-orb sbg-orb1"></div><div class="sbg-orb sbg-orb2"></div><div class="sbg-ring sbg-r1"></div><div class="sbg-glow sbg-g1"></div><div class="sbg-glow sbg-g2"></div></div><div class="container"><div class="text-center"><span class="eyebrow" style="color:var(--accent-lt);background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.25)">Discovery Path</span><h2 style="color:#fff">Browse by <span class="acc-lt">${label}</span></h2><p class="section-sub" style="color:#94A3B8">Filter the demo portfolio by ${label.toLowerCase()} to find relevant capabilities.</p></div><div class="search-bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" id="search-input" placeholder="Search demos..." autocomplete="off"></div><div class="facet-filters">${options.map(o=>{const c=countByFacet(field,o);return c===0?'':`<button class="filter-chip ${prefix}-chip" data-${prefix}="${o}">${o}<span class="count">${c}</span></button>`}).join('')}</div><div class="demos-grid" id="demos-grid"></div></div></section>`;
+  return `<section id="sec-${prefix}" class="section">${bgDecor(sbgType)}<div class="container"><div class="text-center"><span class="eyebrow">Discovery Path</span><h2>Browse by <span class="acc">${label}</span></h2><p class="section-sub">Filter the demo portfolio by ${label.toLowerCase()} to find relevant capabilities.</p></div><div class="search-bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" id="search-input" placeholder="Search demos..." autocomplete="off"></div><div class="facet-filters">${options.map(o=>{const c=countByFacet(field,o);return c===0?'':`<button class="filter-chip ${prefix}-chip" data-${prefix}="${o}">${o}<span class="count">${c}</span></button>`}).join('')}</div><div class="demos-grid" id="demos-grid"></div></div></section>`;
 }
 function countByFacet(f,val){
   if(f==='technology')return demos.filter(d=>d.tags.some(t=>t.toLowerCase().includes(val.toLowerCase()))).length;
