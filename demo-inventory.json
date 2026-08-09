@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2026-08-06",
-    "total_demos": 47,
+    "last_updated": "2026-08-09",
+    "total_demos": 48,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -839,6 +839,23 @@
       "repositoryUrl": null,
       "liveUrl": null,
       "dataProvenance": "Ecoinvent database, public infrastructure data",
+      "screenshots": []
+    },
+    {
+      "id": "shm-bridge-spec-india",
+      "name": "SHM Bridge Specification (India)",
+      "summary": "13-section technical specification for Structural Health Monitoring of highway bridges in India, aligned with 22 IRC/MORTH/BIS/ISO standards.",
+      "description": "A comprehensive technical specification document that establishes minimum requirements for SHM systems on Indian highway bridges. Covers 11 sensor categories with full parameter tables, 3-tier alarm protocol, distributed DAQ architecture with cloud integration, procurement framework with QCBS-based bid evaluation, and a sample sensor schedule for a 250m cable-stayed bridge. Generates both HTML and DOCX outputs from a single specification source.",
+      "primaryCategory": "enterprise-applications-decision-intelligence",
+      "industry": "construction-infrastructure",
+      "secondaryCollections": [],
+      "tags": ["SHM", "Bridge Engineering", "Technical Specification", "Infrastructure", "Standards", "India", "IRC", "NHAI", "Document Generation", "Procurement"],
+      "technologyStack": ["NebulaCloud Studio", "HTML/CSS", "DOCX"],
+      "maturity": "beta",
+      "status": "active",
+      "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos",
+      "liveUrl": "https://studio-public-demos.github.io/studio-public-demos/",
+      "dataProvenance": "IRC, MORTH, BIS, ISO, SAMCO, FHWA standards (publicly available reference documents)",
       "screenshots": []
     }
   ]

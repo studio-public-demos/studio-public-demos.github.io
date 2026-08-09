@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-08-06",
-    "total_demos": 18,
+    "last_updated": "2026-08-09",
+    "total_demos": 19,
     "live_demos": 15,
     "categories": [
       "agentic-ai-autonomous-workflows",
@@ -285,6 +285,21 @@
       "pagesUrl": null,
       "dataProvenance": "Synthetic CRM data for demonstration",
       "title": "SalesFlow CRM Backend"
+    },
+    {
+      "repo_name": "studio-public-demos",
+      "name": "SHM Bridge Specification (India)",
+      "summary": "13-section technical specification for Structural Health Monitoring of highway bridges in India, aligned with 22 IRC/MORTH/BIS/ISO standards.",
+      "description": "A comprehensive technical specification document establishing minimum requirements for SHM systems on Indian highway bridges. Covers 11 sensor categories, 3-tier alarm protocol, cloud architecture, procurement framework, and bid evaluation — all tailored for Indian climatic, seismic, and traffic conditions.",
+      "primaryCategory": "enterprise-applications-decision-intelligence",
+      "industry": ["construction-infrastructure", "government"],
+      "tags": ["SHM", "Bridge Engineering", "Technical Specification", "Infrastructure", "Standards", "India", "IRC", "NHAI"],
+      "technologyStack": ["NebulaCloud Studio", "HTML/CSS", "DOCX"],
+      "maturity": "beta",
+      "repoUrl": "https://github.com/studio-public-demos/studio-public-demos",
+      "pagesUrl": "https://studio-public-demos.github.io/studio-public-demos/",
+      "dataProvenance": "IRC, MORTH, BIS, ISO, SAMCO, FHWA standards (publicly available)",
+      "title": "SHM Bridge Specification — India"
     }
   ]
 }
