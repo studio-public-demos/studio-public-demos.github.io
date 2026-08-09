@@ -853,8 +853,8 @@
       "technologyStack": ["NebulaCloud Studio", "HTML/CSS", "DOCX"],
       "maturity": "beta",
       "status": "active",
-      "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos",
-      "liveUrl": "https://studio-public-demos.github.io/studio-public-demos/",
+      "repositoryUrl": "https://github.com/studio-public-demos/shm-bridge-specification",
+      "liveUrl": "https://studio-public-demos.github.io/shm-bridge-specification/",
       "dataProvenance": "IRC, MORTH, BIS, ISO, SAMCO, FHWA standards (publicly available reference documents)",
       "screenshots": []
     }

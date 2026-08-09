@@ -287,18 +287,18 @@
       "title": "SalesFlow CRM Backend"
     },
     {
-      "repo_name": "studio-public-demos",
+      "repo_name": "shm-bridge-specification",
       "name": "SHM Bridge Specification (India)",
       "summary": "13-section technical specification for Structural Health Monitoring of highway bridges in India, aligned with 22 IRC/MORTH/BIS/ISO standards.",
-      "description": "A comprehensive technical specification document establishing minimum requirements for SHM systems on Indian highway bridges. Covers 11 sensor categories, 3-tier alarm protocol, cloud architecture, procurement framework, and bid evaluation — all tailored for Indian climatic, seismic, and traffic conditions.",
+      "description": "A comprehensive technical specification document that establishes minimum requirements for SHM systems on Indian highway bridges. Covers 11 sensor categories with full parameter tables, 3-tier alarm protocol, cloud architecture, procurement framework with QCBS-based bid evaluation, and a sample sensor schedule for a 250m cable-stayed bridge. Generates both HTML and DOCX outputs from a single specification source.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
       "industry": ["construction-infrastructure", "government"],
-      "tags": ["SHM", "Bridge Engineering", "Technical Specification", "Infrastructure", "Standards", "India", "IRC", "NHAI"],
+      "tags": ["SHM", "Bridge Engineering", "Technical Specification", "Infrastructure", "Standards", "India", "IRC", "NHAI", "Document Generation", "Procurement"],
       "technologyStack": ["NebulaCloud Studio", "HTML/CSS", "DOCX"],
       "maturity": "beta",
-      "repoUrl": "https://github.com/studio-public-demos/studio-public-demos",
-      "pagesUrl": "https://studio-public-demos.github.io/studio-public-demos/",
-      "dataProvenance": "IRC, MORTH, BIS, ISO, SAMCO, FHWA standards (publicly available)",
+      "repoUrl": "https://github.com/studio-public-demos/shm-bridge-specification",
+      "pagesUrl": "https://studio-public-demos.github.io/shm-bridge-specification/",
+      "dataProvenance": "IRC, MORTH, BIS, ISO, SAMCO, FHWA standards (publicly available reference documents)",
       "title": "SHM Bridge Specification — India"
     }
   ]
