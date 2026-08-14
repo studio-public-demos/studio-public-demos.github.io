@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2026-08-09",
-    "total_demos": 48,
+    "last_updated": "2026-08-14",
+    "total_demos": 49,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -40,6 +40,23 @@
     "maturity_levels": ["production", "beta", "prototype", "concept", "planned"]
   },
   "demos": [
+    {
+      "id": "india-census-2011-thematic-maps",
+      "name": "India Census 2011 - District Thematic Maps",
+      "summary": "Five district-level choropleth maps of India from Census 2011 - literacy, sex ratio, Scheduled Caste/Tribe population, and workforce participation - with quantile classification and print-ready output.",
+      "description": "A GIS data-visualization deliverable that computes five demographic indicators for 642 districts and produces publication-ready thematic maps with legends, scale bars, and attribution, plus multi-page PDF reports, an interactive gallery, and a demo video. Built with NebulaCloud Studio.",
+      "primaryCategory": "geoai-earth-intelligence",
+      "industry": "geospatial-smart-cities",
+      "secondaryCollections": [],
+      "tags": ["Thematic Mapping", "Choropleth", "Census 2011", "Cartography", "GIS", "Data Visualization"],
+      "technologyStack": ["QGIS", "Python", "NebulaCloud Studio"],
+      "maturity": "production",
+      "status": "active",
+      "repositoryUrl": "https://github.com/studio-public-demos/india-census-2011-thematic-maps",
+      "liveUrl": "https://studio-public-demos.github.io/india-census-2011-thematic-maps/",
+      "dataProvenance": "Census of India 2011 (demographic attributes)",
+      "screenshots": []
+    },
     {
       "id": "drivaerml-cfd",
       "name": "DrivAerML CFD",
