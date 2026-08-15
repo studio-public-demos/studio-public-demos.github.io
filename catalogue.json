@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-08-14",
-    "total_demos": 20,
-    "live_demos": 16,
+    "last_updated": "2026-08-15",
+    "total_demos": 21,
+    "live_demos": 17,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -315,6 +315,21 @@
       "pagesUrl": "https://studio-public-demos.github.io/shm-bridge-specification/",
       "dataProvenance": "IRC, MORTH, BIS, ISO, SAMCO, FHWA standards (publicly available reference documents)",
       "title": "SHM Bridge Specification — India"
+    },
+    {
+      "repo_name": "bim-cloud-pipeline-showcase",
+      "name": "BIM Cloud Pipeline",
+      "summary": "Revit & IFC to optimised GLB/GLTF 3D models and structured metadata JSON - a cloud conversion pipeline for web, mobile, AR/VR and digital-twin applications.",
+      "description": "A cloud pipeline that turns heavyweight Revit and IFC models into lightweight glTF assets and structured BIM metadata through one REST API. Upload, process, track and download optimised GLB/GLTF plus metadata JSON; explore results in a live 3D viewer and compare two models side-by-side. Includes credential-gated adapters for real Revit conversion (Autodesk APS) and S3 cloud storage. Built with NebulaCloud Studio.",
+      "primaryCategory": "digital-twins-spatial-intelligence",
+      "industry": ["construction-infrastructure", "geospatial-smart-cities"],
+      "tags": ["BIM", "Revit", "IFC", "GLB/GLTF", "Digital Twin", "AR/VR", "AEC", "REST API"],
+      "technologyStack": ["Python", "FastAPI", "Three.js", "trimesh", "NebulaCloud Studio"],
+      "maturity": "prototype",
+      "repoUrl": "https://github.com/studio-public-demos/bim-cloud-pipeline-showcase",
+      "pagesUrl": "https://studio-public-demos.github.io/bim-cloud-pipeline-showcase/",
+      "dataProvenance": "buildingSMART Sample-Test-Files (open IFC4 samples)",
+      "title": "BIM Cloud Pipeline"
     }
   ]
 }
