@@ -2,7 +2,7 @@
   "metadata": {
     "version": "2.0",
     "last_updated": "2026-08-15",
-    "total_demos": 21,
+    "total_demos": 22,
     "live_demos": 17,
     "categories": [
       "agentic-ai-autonomous-workflows",
@@ -330,6 +330,21 @@
       "pagesUrl": "https://studio-public-demos.github.io/bim-cloud-pipeline-showcase/",
       "dataProvenance": "buildingSMART Sample-Test-Files (open IFC4 samples)",
       "title": "BIM Cloud Pipeline"
+    },
+    {
+      "repo_name": "bim-cloud-pipeline",
+      "name": "BIM Cloud Pipeline (Implementation)",
+      "summary": "Full-stack implementation: FastAPI backend, dependency-free IFC parser, GLB/GLTF builder, Three.js dashboard, model compare view, and APS + S3 adapters.",
+      "description": "The complete, runnable engineering implementation behind the BIM Cloud Pipeline showcase. A FastAPI service with a from-scratch IFC (ISO-10303-21) parser extracting geometry and semantics, a trimesh-based GLB/GLTF exporter, job tracking with live logs, a mobile-first Three.js dashboard, a multi-model compare API, and credential-gated adapters for real Revit conversion (Autodesk APS Model Derivative) and S3 cloud storage. Ships real buildingSMART sample data and an automated test suite.",
+      "primaryCategory": "digital-twins-spatial-intelligence",
+      "industry": ["construction-infrastructure", "geospatial-smart-cities"],
+      "tags": ["BIM", "Revit", "IFC", "GLB/GLTF", "FastAPI", "Three.js", "Digital Twin", "REST API"],
+      "technologyStack": ["Python", "FastAPI", "Three.js", "trimesh", "boto3", "NebulaCloud Studio"],
+      "maturity": "prototype",
+      "repoUrl": "https://github.com/studio-public-demos/bim-cloud-pipeline",
+      "pagesUrl": null,
+      "dataProvenance": "buildingSMART Sample-Test-Files (open IFC4 samples)",
+      "title": "BIM Cloud Pipeline (Implementation)"
     }
   ]
 }
