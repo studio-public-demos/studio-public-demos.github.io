@@ -342,7 +342,7 @@
       "technologyStack": ["Python", "FastAPI", "Three.js", "trimesh", "boto3", "NebulaCloud Studio"],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/bim-cloud-pipeline",
-      "pagesUrl": null,
+      "pagesUrl": "https://bim-cloud-pipeline.onrender.com/",
       "dataProvenance": "buildingSMART Sample-Test-Files (open IFC4 samples)",
       "title": "BIM Cloud Pipeline (Implementation)"
     }
