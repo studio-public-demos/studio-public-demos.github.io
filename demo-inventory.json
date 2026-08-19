@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2026-08-14",
-    "total_demos": 49,
+    "last_updated": "2026-08-19",
+    "total_demos": 50,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -873,6 +873,23 @@
       "repositoryUrl": "https://github.com/studio-public-demos/shm-bridge-specification",
       "liveUrl": "https://studio-public-demos.github.io/shm-bridge-specification/",
       "dataProvenance": "IRC, MORTH, BIS, ISO, SAMCO, FHWA standards (publicly available reference documents)",
+      "screenshots": []
+    },
+    {
+      "id": "municipal-property-intelligence",
+      "name": "Municipal Property Intelligence",
+      "summary": "AI-assisted GIS evidence and reconciliation platform for municipal property-tax administration, with a live Tirunelveli, India Web GIS demo.",
+      "description": "A geospatial intelligence deliverable that conflates three building-footprint sources, runs multi-temporal change detection, and layers demographic context into a property-tax evidence and reconciliation pipeline for municipal governments. Includes a live interactive Web GIS demo (Tirunelveli, India) built on openly licensed building and temporal sources plus Studio-derived layers.",
+      "primaryCategory": "geoai-earth-intelligence",
+      "industry": "geospatial-smart-cities",
+      "secondaryCollections": [],
+      "tags": ["Property Tax", "Building Footprints", "Data Conflation", "Change Detection", "Web GIS", "Urban Analytics"],
+      "technologyStack": ["QGIS", "Python", "MapLibre GL JS", "React", "GeoPandas", "NebulaCloud Studio"],
+      "maturity": "prototype",
+      "status": "active",
+      "repositoryUrl": "https://github.com/studio-public-demos/municipal-property-intelligence",
+      "liveUrl": "https://studio-public-demos.github.io/municipal-property-intelligence/",
+      "dataProvenance": "OpenStreetMap, Google Open Buildings, Microsoft building footprints, Google 2.5D Temporal, Census of India 2011 (public totals)",
       "screenshots": []
     }
   ]
