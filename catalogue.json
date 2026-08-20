@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-08-19",
-    "total_demos": 23,
-    "live_demos": 18,
+    "last_updated": "2026-08-20",
+    "total_demos": 24,
+    "live_demos": 20,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -23,9 +23,23 @@
       "summary": "Five district-level choropleth maps of India from Census 2011 - literacy, sex ratio, Scheduled Caste/Tribe population, and workforce participation - with quantile classification and print-ready output.",
       "description": "A GIS data-visualization deliverable that computes five demographic indicators for 642 districts and produces publication-ready thematic maps with legends, scale bars, and attribution, plus multi-page PDF reports, an interactive gallery, and a demo video. Built with NebulaCloud Studio.",
       "primaryCategory": "geoai-earth-intelligence",
-      "industry": ["geospatial-smart-cities", "government"],
-      "tags": ["Thematic Mapping", "Choropleth", "Census 2011", "Cartography", "GIS", "Data Visualization"],
-      "technologyStack": ["QGIS", "Python", "NebulaCloud Studio"],
+      "industry": [
+        "geospatial-smart-cities",
+        "government"
+      ],
+      "tags": [
+        "Thematic Mapping",
+        "Choropleth",
+        "Census 2011",
+        "Cartography",
+        "GIS",
+        "Data Visualization"
+      ],
+      "technologyStack": [
+        "QGIS",
+        "Python",
+        "NebulaCloud Studio"
+      ],
       "maturity": "case-study",
       "repoUrl": "https://github.com/studio-public-demos/india-census-2011-thematic-maps",
       "pagesUrl": "https://studio-public-demos.github.io/india-census-2011-thematic-maps/",
@@ -38,9 +52,26 @@
       "summary": "Browser-based 3D urban navigation through Westminster to Trafalgar Square. Automated drive simulation with 5 camera modes, 4 lighting presets, and real-time performance monitoring.",
       "description": "An interactive 3D urban drive experience through central London using open data from OpenStreetMap. Features automated route following, camera modes (driver, chase, orbit, pedestrian, overview), dawn/day/dusk/night lighting, and performance metrics panel — all running in the browser without proprietary APIs.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["geospatial-smart-cities", "transportation"],
-      "tags": ["3D Visualization", "Urban Digital Twin", "Navigation", "OpenStreetMap", "WebGIS", "MapLibre", "Three.js"],
-      "technologyStack": ["TypeScript", "MapLibre GL JS", "Three.js", "Vite", "Python"],
+      "industry": [
+        "geospatial-smart-cities",
+        "transportation"
+      ],
+      "tags": [
+        "3D Visualization",
+        "Urban Digital Twin",
+        "Navigation",
+        "OpenStreetMap",
+        "WebGIS",
+        "MapLibre",
+        "Three.js"
+      ],
+      "technologyStack": [
+        "TypeScript",
+        "MapLibre GL JS",
+        "Three.js",
+        "Vite",
+        "Python"
+      ],
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/open-london-3d-showcase",
       "pagesUrl": "https://studio-public-demos.github.io/open-london-3d-showcase/",
@@ -53,9 +84,25 @@
       "summary": "Full-stack implementation repository for the London 3D drive — data pipeline, processing, Docker deployment, and web application source.",
       "description": "The engineering implementation behind the London 3D showcase. Contains the Python data acquisition pipeline (Overpass API fetch), geo-processing scripts, the Vite + TypeScript web application, and Docker Compose deployment configuration. This is the development/implementation counterpart to the showcase repo.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["geospatial-smart-cities", "transportation"],
-      "tags": ["Data Pipeline", "Urban Digital Twin", "OpenStreetMap", "Docker", "Python", "TypeScript"],
-      "technologyStack": ["Python", "TypeScript", "Docker", "Three.js", "MapLibre GL JS"],
+      "industry": [
+        "geospatial-smart-cities",
+        "transportation"
+      ],
+      "tags": [
+        "Data Pipeline",
+        "Urban Digital Twin",
+        "OpenStreetMap",
+        "Docker",
+        "Python",
+        "TypeScript"
+      ],
+      "technologyStack": [
+        "Python",
+        "TypeScript",
+        "Docker",
+        "Three.js",
+        "MapLibre GL JS"
+      ],
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/open-london-3d-drive",
       "pagesUrl": null,
@@ -68,9 +115,24 @@
       "summary": "Web-native industrial digital twin platform with real UCI data, 3D visualization, AI predictive maintenance, and VR readiness.",
       "description": "A comprehensive digital twin platform that federates industrial sensor data into a unified 3D operational view. Features real-time equipment monitoring, AI-driven predictive maintenance analytics, VR-ready visualization, and interactive dashboards for industrial facility management.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["manufacturing", "energy-utilities"],
-      "tags": ["Digital Twin", "IoT", "3D Visualization", "AI", "VR", "Predictive Maintenance"],
-      "technologyStack": ["Three.js", "WebXR", "Python", "NebulaCloud Studio"],
+      "industry": [
+        "manufacturing",
+        "energy-utilities"
+      ],
+      "tags": [
+        "Digital Twin",
+        "IoT",
+        "3D Visualization",
+        "AI",
+        "VR",
+        "Predictive Maintenance"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "WebXR",
+        "Python",
+        "NebulaCloud Studio"
+      ],
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/nexustwin-industrial-digital-twin",
       "pagesUrl": "https://studio-public-demos.github.io/nexustwin-industrial-digital-twin/",
@@ -83,9 +145,24 @@
       "summary": "Studio-created evidence package covering geospatial analysis, commercial modelling, traceability, thermal-performance comparison, and automated reporting.",
       "description": "An independent NebulaCloud Studio technology case study. The complete interactive demonstrator is maintained privately.",
       "primaryCategory": "climate-environment-sustainability",
-      "industry": ["climate-environment", "marine-circular-economy", "construction-infrastructure"],
-      "tags": ["Circular Economy", "Plastic Waste", "Construction Materials", "Geospatial Analysis", "Traceability"],
-      "technologyStack": ["Python", "Leaflet", "Chart.js", "NebulaCloud Studio"],
+      "industry": [
+        "climate-environment",
+        "marine-circular-economy",
+        "construction-infrastructure"
+      ],
+      "tags": [
+        "Circular Economy",
+        "Plastic Waste",
+        "Construction Materials",
+        "Geospatial Analysis",
+        "Traceability"
+      ],
+      "technologyStack": [
+        "Python",
+        "Leaflet",
+        "Chart.js",
+        "NebulaCloud Studio"
+      ],
       "maturity": "case-study",
       "repoUrl": "https://github.com/studio-public-demos/circato-ocean-plastic-tfw-dashboard",
       "dataProvenance": "Publicly available information and representative assumptions",
@@ -97,9 +174,24 @@
       "summary": "Restaurant landing page with interactive 3D hero scene — authentic dum biryani brand showcase.",
       "description": "A visually rich restaurant landing page featuring an interactive Three.js 3D hero scene. Demonstrates Studio's capability for commercial brand websites with immersive 3D elements, built with Vite + React + Three.js.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
-      "industry": ["enterprise"],
-      "tags": ["3D Visualization", "Restaurant", "Landing Page", "Interactive", "Three.js", "React"],
-      "technologyStack": ["React", "Vite", "Three.js", "Tailwind CSS", "JavaScript"],
+      "industry": [
+        "enterprise"
+      ],
+      "tags": [
+        "3D Visualization",
+        "Restaurant",
+        "Landing Page",
+        "Interactive",
+        "Three.js",
+        "React"
+      ],
+      "technologyStack": [
+        "React",
+        "Vite",
+        "Three.js",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/royal-biryani",
       "pagesUrl": "https://studio-public-demos.github.io/royal-biryani/",
@@ -112,9 +204,24 @@
       "summary": "Interactive 3D Building Information Model viewer for an industrial factory complex — built with Three.js.",
       "description": "A browser-based BIM viewer that renders a detailed 3D model of an industrial factory. Supports orbit controls, section planes, component selection, and metadata display. Demonstrates Studio's AEC (Architecture, Engineering, Construction) visualization capabilities.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["manufacturing", "construction-infrastructure"],
-      "tags": ["BIM", "3D Visualization", "Industrial", "Factory", "Three.js", "Digital Twin"],
-      "technologyStack": ["Three.js", "HTML/CSS", "Node.js", "NebulaCloud Studio"],
+      "industry": [
+        "manufacturing",
+        "construction-infrastructure"
+      ],
+      "tags": [
+        "BIM",
+        "3D Visualization",
+        "Industrial",
+        "Factory",
+        "Three.js",
+        "Digital Twin"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "HTML/CSS",
+        "Node.js",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/factory-bim",
       "pagesUrl": "https://studio-public-demos.github.io/factory-bim/",
@@ -127,9 +234,25 @@
       "summary": "Interactive 3D car concept dashboard with Sketchfab model, material variants, animated parts, and real-time controls.",
       "description": "An interactive automotive visualization tool featuring a real Sketchfab 3D car model. Includes material variant switching (paint colors, trim), animated opening doors/hood, real-time lighting controls, and a dashboard overlay with vehicle specs. Demonstrates Studio's product visualization capabilities.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["transportation", "manufacturing"],
-      "tags": ["3D Visualization", "Automotive", "Sketchfab", "Material Variants", "Interactive", "Three.js"],
-      "technologyStack": ["Three.js", "GLB/GLTF", "Sketchfab API", "HTML/CSS", "NebulaCloud Studio"],
+      "industry": [
+        "transportation",
+        "manufacturing"
+      ],
+      "tags": [
+        "3D Visualization",
+        "Automotive",
+        "Sketchfab",
+        "Material Variants",
+        "Interactive",
+        "Three.js"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "GLB/GLTF",
+        "Sketchfab API",
+        "HTML/CSS",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/car-concept-3d-dashboard",
       "pagesUrl": "https://studio-public-demos.github.io/car-concept-3d-dashboard/",
@@ -142,9 +265,25 @@
       "summary": "Interactive geospatial dashboard visualizing building-level change detection across Guntur, India (2017–2022).",
       "description": "A geospatial intelligence dashboard that maps and quantifies urban change across the Guntur region using multi-temporal satellite imagery analysis. Features interactive maps, change heatmaps, building-level statistics, and temporal comparison tools for urban planning and development monitoring.",
       "primaryCategory": "geoai-earth-intelligence",
-      "industry": ["geospatial-smart-cities", "climate-environment"],
-      "tags": ["Change Detection", "Satellite Imagery", "Urban Analytics", "Remote Sensing", "Dashboard", "Geospatial"],
-      "technologyStack": ["Python", "MapLibre GL JS", "D3.js", "GeoPandas", "NebulaCloud Studio"],
+      "industry": [
+        "geospatial-smart-cities",
+        "climate-environment"
+      ],
+      "tags": [
+        "Change Detection",
+        "Satellite Imagery",
+        "Urban Analytics",
+        "Remote Sensing",
+        "Dashboard",
+        "Geospatial"
+      ],
+      "technologyStack": [
+        "Python",
+        "MapLibre GL JS",
+        "D3.js",
+        "GeoPandas",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/guntur-change-detection-dashboard",
       "pagesUrl": "https://studio-public-demos.github.io/guntur-change-detection-dashboard/",
@@ -157,9 +296,25 @@
       "summary": "Interactive 3D GIS globe with live earthquake data visualization, country boundaries, and place markers.",
       "description": "A browser-based 3D globe rendering country boundaries, state outlines, and populated places from GeoJSON data. Overlays live earthquake data from USGS for real-time geospatial awareness. Demonstrates Studio's 3D geospatial visualization capabilities.",
       "primaryCategory": "geoai-earth-intelligence",
-      "industry": ["geospatial-smart-cities", "government"],
-      "tags": ["3D GIS", "Globe", "Earthquake Data", "Geospatial", "Live Data", "Three.js"],
-      "technologyStack": ["Three.js", "GeoJSON", "USGS API", "HTML/CSS", "NebulaCloud Studio"],
+      "industry": [
+        "geospatial-smart-cities",
+        "government"
+      ],
+      "tags": [
+        "3D GIS",
+        "Globe",
+        "Earthquake Data",
+        "Geospatial",
+        "Live Data",
+        "Three.js"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "GeoJSON",
+        "USGS API",
+        "HTML/CSS",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/3d-gis-globe",
       "pagesUrl": "https://studio-public-demos.github.io/3d-gis-globe/",
@@ -172,9 +327,24 @@
       "summary": "Interactive 3D metro station simulation with agent-based passenger flow and emergency evacuation modeling.",
       "description": "A 3D simulation of a metro station showing agent-based passenger movement patterns. Includes normal operations flow visualization, emergency evacuation scenario modeling, and real-time passenger density heatmaps. Demonstrates Studio's simulation and digital twin capabilities for transportation infrastructure.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["transportation", "construction-infrastructure"],
-      "tags": ["Metro", "Simulation", "Agent-Based", "Passenger Flow", "Emergency Evacuation", "Three.js"],
-      "technologyStack": ["Three.js", "JavaScript", "HTML/CSS", "NebulaCloud Studio"],
+      "industry": [
+        "transportation",
+        "construction-infrastructure"
+      ],
+      "tags": [
+        "Metro",
+        "Simulation",
+        "Agent-Based",
+        "Passenger Flow",
+        "Emergency Evacuation",
+        "Three.js"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "JavaScript",
+        "HTML/CSS",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/metro-station-simulator",
       "pagesUrl": "https://studio-public-demos.github.io/metro-station-simulator/",
@@ -187,9 +357,24 @@
       "summary": "Interactive 3D stadium digital twin dashboard with live sensor simulation for the Al Janoub Stadium.",
       "description": "A comprehensive digital twin of the Al Janoub Stadium featuring interactive 3D navigation, simulated IoT sensor data (temperature, occupancy, energy), real-time dashboards, and facility management overlays. Demonstrates Studio's large-venue digital twin capabilities.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["construction-infrastructure", "enterprise"],
-      "tags": ["Digital Twin", "Stadium", "3D Visualization", "IoT", "Sensor Simulation", "Three.js"],
-      "technologyStack": ["Three.js", "Chart.js", "HTML/CSS", "NebulaCloud Studio"],
+      "industry": [
+        "construction-infrastructure",
+        "enterprise"
+      ],
+      "tags": [
+        "Digital Twin",
+        "Stadium",
+        "3D Visualization",
+        "IoT",
+        "Sensor Simulation",
+        "Three.js"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "Chart.js",
+        "HTML/CSS",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/stadium-digital-twin",
       "pagesUrl": "https://studio-public-demos.github.io/stadium-digital-twin/",
@@ -202,9 +387,24 @@
       "summary": "Procedurally generated 3D seaplane outpost visualization with terrain, water simulation, and infrastructure layout.",
       "description": "A Three.js-powered visualization of a seaplane outpost facility featuring procedurally generated terrain with water simulation, modular infrastructure components (docks, hangars, fuel storage), and interactive camera controls. Demonstrates Studio's procedural 3D generation and engineering visualization capabilities.",
       "primaryCategory": "physical-ai-engineering",
-      "industry": ["defence-aerospace", "transportation"],
-      "tags": ["Seaplane", "Hydrodynamics", "Infrastructure", "Engineering", "Simulation", "3D Visualization"],
-      "technologyStack": ["Three.js", "Procedural Generation", "HTML/CSS", "NebulaCloud Studio"],
+      "industry": [
+        "defence-aerospace",
+        "transportation"
+      ],
+      "tags": [
+        "Seaplane",
+        "Hydrodynamics",
+        "Infrastructure",
+        "Engineering",
+        "Simulation",
+        "3D Visualization"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "Procedural Generation",
+        "HTML/CSS",
+        "NebulaCloud Studio"
+      ],
       "maturity": "concept",
       "repoUrl": "https://github.com/studio-public-demos/seaplane-outpost-showcase",
       "pagesUrl": "https://studio-public-demos.github.io/seaplane-outpost-showcase/",
@@ -217,9 +417,25 @@
       "summary": "Interactive 3D wing aerodynamics simulator using Vortex Lattice Method — NACA 2412 airfoil at variable angle of attack.",
       "description": "An interactive aerospace engineering tool that visualizes Vortex Lattice Method aerodynamics results on a 3D wing. Features adjustable angle of attack, lift/drag coefficient display, pressure distribution visualization, and real-time 3D rendering of the wing with aerodynamic overlay. Includes a Python VLM computation backend.",
       "primaryCategory": "physical-ai-engineering",
-      "industry": ["defence-aerospace", "transportation"],
-      "tags": ["Aerodynamics", "VLM", "Simulation", "Wing Design", "Physics AI", "Three.js", "Python"],
-      "technologyStack": ["Three.js", "Python", "NumPy", "NebulaCloud Studio"],
+      "industry": [
+        "defence-aerospace",
+        "transportation"
+      ],
+      "tags": [
+        "Aerodynamics",
+        "VLM",
+        "Simulation",
+        "Wing Design",
+        "Physics AI",
+        "Three.js",
+        "Python"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "Python",
+        "NumPy",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/vlm-aerodynamics-demo",
       "pagesUrl": "https://studio-public-demos.github.io/vlm-aerodynamics-demo/",
@@ -232,9 +448,24 @@
       "summary": "LiDAR and surveying solutions showcase — interactive geospatial data visualization platform.",
       "description": "A professional geospatial services showcase demonstrating LiDAR data processing, surveying workflow visualization, and 3D terrain modeling capabilities. Features interactive maps, point cloud visualization, and surveying methodology presentations.",
       "primaryCategory": "computer-vision-visual-intelligence",
-      "industry": ["geospatial-smart-cities", "government"],
-      "tags": ["LiDAR", "Surveying", "Point Cloud", "3D Terrain", "Geospatial", "Remote Sensing"],
-      "technologyStack": ["Three.js", "MapLibre GL JS", "HTML/CSS", "NebulaCloud Studio"],
+      "industry": [
+        "geospatial-smart-cities",
+        "government"
+      ],
+      "tags": [
+        "LiDAR",
+        "Surveying",
+        "Point Cloud",
+        "3D Terrain",
+        "Geospatial",
+        "Remote Sensing"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "MapLibre GL JS",
+        "HTML/CSS",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/geovision-pro-showcase",
       "pagesUrl": "https://studio-public-demos.github.io/geovision-pro-showcase/",
@@ -247,9 +478,24 @@
       "summary": "Interactive 3D visualization of the Bust of Nefertiti — high-fidelity GLB model with physically-based rendering.",
       "description": "A browser-based 3D monument viewer for cultural heritage artifacts. Renders the iconic Nefertiti bust as a high-fidelity GLB model with physically-based rendering (PBR), orbit controls, and lighting presets. Demonstrates Studio's 3D reconstruction and cultural heritage visualization capabilities.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["government", "enterprise"],
-      "tags": ["3D Reconstruction", "Cultural Heritage", "PBR", "WebGL", "GLB", "Three.js"],
-      "technologyStack": ["Three.js", "GLB/GLTF", "HTML/CSS", "NebulaCloud Studio"],
+      "industry": [
+        "government",
+        "enterprise"
+      ],
+      "tags": [
+        "3D Reconstruction",
+        "Cultural Heritage",
+        "PBR",
+        "WebGL",
+        "GLB",
+        "Three.js"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "GLB/GLTF",
+        "HTML/CSS",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/nefertiti-viewer",
       "pagesUrl": "https://studio-public-demos.github.io/nefertiti-viewer/",
@@ -262,9 +508,26 @@
       "summary": "Interactive 3D viewer for the Sponza Palace atrium — real-time rendering with GLTF model and Draco compression.",
       "description": "A real-time 3D architectural visualization of the classic Sponza atrium scene. Features physically-based materials, dynamic lighting, Draco-compressed geometry, and interactive camera controls. Demonstrates Studio's architectural visualization and 3D graphics capabilities with optimized asset delivery.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["construction-infrastructure", "enterprise"],
-      "tags": ["WebGPU", "PBR", "Real-time Rendering", "3D Graphics", "Architectural Viz", "GLTF", "Draco"],
-      "technologyStack": ["Three.js", "GLTF", "Draco", "HTML/CSS", "NebulaCloud Studio"],
+      "industry": [
+        "construction-infrastructure",
+        "enterprise"
+      ],
+      "tags": [
+        "WebGPU",
+        "PBR",
+        "Real-time Rendering",
+        "3D Graphics",
+        "Architectural Viz",
+        "GLTF",
+        "Draco"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "GLTF",
+        "Draco",
+        "HTML/CSS",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/sponza-viewer",
       "pagesUrl": "https://studio-public-demos.github.io/sponza-viewer/",
@@ -277,9 +540,23 @@
       "summary": "AI-powered sales CRM platform — pipeline management, deal insights, Slack alerts, and AI sales assistant.",
       "description": "A modern CRM platform showcase featuring AI-powered deal insights, interactive pipeline visualization, automated Slack alerts for deal milestones, and an AI sales assistant for opportunity analysis. Demonstrates Studio's enterprise application development capabilities.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
-      "industry": ["enterprise"],
-      "tags": ["CRM", "Sales", "Pipeline Management", "AI Assistant", "Slack", "Dashboard"],
-      "technologyStack": ["HTML/CSS", "JavaScript", "Chart.js", "NebulaCloud Studio"],
+      "industry": [
+        "enterprise"
+      ],
+      "tags": [
+        "CRM",
+        "Sales",
+        "Pipeline Management",
+        "AI Assistant",
+        "Slack",
+        "Dashboard"
+      ],
+      "technologyStack": [
+        "HTML/CSS",
+        "JavaScript",
+        "Chart.js",
+        "NebulaCloud Studio"
+      ],
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/salesflow-crm-showcase",
       "pagesUrl": null,
@@ -292,9 +569,25 @@
       "summary": "SalesFlow CRM deployment — FastAPI backend with SQLite, AI engine, and Slack integration.",
       "description": "The backend implementation for the SalesFlow CRM platform. Includes a FastAPI server with SQLite database, AI-powered deal analysis engine, automated Slack notification service, and REST API endpoints. This is the deployable backend counterpart to the CRM showcase frontend.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
-      "industry": ["enterprise"],
-      "tags": ["CRM", "Backend", "FastAPI", "SQLite", "Slack", "AI Engine", "Python"],
-      "technologyStack": ["Python", "FastAPI", "SQLite", "Slack API", "NebulaCloud Studio"],
+      "industry": [
+        "enterprise"
+      ],
+      "tags": [
+        "CRM",
+        "Backend",
+        "FastAPI",
+        "SQLite",
+        "Slack",
+        "AI Engine",
+        "Python"
+      ],
+      "technologyStack": [
+        "Python",
+        "FastAPI",
+        "SQLite",
+        "Slack API",
+        "NebulaCloud Studio"
+      ],
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/salesflow-crm-deploy",
       "pagesUrl": null,
@@ -307,9 +600,27 @@
       "summary": "13-section technical specification for Structural Health Monitoring of highway bridges in India, aligned with 22 IRC/MORTH/BIS/ISO standards.",
       "description": "A comprehensive technical specification document that establishes minimum requirements for SHM systems on Indian highway bridges. Covers 11 sensor categories with full parameter tables, 3-tier alarm protocol, cloud architecture, procurement framework with QCBS-based bid evaluation, and a sample sensor schedule for a 250m cable-stayed bridge. Generates both HTML and DOCX outputs from a single specification source.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
-      "industry": ["construction-infrastructure", "government"],
-      "tags": ["SHM", "Bridge Engineering", "Technical Specification", "Infrastructure", "Standards", "India", "IRC", "NHAI", "Document Generation", "Procurement"],
-      "technologyStack": ["NebulaCloud Studio", "HTML/CSS", "DOCX"],
+      "industry": [
+        "construction-infrastructure",
+        "government"
+      ],
+      "tags": [
+        "SHM",
+        "Bridge Engineering",
+        "Technical Specification",
+        "Infrastructure",
+        "Standards",
+        "India",
+        "IRC",
+        "NHAI",
+        "Document Generation",
+        "Procurement"
+      ],
+      "technologyStack": [
+        "NebulaCloud Studio",
+        "HTML/CSS",
+        "DOCX"
+      ],
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/shm-bridge-specification",
       "pagesUrl": "https://studio-public-demos.github.io/shm-bridge-specification/",
@@ -322,9 +633,27 @@
       "summary": "Revit & IFC to optimised GLB/GLTF 3D models and structured metadata JSON - a cloud conversion pipeline for web, mobile, AR/VR and digital-twin applications.",
       "description": "A cloud pipeline that turns heavyweight Revit and IFC models into lightweight glTF assets and structured BIM metadata through one REST API. Upload, process, track and download optimised GLB/GLTF plus metadata JSON; explore results in a live 3D viewer and compare two models side-by-side. Includes credential-gated adapters for real Revit conversion (Autodesk APS) and S3 cloud storage. Built with NebulaCloud Studio.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["construction-infrastructure", "geospatial-smart-cities"],
-      "tags": ["BIM", "Revit", "IFC", "GLB/GLTF", "Digital Twin", "AR/VR", "AEC", "REST API"],
-      "technologyStack": ["Python", "FastAPI", "Three.js", "trimesh", "NebulaCloud Studio"],
+      "industry": [
+        "construction-infrastructure",
+        "geospatial-smart-cities"
+      ],
+      "tags": [
+        "BIM",
+        "Revit",
+        "IFC",
+        "GLB/GLTF",
+        "Digital Twin",
+        "AR/VR",
+        "AEC",
+        "REST API"
+      ],
+      "technologyStack": [
+        "Python",
+        "FastAPI",
+        "Three.js",
+        "trimesh",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/bim-cloud-pipeline-showcase",
       "pagesUrl": "https://studio-public-demos.github.io/bim-cloud-pipeline-showcase/",
@@ -337,9 +666,28 @@
       "summary": "Full-stack implementation: FastAPI backend, dependency-free IFC parser, GLB/GLTF builder, Three.js dashboard, model compare view, and APS + S3 adapters.",
       "description": "The complete, runnable engineering implementation behind the BIM Cloud Pipeline showcase. A FastAPI service with a from-scratch IFC (ISO-10303-21) parser extracting geometry and semantics, a trimesh-based GLB/GLTF exporter, job tracking with live logs, a mobile-first Three.js dashboard, a multi-model compare API, and credential-gated adapters for real Revit conversion (Autodesk APS Model Derivative) and S3 cloud storage. Ships real buildingSMART sample data and an automated test suite.",
       "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": ["construction-infrastructure", "geospatial-smart-cities"],
-      "tags": ["BIM", "Revit", "IFC", "GLB/GLTF", "FastAPI", "Three.js", "Digital Twin", "REST API"],
-      "technologyStack": ["Python", "FastAPI", "Three.js", "trimesh", "boto3", "NebulaCloud Studio"],
+      "industry": [
+        "construction-infrastructure",
+        "geospatial-smart-cities"
+      ],
+      "tags": [
+        "BIM",
+        "Revit",
+        "IFC",
+        "GLB/GLTF",
+        "FastAPI",
+        "Three.js",
+        "Digital Twin",
+        "REST API"
+      ],
+      "technologyStack": [
+        "Python",
+        "FastAPI",
+        "Three.js",
+        "trimesh",
+        "boto3",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/bim-cloud-pipeline",
       "pagesUrl": "https://bim-cloud-pipeline.onrender.com/",
@@ -352,14 +700,62 @@
       "summary": "AI-assisted GIS evidence and reconciliation platform for municipal property-tax administration, with a live Tirunelveli, India Web GIS demo.",
       "description": "A geospatial intelligence deliverable that conflates three building-footprint sources, runs multi-temporal change detection, and layers demographic context into a property-tax evidence and reconciliation pipeline for municipal governments. Includes a live interactive Web GIS demo (Tirunelveli, India) built on openly licensed building and temporal sources plus Studio-derived layers.",
       "primaryCategory": "geoai-earth-intelligence",
-      "industry": ["geospatial-smart-cities", "government"],
-      "tags": ["Property Tax", "Building Footprints", "Data Conflation", "Change Detection", "Web GIS", "Urban Analytics"],
-      "technologyStack": ["QGIS", "Python", "MapLibre GL JS", "React", "GeoPandas", "NebulaCloud Studio"],
+      "industry": [
+        "geospatial-smart-cities",
+        "government"
+      ],
+      "tags": [
+        "Property Tax",
+        "Building Footprints",
+        "Data Conflation",
+        "Change Detection",
+        "Web GIS",
+        "Urban Analytics"
+      ],
+      "technologyStack": [
+        "QGIS",
+        "Python",
+        "MapLibre GL JS",
+        "React",
+        "GeoPandas",
+        "NebulaCloud Studio"
+      ],
       "maturity": "prototype",
       "repoUrl": "https://github.com/studio-public-demos/municipal-property-intelligence",
       "pagesUrl": "https://studio-public-demos.github.io/municipal-property-intelligence/",
       "dataProvenance": "OpenStreetMap, Google Open Buildings, Microsoft building footprints, Google 2.5D Temporal, Census of India 2011 (public totals)",
       "title": "Municipal Property Intelligence | Tirunelveli"
+    },
+    {
+      "repo_name": "civic-index-india-geoportal",
+      "name": "Nebula Civic Index — GeoIndia",
+      "summary": "An open public-data discovery and intelligence platform for India's geospatial data — faceted search, an interactive state map, portal assessment, data-gap analysis and source comparison, assembled and verified with Studio AI.",
+      "description": "An open index of public geospatial datasets, services and portals for India (100+ datasets, 29 portals, 16 themes). Features faceted search, Ask Studio natural-language queries, a MapLibre choropleth, 0–100 portal assessment, data-availability gap analysis and authoritative-vs-alternative source comparison. The catalogue is independently curated from primary sources, link-verified, and downloadable as open data (CC-BY 4.0). Built with NebulaCloud Studio.",
+      "primaryCategory": "geoai-earth-intelligence",
+      "industry": [
+        "government",
+        "geospatial-smart-cities"
+      ],
+      "tags": [
+        "Open Data",
+        "Geospatial",
+        "Data Discovery",
+        "MapLibre",
+        "Public Good",
+        "GIS",
+        "India"
+      ],
+      "technologyStack": [
+        "JavaScript",
+        "MapLibre GL JS",
+        "Python",
+        "NebulaCloud Studio"
+      ],
+      "maturity": "beta",
+      "repoUrl": "https://github.com/studio-public-demos/civic-index-india-geoportal",
+      "pagesUrl": "https://studio-public-demos.github.io/civic-index-india-geoportal/",
+      "dataProvenance": "Independently curated public geospatial portals (ISRO/Bhuvan, Survey of India, India-WRIS, data.gov.in, OpenStreetMap, Natural Earth, Microsoft/Google open buildings, ESA/Copernicus, etc.); Natural Earth boundaries (public domain)",
+      "title": "Nebula Civic Index — GeoIndia"
     }
   ]
 }
