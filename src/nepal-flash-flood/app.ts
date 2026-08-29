@@ -389,7 +389,7 @@ async function sampleCorridorTerrain() {
   );
   const cartographics = samplePoints.map((sample) => Cesium.Cartographic.fromDegrees(sample.lon, sample.lat));
   try {
-    const sampled = await Cesium.sampleTerrainMostDetailed(state.viewer.terrainProvider, cartographics);
+    const sampled = await withTimeout<any[]>(Cesium.sampleTerrainMostDetailed(state.viewer.terrainProvider, cartographics), 8000, "Terrain sampling timed out");
     const crossValleySamples: CrossValleySample[] = sampled.map((point: any, index: number) => ({
       lon: samplePoints[index]?.lon ?? Cesium.Math.toDegrees(point.longitude),
       lat: samplePoints[index]?.lat ?? Cesium.Math.toDegrees(point.latitude),
@@ -422,6 +422,22 @@ async function sampleCorridorTerrain() {
     state.terrainSections = [];
     state.terrainStatus = "Terrain provider unavailable for sampling; overlay is clamped to fallback surface";
   }
+}
+
+function withTimeout<T>(promise: Promise<T>, timeoutMs: number, message: string): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timeout = window.setTimeout(() => reject(new Error(message)), timeoutMs);
+    promise.then(
+      (value) => {
+        window.clearTimeout(timeout);
+        resolve(value);
+      },
+      (error) => {
+        window.clearTimeout(timeout);
+        reject(error);
+      },
+    );
+  });
 }
 
 function offsetFromCenterline(centerline: number[][], index: number, offsetM: number): [number, number] {

@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 test("visitor can replay, run, inspect, compare, and open methodology", async ({ page }) => {
+  test.setTimeout(60000);
   await page.goto("/");
   await expect(page.getByText("Featured Showcase")).toBeVisible();
   await expect(page.getByText("Nepal Flash Flood Digital Twin").first()).toBeVisible();
@@ -26,6 +27,10 @@ test("visitor can replay, run, inspect, compare, and open methodology", async ({
   await expect(page.getByRole("button", { name: "Center on Nepal flood corridor" })).toBeVisible();
   await expect(page.locator("#flowCanvas")).toBeVisible();
   await expect.poll(async () => page.locator("#flowCanvas").evaluate((canvas: HTMLCanvasElement) => canvas.width > 0 && canvas.height > 0)).toBe(true);
+  await expect.poll(async () => page.locator(".viewport-shell").evaluate((element: HTMLElement) => Math.round(element.getBoundingClientRect().height))).toBeLessThanOrEqual(1000);
+  await expect
+    .poll(async () => page.locator("#flowCanvas").evaluate((canvas: HTMLCanvasElement) => canvas.width >= Math.round(canvas.getBoundingClientRect().width)), { timeout: 15000 })
+    .toBe(true);
   await page.getByRole("button", { name: "Center on Nepal flood corridor" }).click();
   await page.getByRole("button", { name: "Zoom in" }).click();
 
