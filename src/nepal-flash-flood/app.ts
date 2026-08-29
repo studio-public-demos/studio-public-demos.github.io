@@ -380,7 +380,7 @@ async function sampleCorridorTerrain() {
   const Cesium = window.Cesium;
   const centerline = state.currentRun.frames[0]?.centerline ?? [];
   if (!centerline.length) return;
-  const offsets = [-3000, -2200, -1500, -900, -450, 0, 450, 900, 1500, 2200, 3000];
+  const offsets = [-2600, -1300, 0, 1300, 2600];
   const samplePoints = centerline.flatMap((point, index) =>
     offsets.map((offsetM) => {
       const [lon, lat] = offsetFromCenterline(centerline, index, offsetM);
