@@ -46,8 +46,8 @@
         "Nebula Cloud Studio"
       ],
       "maturity": "beta",
-      "repoUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io",
-      "pagesUrl": "./showcase/nepal-flash-flood/",
+      "repoUrl": "https://github.com/studio-public-demos/nepal-flash-flood-digital-twin",
+      "pagesUrl": "https://studio-public-demos.github.io/nepal-flash-flood-digital-twin/",
       "dataProvenance": "Real Nepal corridor geography, runtime Cesium terrain, OpenStreetMap/HOT context, and representative synthetic scenario outputs. Geopera and Planet Source Cooperative are cited; non-commercial imagery/model products are not bundled.",
       "title": "Nepal 2026 Flash Flood - 3D Digital Twin & What-If Scenario Lab"
     },
