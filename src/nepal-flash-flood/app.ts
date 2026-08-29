@@ -225,6 +225,8 @@ async function loadData() {
 }
 
 async function loadRuntimeConfig() {
+  const host = window.location.hostname;
+  if (host && host !== "localhost" && host !== "127.0.0.1") return;
   try {
     const response = await fetch("./config.local.json", { cache: "no-store" });
     if (!response.ok) return;
