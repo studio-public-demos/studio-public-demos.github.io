@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-08-20",
-    "total_demos": 24,
-    "live_demos": 20,
+    "last_updated": "2026-08-29",
+    "total_demos": 25,
+    "live_demos": 21,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -17,6 +17,40 @@
     ]
   },
   "demos": [
+    {
+      "repo_name": "nepal-flash-flood-digital-twin",
+      "name": "Nepal Flash Flood Digital Twin",
+      "summary": "Explore the August 2026 Himalayan flash flood in 3D and test downstream what-if scenarios across terrain, infrastructure and settlements.",
+      "description": "A standalone public 3D digital twin and what-if scenario lab for the Bhote Koshi / Trishuli corridor in Nepal. Visitors can replay the August 26 reference reconstruction, adjust 2-5 Mm3 barrier-lake assumptions, inspect modeled infrastructure exposure, compare scenarios, and review provenance, licensing and limitations.",
+      "primaryCategory": "digital-twins-spatial-intelligence",
+      "industry": [
+        "geospatial-smart-cities",
+        "climate-environment",
+        "government",
+        "construction-infrastructure"
+      ],
+      "tags": [
+        "3D Simulation",
+        "Event Reconstruction",
+        "What-If Analysis",
+        "Infrastructure Exposure",
+        "Scenario Comparison",
+        "Scientific Computing",
+        "CesiumJS"
+      ],
+      "technologyStack": [
+        "TypeScript",
+        "CesiumJS",
+        "GeoJSON",
+        "Static Web",
+        "Nebula Cloud Studio"
+      ],
+      "maturity": "beta",
+      "repoUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io",
+      "pagesUrl": "./showcase/nepal-flash-flood/",
+      "dataProvenance": "Real Nepal corridor geography, runtime Cesium terrain, OpenStreetMap/HOT context, and representative synthetic scenario outputs. Geopera and Planet Source Cooperative are cited; non-commercial imagery/model products are not bundled.",
+      "title": "Nepal 2026 Flash Flood - 3D Digital Twin & What-If Scenario Lab"
+    },
     {
       "repo_name": "india-census-2011-thematic-maps",
       "name": "India Census 2011 - District Thematic Maps",

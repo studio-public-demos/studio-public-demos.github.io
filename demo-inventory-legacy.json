@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2026-08-06",
-    "total_demos": 47,
+    "last_updated": "2026-08-29",
+    "total_demos": 48,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -37,9 +37,49 @@
       "document-intelligence",
       "iot-edge-ai"
     ],
-    "maturity_levels": ["production", "beta", "prototype", "concept", "planned"]
+    "maturity_levels": [
+      "production",
+      "beta",
+      "prototype",
+      "concept",
+      "planned"
+    ]
   },
   "demos": [
+    {
+      "id": "nepal-flash-flood-digital-twin",
+      "name": "Nepal Flash Flood Digital Twin",
+      "summary": "Explore the August 2026 Himalayan flash flood in 3D and test downstream what-if scenarios across terrain, infrastructure and settlements.",
+      "description": "A standalone public 3D digital twin and what-if scenario lab for the Bhote Koshi / Trishuli corridor in Nepal. Visitors can replay the August 26 reference reconstruction, adjust 2-5 Mm3 barrier-lake assumptions, inspect modeled infrastructure exposure, compare scenarios, and review provenance, licensing and limitations.",
+      "primaryCategory": "digital-twins-spatial-intelligence",
+      "industry": "geospatial-smart-cities",
+      "secondaryCollections": [
+        "geoai-earth-intelligence",
+        "climate-environment-sustainability"
+      ],
+      "tags": [
+        "3D Simulation",
+        "Event Reconstruction",
+        "What-If Analysis",
+        "Infrastructure Exposure",
+        "Scenario Comparison",
+        "Scientific Computing",
+        "CesiumJS"
+      ],
+      "technologyStack": [
+        "TypeScript",
+        "CesiumJS",
+        "GeoJSON",
+        "Static Web",
+        "Nebula Cloud Studio"
+      ],
+      "maturity": "beta",
+      "status": "active",
+      "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io",
+      "liveUrl": "https://studio-public-demos.github.io/showcase/nepal-flash-flood/",
+      "dataProvenance": "Real Nepal corridor geography, runtime Cesium terrain, OpenStreetMap/HOT context, and representative synthetic scenario outputs. Geopera and Planet Source Cooperative are cited; non-commercial imagery/model products are not bundled.",
+      "screenshots": []
+    },
     {
       "id": "drivaerml-cfd",
       "name": "DrivAerML CFD",
@@ -47,9 +87,22 @@
       "description": "A physics-based simulation workflow that performs CFD analysis on the DrivAerML vehicle geometry. Demonstrates automated mesh generation, solver configuration, and result visualization for aerodynamic coefficient prediction.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "transportation",
-      "secondaryCollections": ["industrial-ai-predictive-operations"],
-      "tags": ["CFD", "Physics AI", "Simulation", "Automotive", "Aerodynamics"],
-      "technologyStack": ["OpenFOAM", "Python", "ParaView", "Nebula Studio"],
+      "secondaryCollections": [
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "CFD",
+        "Physics AI",
+        "Simulation",
+        "Automotive",
+        "Aerodynamics"
+      ],
+      "technologyStack": [
+        "OpenFOAM",
+        "Python",
+        "ParaView",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/drivaerml-cfd",
@@ -64,9 +117,22 @@
       "description": "A computational aerodynamics tool implementing the Vortex Lattice Method for preliminary aircraft design. Supports multi-surface configurations, stability derivative calculation, and parametric sweep studies.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace"],
-      "tags": ["Aerodynamics", "VLM", "Simulation", "Aircraft Design", "Physics AI"],
-      "technologyStack": ["Python", "NumPy", "Matplotlib", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace"
+      ],
+      "tags": [
+        "Aerodynamics",
+        "VLM",
+        "Simulation",
+        "Aircraft Design",
+        "Physics AI"
+      ],
+      "technologyStack": [
+        "Python",
+        "NumPy",
+        "Matplotlib",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/vlm-aerodynamics",
@@ -81,9 +147,22 @@
       "description": "An integrated engineering workflow for designing seaplane docking and maintenance outposts. Combines hydrodynamic simulation, structural analysis, and operational logistics modeling.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["digital-twins-spatial-intelligence"],
-      "tags": ["Hydrodynamics", "Structural", "Simulation", "Marine", "Infrastructure"],
-      "technologyStack": ["Python", "FEniCS", "Three.js", "Nebula Studio"],
+      "secondaryCollections": [
+        "digital-twins-spatial-intelligence"
+      ],
+      "tags": [
+        "Hydrodynamics",
+        "Structural",
+        "Simulation",
+        "Marine",
+        "Infrastructure"
+      ],
+      "technologyStack": [
+        "Python",
+        "FEniCS",
+        "Three.js",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
@@ -98,9 +177,22 @@
       "description": "A computational design prototype that uses physics-informed neural networks (PINNs) and surrogate models to accelerate engineering simulation workflows. Enables real-time design exploration that would traditionally require hours of HPC time.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "manufacturing",
-      "secondaryCollections": ["industrial-ai-predictive-operations"],
-      "tags": ["PINNs", "Generative Design", "Surrogate Models", "FEA", "Deep Learning"],
-      "technologyStack": ["PyTorch", "JAX", "NVIDIA Modulus", "Nebula Studio"],
+      "secondaryCollections": [
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "PINNs",
+        "Generative Design",
+        "Surrogate Models",
+        "FEA",
+        "Deep Learning"
+      ],
+      "technologyStack": [
+        "PyTorch",
+        "JAX",
+        "NVIDIA Modulus",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/physics-ai-computational-design",
@@ -115,9 +207,22 @@
       "description": "An engineering toolkit implementing lifecycle analysis, Weibull reliability modeling, and maintenance scheduling optimization for complex industrial assets.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "manufacturing",
-      "secondaryCollections": ["industrial-ai-predictive-operations"],
-      "tags": ["Reliability", "Lifecycle", "Maintenance", "Weibull", "Optimization"],
-      "technologyStack": ["Python", "SciPy", "Pandas", "Nebula Studio"],
+      "secondaryCollections": [
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "Reliability",
+        "Lifecycle",
+        "Maintenance",
+        "Weibull",
+        "Optimization"
+      ],
+      "technologyStack": [
+        "Python",
+        "SciPy",
+        "Pandas",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/pylcss-engineering",
@@ -132,9 +237,24 @@
       "description": "A digital test rig that simulates aero-engine operating conditions, integrates virtual sensor networks, and applies machine learning for anomaly detection and performance trend analysis.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace", "industrial-ai-predictive-operations"],
-      "tags": ["Test Rig", "Aero-Engine", "Sensors", "Predictive Maintenance", "Digital Twin"],
-      "technologyStack": ["Python", "MLflow", "InfluxDB", "Grafana", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace",
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "Test Rig",
+        "Aero-Engine",
+        "Sensors",
+        "Predictive Maintenance",
+        "Digital Twin"
+      ],
+      "technologyStack": [
+        "Python",
+        "MLflow",
+        "InfluxDB",
+        "Grafana",
+        "Nebula Studio"
+      ],
       "maturity": "planned",
       "status": "planned",
       "repositoryUrl": null,
@@ -149,9 +269,22 @@
       "description": "A physics simulation of a trailer-mounted radar lifting mechanism, analyzing deployment kinematics, structural loads, stability envelopes, and actuator requirements.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace"],
-      "tags": ["Multibody Dynamics", "Structural", "Kinematics", "Radar", "Deployment"],
-      "technologyStack": ["Python", "PyBullet", "FreeCAD", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace"
+      ],
+      "tags": [
+        "Multibody Dynamics",
+        "Structural",
+        "Kinematics",
+        "Radar",
+        "Deployment"
+      ],
+      "technologyStack": [
+        "Python",
+        "PyBullet",
+        "FreeCAD",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
@@ -166,9 +299,23 @@
       "description": "An IoT-integrated system for monitoring aircraft tyre wear patterns, predicting rotation intervals, and generating optimized rotation schedules across fleet operations.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace", "industrial-ai-predictive-operations"],
-      "tags": ["IoT", "Predictive Maintenance", "Fleet Management", "Wear Analysis", "Aviation"],
-      "technologyStack": ["Python", "TensorFlow", "MQTT", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace",
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "IoT",
+        "Predictive Maintenance",
+        "Fleet Management",
+        "Wear Analysis",
+        "Aviation"
+      ],
+      "technologyStack": [
+        "Python",
+        "TensorFlow",
+        "MQTT",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
@@ -183,9 +330,23 @@
       "description": "A comprehensive stadium digital twin combining 3D visualization, IoT sensor integration, crowd flow simulation, and facility management dashboards for venue operations optimization.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "construction-infrastructure",
-      "secondaryCollections": ["enterprise-applications-decision-intelligence"],
-      "tags": ["Digital Twin", "3D Visualization", "IoT", "Crowd Simulation", "Facility Management"],
-      "technologyStack": ["Three.js", "Cesium", "Node.js", "WebSocket", "Nebula Studio"],
+      "secondaryCollections": [
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Digital Twin",
+        "3D Visualization",
+        "IoT",
+        "Crowd Simulation",
+        "Facility Management"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "Cesium",
+        "Node.js",
+        "WebSocket",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/stadium-digital-twin",
@@ -200,9 +361,23 @@
       "description": "A digital twin integration platform that normalizes and federates data from IoT sensors, BIM models, GIS systems, and enterprise databases into a unified operational interface.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "enterprise",
-      "secondaryCollections": ["enterprise-applications-decision-intelligence"],
-      "tags": ["Digital Twin", "Data Federation", "IoT", "BIM", "GIS Integration"],
-      "technologyStack": ["Python", "FastAPI", "Three.js", "PostgreSQL", "Nebula Studio"],
+      "secondaryCollections": [
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Digital Twin",
+        "Data Federation",
+        "IoT",
+        "BIM",
+        "GIS Integration"
+      ],
+      "technologyStack": [
+        "Python",
+        "FastAPI",
+        "Three.js",
+        "PostgreSQL",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/nexustwin",
@@ -217,9 +392,23 @@
       "description": "A high-fidelity digital twin of the Varanasi ghats and old city, integrating photogrammetry, historical maps, demographic data, and environmental sensors for heritage preservation and urban planning.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "government",
-      "secondaryCollections": ["geoai-earth-intelligence"],
-      "tags": ["Digital Twin", "Cultural Heritage", "Photogrammetry", "Urban Analytics", "3D GIS"],
-      "technologyStack": ["Cesium", "Three.js", "Python", "PostGIS", "Nebula Studio"],
+      "secondaryCollections": [
+        "geoai-earth-intelligence"
+      ],
+      "tags": [
+        "Digital Twin",
+        "Cultural Heritage",
+        "Photogrammetry",
+        "Urban Analytics",
+        "3D GIS"
+      ],
+      "technologyStack": [
+        "Cesium",
+        "Three.js",
+        "Python",
+        "PostGIS",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/varanasi-digital-twin",
@@ -234,15 +423,31 @@
       "description": "An interactive 3D urban drive experience through central London using open data. Features 5 camera modes, automated route following, 4 lighting presets, and performance monitoring — all running in the browser without proprietary APIs.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "geospatial-smart-cities",
-      "secondaryCollections": ["geoai-earth-intelligence"],
-      "tags": ["3D Visualization", "Urban Digital Twin", "Navigation", "OpenStreetMap", "WebGIS"],
-      "technologyStack": ["TypeScript", "MapLibre GL JS", "Three.js", "Vite", "Python"],
+      "secondaryCollections": [
+        "geoai-earth-intelligence"
+      ],
+      "tags": [
+        "3D Visualization",
+        "Urban Digital Twin",
+        "Navigation",
+        "OpenStreetMap",
+        "WebGIS"
+      ],
+      "technologyStack": [
+        "TypeScript",
+        "MapLibre GL JS",
+        "Three.js",
+        "Vite",
+        "Python"
+      ],
       "maturity": "beta",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/open-london-3d-drive",
       "liveUrl": "http://localhost:5173",
       "dataProvenance": "OpenStreetMap via Overpass API (ODbL 1.0)",
-      "screenshots": ["docs/screenshots/overview.png"]
+      "screenshots": [
+        "docs/screenshots/overview.png"
+      ]
     },
     {
       "id": "city2graph-new-delhi",
@@ -251,9 +456,23 @@
       "description": "A pipeline that transforms raw OSM data into rich graph structures enabling network analysis, accessibility studies, and urban morphology research for Indian metropolitan areas.",
       "primaryCategory": "geoai-earth-intelligence",
       "industry": "geospatial-smart-cities",
-      "secondaryCollections": ["digital-twins-spatial-intelligence"],
-      "tags": ["Graph AI", "OSM", "Urban Analytics", "Network Analysis", "WebGIS"],
-      "technologyStack": ["Python", "NetworkX", "osmnx", "Leaflet", "Nebula Studio"],
+      "secondaryCollections": [
+        "digital-twins-spatial-intelligence"
+      ],
+      "tags": [
+        "Graph AI",
+        "OSM",
+        "Urban Analytics",
+        "Network Analysis",
+        "WebGIS"
+      ],
+      "technologyStack": [
+        "Python",
+        "NetworkX",
+        "osmnx",
+        "Leaflet",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/city2graph-new-delhi",
@@ -268,9 +487,24 @@
       "description": "An automated pipeline for detecting and classifying urban change from satellite imagery time series. Combines deep learning-based segmentation with GIS analysis for land use change quantification.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "geospatial-smart-cities",
-      "secondaryCollections": ["geoai-earth-intelligence", "climate-environment-sustainability"],
-      "tags": ["Change Detection", "Satellite Imagery", "Deep Learning", "Urban Growth", "Remote Sensing"],
-      "technologyStack": ["Python", "PyTorch", "Rasterio", "GeoPandas", "Nebula Studio"],
+      "secondaryCollections": [
+        "geoai-earth-intelligence",
+        "climate-environment-sustainability"
+      ],
+      "tags": [
+        "Change Detection",
+        "Satellite Imagery",
+        "Deep Learning",
+        "Urban Growth",
+        "Remote Sensing"
+      ],
+      "technologyStack": [
+        "Python",
+        "PyTorch",
+        "Rasterio",
+        "GeoPandas",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/guntur-change-detection",
@@ -286,8 +520,19 @@
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "construction-infrastructure",
       "secondaryCollections": [],
-      "tags": ["WebGPU", "PBR", "Real-time Rendering", "3D Graphics", "Architectural Viz"],
-      "technologyStack": ["WebGPU", "TypeScript", "glTF", "Nebula Studio"],
+      "tags": [
+        "WebGPU",
+        "PBR",
+        "Real-time Rendering",
+        "3D Graphics",
+        "Architectural Viz"
+      ],
+      "technologyStack": [
+        "WebGPU",
+        "TypeScript",
+        "glTF",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/sponza",
@@ -303,8 +548,20 @@
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "government",
       "secondaryCollections": [],
-      "tags": ["3D Reconstruction", "Photogrammetry", "Cultural Heritage", "PBR", "Web Visualization"],
-      "technologyStack": ["Three.js", "WebGL", "Python", "COLMAP", "Nebula Studio"],
+      "tags": [
+        "3D Reconstruction",
+        "Photogrammetry",
+        "Cultural Heritage",
+        "PBR",
+        "Web Visualization"
+      ],
+      "technologyStack": [
+        "Three.js",
+        "WebGL",
+        "Python",
+        "COLMAP",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/nefertiti",
@@ -319,9 +576,22 @@
       "description": "A cutting-edge browser-based viewer for 3D Gaussian Splatting scenes, leveraging WebGPU compute shaders for real-time novel view synthesis and radiance field exploration.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "enterprise",
-      "secondaryCollections": ["computer-vision-visual-intelligence"],
-      "tags": ["Gaussian Splatting", "WebGPU", "Radiance Fields", "Real-time", "3D Rendering"],
-      "technologyStack": ["WebGPU", "TypeScript", "WGSL", "Nebula Studio"],
+      "secondaryCollections": [
+        "computer-vision-visual-intelligence"
+      ],
+      "tags": [
+        "Gaussian Splatting",
+        "WebGPU",
+        "Radiance Fields",
+        "Real-time",
+        "3D Rendering"
+      ],
+      "technologyStack": [
+        "WebGPU",
+        "TypeScript",
+        "WGSL",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/gaussian-splatting-webgpu",
@@ -336,9 +606,25 @@
       "description": "A comprehensive inspection digital twin combining computer vision for automated defect detection, 3D engine model navigation, and integrated maintenance record systems.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace", "digital-twins-spatial-intelligence", "industrial-ai-predictive-operations"],
-      "tags": ["Digital Twin", "Computer Vision", "LiDAR", "MRO", "Inspection"],
-      "technologyStack": ["Python", "PyTorch", "Three.js", "OpenCV", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace",
+        "digital-twins-spatial-intelligence",
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "Digital Twin",
+        "Computer Vision",
+        "LiDAR",
+        "MRO",
+        "Inspection"
+      ],
+      "technologyStack": [
+        "Python",
+        "PyTorch",
+        "Three.js",
+        "OpenCV",
+        "Nebula Studio"
+      ],
       "maturity": "planned",
       "status": "planned",
       "repositoryUrl": null,
@@ -353,9 +639,24 @@
       "description": "An integrated digital twin for defence fuel depots combining IoT sensor networks, 3D facility models, automated inventory tracking, and AI-driven anomaly detection for safety and operational efficiency.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace", "industrial-ai-predictive-operations"],
-      "tags": ["Digital Twin", "IoT", "Fuel Management", "Safety", "Anomaly Detection"],
-      "technologyStack": ["Python", "FastAPI", "Three.js", "InfluxDB", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace",
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "Digital Twin",
+        "IoT",
+        "Fuel Management",
+        "Safety",
+        "Anomaly Detection"
+      ],
+      "technologyStack": [
+        "Python",
+        "FastAPI",
+        "Three.js",
+        "InfluxDB",
+        "Nebula Studio"
+      ],
       "maturity": "planned",
       "status": "planned",
       "repositoryUrl": null,
@@ -370,9 +671,22 @@
       "description": "A specialized digital twin for electrical protection infrastructure, visualizing protection zones, relay coordination curves, and simulating fault scenarios for grid reliability analysis.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "energy-utilities",
-      "secondaryCollections": ["defence-aerospace"],
-      "tags": ["Digital Twin", "Electrical", "Protection", "Relay Coordination", "Fault Analysis"],
-      "technologyStack": ["Python", "Three.js", "PSS/E", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace"
+      ],
+      "tags": [
+        "Digital Twin",
+        "Electrical",
+        "Protection",
+        "Relay Coordination",
+        "Fault Analysis"
+      ],
+      "technologyStack": [
+        "Python",
+        "Three.js",
+        "PSS/E",
+        "Nebula Studio"
+      ],
       "maturity": "planned",
       "status": "planned",
       "repositoryUrl": null,
@@ -387,9 +701,22 @@
       "description": "A digital twin providing 3D visualization of radar platform deployment configurations, electromagnetic coverage analysis, terrain masking simulation, and predictive maintenance dashboards.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace"],
-      "tags": ["Digital Twin", "Radar", "Coverage Analysis", "Terrain", "EM Simulation"],
-      "technologyStack": ["Cesium", "Python", "SPLAT!", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace"
+      ],
+      "tags": [
+        "Digital Twin",
+        "Radar",
+        "Coverage Analysis",
+        "Terrain",
+        "EM Simulation"
+      ],
+      "technologyStack": [
+        "Cesium",
+        "Python",
+        "SPLAT!",
+        "Nebula Studio"
+      ],
       "maturity": "planned",
       "status": "planned",
       "repositoryUrl": null,
@@ -404,9 +731,23 @@
       "description": "An automated inspection system using deep learning to detect railway track components, identify defects, and generate maintenance priority reports from forward-facing camera imagery.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "transportation",
-      "secondaryCollections": ["industrial-ai-predictive-operations"],
-      "tags": ["Computer Vision", "Railway", "Defect Detection", "Deep Learning", "Inspection"],
-      "technologyStack": ["Python", "YOLO", "OpenCV", "PyTorch", "Nebula Studio"],
+      "secondaryCollections": [
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "Computer Vision",
+        "Railway",
+        "Defect Detection",
+        "Deep Learning",
+        "Inspection"
+      ],
+      "technologyStack": [
+        "Python",
+        "YOLO",
+        "OpenCV",
+        "PyTorch",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/railway-computer-vision",
@@ -421,9 +762,23 @@
       "description": "A vision-centric autonomous driving prototype integrating Autoware's perception pipeline with custom computer vision models for Indian road conditions and traffic scenarios.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "transportation",
-      "secondaryCollections": ["physical-ai-engineering"],
-      "tags": ["Autonomous Driving", "Computer Vision", "Autoware", "Perception", "Localization"],
-      "technologyStack": ["Autoware", "ROS 2", "Python", "PyTorch", "Nebula Studio"],
+      "secondaryCollections": [
+        "physical-ai-engineering"
+      ],
+      "tags": [
+        "Autonomous Driving",
+        "Computer Vision",
+        "Autoware",
+        "Perception",
+        "Localization"
+      ],
+      "technologyStack": [
+        "Autoware",
+        "ROS 2",
+        "Python",
+        "PyTorch",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/autoware-vision-pilot",
@@ -438,9 +793,24 @@
       "description": "A multimodal monitoring system combining Sentinel-2 satellite imagery analysis with drift modeling to detect, quantify, and forecast ocean plastic accumulation zones.",
       "primaryCategory": "climate-environment-sustainability",
       "industry": "climate-environment",
-      "secondaryCollections": ["computer-vision-visual-intelligence", "geoai-earth-intelligence"],
-      "tags": ["Ocean Intelligence", "Plastic Tracking", "Satellite", "Computer Vision", "Environmental"],
-      "technologyStack": ["Python", "PyTorch", "SentinelHub", "OceanParcels", "Nebula Studio"],
+      "secondaryCollections": [
+        "computer-vision-visual-intelligence",
+        "geoai-earth-intelligence"
+      ],
+      "tags": [
+        "Ocean Intelligence",
+        "Plastic Tracking",
+        "Satellite",
+        "Computer Vision",
+        "Environmental"
+      ],
+      "technologyStack": [
+        "Python",
+        "PyTorch",
+        "SentinelHub",
+        "OceanParcels",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/ocean-plastic-monitoring",
@@ -455,9 +825,24 @@
       "description": "A computer vision pipeline for PCB analysis including component detection, trace routing extraction, solder joint inspection, and automated bill-of-materials generation.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "manufacturing",
-      "secondaryCollections": ["defence-aerospace", "industrial-ai-predictive-operations"],
-      "tags": ["PCB", "Computer Vision", "Reverse Engineering", "Inspection", "Manufacturing"],
-      "technologyStack": ["Python", "OpenCV", "YOLO", "scikit-image", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace",
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "PCB",
+        "Computer Vision",
+        "Reverse Engineering",
+        "Inspection",
+        "Manufacturing"
+      ],
+      "technologyStack": [
+        "Python",
+        "OpenCV",
+        "YOLO",
+        "scikit-image",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/pcb-visual-analysis",
@@ -472,9 +857,23 @@
       "description": "A configurable computer vision system for detecting and classifying surface defects across multiple materials and manufacturing processes, with active learning for continuous improvement.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "manufacturing",
-      "secondaryCollections": ["industrial-ai-predictive-operations"],
-      "tags": ["Defect Detection", "Computer Vision", "Quality Assurance", "Deep Learning", "Manufacturing"],
-      "technologyStack": ["Python", "PyTorch", "MMDetection", "ONNX", "Nebula Studio"],
+      "secondaryCollections": [
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "Defect Detection",
+        "Computer Vision",
+        "Quality Assurance",
+        "Deep Learning",
+        "Manufacturing"
+      ],
+      "technologyStack": [
+        "Python",
+        "PyTorch",
+        "MMDetection",
+        "ONNX",
+        "Nebula Studio"
+      ],
       "maturity": "beta",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/surface-defect-detection",
@@ -489,9 +888,23 @@
       "description": "A computer vision system that identifies and catalogs industrial components from photographs, matches against maintenance databases, and generates digital asset records with metadata extraction.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "manufacturing",
-      "secondaryCollections": ["industrial-ai-predictive-operations"],
-      "tags": ["Asset Recognition", "Computer Vision", "Inventory", "Component ID", "OCR"],
-      "technologyStack": ["Python", "PyTorch", "Tesseract OCR", "FAISS", "Nebula Studio"],
+      "secondaryCollections": [
+        "industrial-ai-predictive-operations"
+      ],
+      "tags": [
+        "Asset Recognition",
+        "Computer Vision",
+        "Inventory",
+        "Component ID",
+        "OCR"
+      ],
+      "technologyStack": [
+        "Python",
+        "PyTorch",
+        "Tesseract OCR",
+        "FAISS",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/asset-component-recognition",
@@ -507,8 +920,20 @@
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
       "secondaryCollections": [],
-      "tags": ["Agentic AI", "Autonomous", "Software Engineering", "DevOps", "Studio Core"],
-      "technologyStack": ["Nebula Studio", "Python", "TypeScript", "Docker", "Git"],
+      "tags": [
+        "Agentic AI",
+        "Autonomous",
+        "Software Engineering",
+        "DevOps",
+        "Studio Core"
+      ],
+      "technologyStack": [
+        "Nebula Studio",
+        "Python",
+        "TypeScript",
+        "Docker",
+        "Git"
+      ],
       "maturity": "production",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/autonomous-project-execution",
@@ -524,8 +949,19 @@
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
       "secondaryCollections": [],
-      "tags": ["Multi-Agent", "Orchestration", "Task Decomposition", "Quality Gates", "Autonomous"],
-      "technologyStack": ["Nebula Studio", "Python", "REST API", "WebSocket"],
+      "tags": [
+        "Multi-Agent",
+        "Orchestration",
+        "Task Decomposition",
+        "Quality Gates",
+        "Autonomous"
+      ],
+      "technologyStack": [
+        "Nebula Studio",
+        "Python",
+        "REST API",
+        "WebSocket"
+      ],
       "maturity": "beta",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/supervisor-agent-workflow",
@@ -540,9 +976,23 @@
       "description": "An intelligent document system that analyzes RFPs and tenders, extracts requirements, maps to capabilities, generates compliant response drafts, and validates against evaluation criteria.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
       "industry": "government",
-      "secondaryCollections": ["agentic-ai-autonomous-workflows"],
-      "tags": ["Document Intelligence", "RFP", "Compliance", "Automation", "Proposal Generation"],
-      "technologyStack": ["Python", "LLM", "LangChain", "FastAPI", "Nebula Studio"],
+      "secondaryCollections": [
+        "agentic-ai-autonomous-workflows"
+      ],
+      "tags": [
+        "Document Intelligence",
+        "RFP",
+        "Compliance",
+        "Automation",
+        "Proposal Generation"
+      ],
+      "technologyStack": [
+        "Python",
+        "LLM",
+        "LangChain",
+        "FastAPI",
+        "Nebula Studio"
+      ],
       "maturity": "beta",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/tender-rfp-application",
@@ -557,9 +1007,23 @@
       "description": "An end-to-end document processing workflow handling scanned documents, forms, reports, and technical manuals with extraction, classification, and structured data output.",
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
-      "secondaryCollections": ["enterprise-applications-decision-intelligence"],
-      "tags": ["Document Intelligence", "OCR", "Entity Extraction", "Multimodal", "Automation"],
-      "technologyStack": ["Python", "Tesseract", "LayoutLM", "spaCy", "Nebula Studio"],
+      "secondaryCollections": [
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Document Intelligence",
+        "OCR",
+        "Entity Extraction",
+        "Multimodal",
+        "Automation"
+      ],
+      "technologyStack": [
+        "Python",
+        "Tesseract",
+        "LayoutLM",
+        "spaCy",
+        "Nebula Studio"
+      ],
       "maturity": "beta",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/document-intelligence-workflows",
@@ -574,9 +1038,23 @@
       "description": "An agentic workflow that ingests Form 16 documents, extracts financial data, computes tax liability, validates against IT rules, and generates compliance reports.",
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
-      "secondaryCollections": ["enterprise-applications-decision-intelligence"],
-      "tags": ["Document Intelligence", "Tax", "Automation", "Compliance", "Finance"],
-      "technologyStack": ["Python", "OCR", "Pandas", "ReportLab", "Nebula Studio"],
+      "secondaryCollections": [
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Document Intelligence",
+        "Tax",
+        "Automation",
+        "Compliance",
+        "Finance"
+      ],
+      "technologyStack": [
+        "Python",
+        "OCR",
+        "Pandas",
+        "ReportLab",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/form16-tax-workflows",
@@ -591,9 +1069,22 @@
       "description": "An end-to-end planning workflow for hotel projects: site feasibility analysis, architectural concept generation, regulatory checklist automation, and project timeline estimation.",
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "construction-infrastructure",
-      "secondaryCollections": ["enterprise-applications-decision-intelligence"],
-      "tags": ["Planning", "Hospitality", "Agentic AI", "Compliance", "Project Management"],
-      "technologyStack": ["Python", "LLM", "GeoPandas", "Nebula Studio"],
+      "secondaryCollections": [
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Planning",
+        "Hospitality",
+        "Agentic AI",
+        "Compliance",
+        "Project Management"
+      ],
+      "technologyStack": [
+        "Python",
+        "LLM",
+        "GeoPandas",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/hotel-planning-workflow",
@@ -609,8 +1100,20 @@
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
       "secondaryCollections": [],
-      "tags": ["Research", "Code Generation", "Autonomous", "Paper2Code", "Validation"],
-      "technologyStack": ["Python", "LLM", "Arxiv API", "Docker", "Nebula Studio"],
+      "tags": [
+        "Research",
+        "Code Generation",
+        "Autonomous",
+        "Paper2Code",
+        "Validation"
+      ],
+      "technologyStack": [
+        "Python",
+        "LLM",
+        "Arxiv API",
+        "Docker",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/research-to-prototype-pipeline",
@@ -626,8 +1129,19 @@
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
       "secondaryCollections": [],
-      "tags": ["Code Intelligence", "Autonomous", "Repository Analysis", "PR Generation", "Software Engineering"],
-      "technologyStack": ["Nebula Studio", "Python", "Git", "AST Analysis"],
+      "tags": [
+        "Code Intelligence",
+        "Autonomous",
+        "Repository Analysis",
+        "PR Generation",
+        "Software Engineering"
+      ],
+      "technologyStack": [
+        "Nebula Studio",
+        "Python",
+        "Git",
+        "AST Analysis"
+      ],
       "maturity": "beta",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/repo-study-auto-implementation",
@@ -643,8 +1157,20 @@
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
       "secondaryCollections": [],
-      "tags": ["QA", "Deployment", "Autonomous", "Testing", "CI/CD"],
-      "technologyStack": ["Nebula Studio", "Playwright", "Pytest", "Docker", "Kubernetes"],
+      "tags": [
+        "QA",
+        "Deployment",
+        "Autonomous",
+        "Testing",
+        "CI/CD"
+      ],
+      "technologyStack": [
+        "Nebula Studio",
+        "Playwright",
+        "Pytest",
+        "Docker",
+        "Kubernetes"
+      ],
       "maturity": "beta",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/agentic-qa-deployment",
@@ -659,9 +1185,22 @@
       "description": "An independent NebulaCloud Studio technology case study. The complete interactive demonstrator is maintained privately and access is available upon request for qualified evaluation.",
       "primaryCategory": "climate-environment-sustainability",
       "industry": "marine-circular-economy",
-      "secondaryCollections": ["geoai-earth-intelligence"],
-      "tags": ["Circular Economy", "Plastic Waste", "Construction Materials", "Geospatial Analysis", "Traceability"],
-      "technologyStack": ["Python", "Leaflet", "Chart.js", "NebulaCloud Studio"],
+      "secondaryCollections": [
+        "geoai-earth-intelligence"
+      ],
+      "tags": [
+        "Circular Economy",
+        "Plastic Waste",
+        "Construction Materials",
+        "Geospatial Analysis",
+        "Traceability"
+      ],
+      "technologyStack": [
+        "Python",
+        "Leaflet",
+        "Chart.js",
+        "NebulaCloud Studio"
+      ],
       "maturity": "case-study",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/circato-ocean-plastic-tfw-dashboard",
@@ -678,9 +1217,23 @@
       "description": "A collection of industrial AI solutions for cement plants: kiln temperature optimization, clinker quality prediction from process parameters, energy consumption modeling, and predictive maintenance for critical equipment.",
       "primaryCategory": "industrial-ai-predictive-operations",
       "industry": "manufacturing",
-      "secondaryCollections": ["enterprise-applications-decision-intelligence"],
-      "tags": ["Process Optimization", "Predictive Maintenance", "Quality", "Energy", "Manufacturing"],
-      "technologyStack": ["Python", "scikit-learn", "XGBoost", "Streamlit", "Nebula Studio"],
+      "secondaryCollections": [
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Process Optimization",
+        "Predictive Maintenance",
+        "Quality",
+        "Energy",
+        "Manufacturing"
+      ],
+      "technologyStack": [
+        "Python",
+        "scikit-learn",
+        "XGBoost",
+        "Streamlit",
+        "Nebula Studio"
+      ],
       "maturity": "prototype",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/cement-industry-use-cases",
@@ -695,9 +1248,23 @@
       "description": "A configurable predictive maintenance system that ingests sensor data, trains failure prediction models per asset class, and generates optimized maintenance schedules balancing risk and cost.",
       "primaryCategory": "industrial-ai-predictive-operations",
       "industry": "manufacturing",
-      "secondaryCollections": ["physical-ai-engineering"],
-      "tags": ["Predictive Maintenance", "Sensors", "ML", "Scheduling", "Asset Management"],
-      "technologyStack": ["Python", "PyTorch", "Prophet", "Apache Kafka", "Nebula Studio"],
+      "secondaryCollections": [
+        "physical-ai-engineering"
+      ],
+      "tags": [
+        "Predictive Maintenance",
+        "Sensors",
+        "ML",
+        "Scheduling",
+        "Asset Management"
+      ],
+      "technologyStack": [
+        "Python",
+        "PyTorch",
+        "Prophet",
+        "Apache Kafka",
+        "Nebula Studio"
+      ],
       "maturity": "beta",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/predictive-maintenance-platform",
@@ -712,9 +1279,23 @@
       "description": "A monitoring platform for electrical protection systems that captures relay events, analyzes protection coordination, identifies misoperations, and generates compliance reports.",
       "primaryCategory": "industrial-ai-predictive-operations",
       "industry": "energy-utilities",
-      "secondaryCollections": ["defence-aerospace"],
-      "tags": ["Electrical", "Protection", "Monitoring", "Relay", "Analytics"],
-      "technologyStack": ["Python", "TimescaleDB", "Grafana", "IEC 61850", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace"
+      ],
+      "tags": [
+        "Electrical",
+        "Protection",
+        "Monitoring",
+        "Relay",
+        "Analytics"
+      ],
+      "technologyStack": [
+        "Python",
+        "TimescaleDB",
+        "Grafana",
+        "IEC 61850",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
@@ -729,9 +1310,24 @@
       "description": "A research prototype integrating radar, RF spectrum analysis, and computer vision for robust counter-UAS detection, classification, and tracking with sensor fusion algorithms.",
       "primaryCategory": "defence-aerospace",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["computer-vision-visual-intelligence", "physical-ai-engineering"],
-      "tags": ["Counter-UAS", "Sensor Fusion", "Radar", "RF", "Computer Vision"],
-      "technologyStack": ["Python", "ROS 2", "Kalman Filters", "YOLO", "Nebula Studio"],
+      "secondaryCollections": [
+        "computer-vision-visual-intelligence",
+        "physical-ai-engineering"
+      ],
+      "tags": [
+        "Counter-UAS",
+        "Sensor Fusion",
+        "Radar",
+        "RF",
+        "Computer Vision"
+      ],
+      "technologyStack": [
+        "Python",
+        "ROS 2",
+        "Kalman Filters",
+        "YOLO",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
@@ -746,9 +1342,23 @@
       "description": "A software-in-the-loop test simulator for airborne defensive aids suites, modeling threat engagement scenarios, countermeasure effectiveness, and system response timing.",
       "primaryCategory": "defence-aerospace",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["physical-ai-engineering"],
-      "tags": ["Defensive Aids", "Simulation", "Threat Modeling", "Countermeasures", "Avionics"],
-      "technologyStack": ["Python", "SimPy", "NumPy", "Matplotlib", "Nebula Studio"],
+      "secondaryCollections": [
+        "physical-ai-engineering"
+      ],
+      "tags": [
+        "Defensive Aids",
+        "Simulation",
+        "Threat Modeling",
+        "Countermeasures",
+        "Avionics"
+      ],
+      "technologyStack": [
+        "Python",
+        "SimPy",
+        "NumPy",
+        "Matplotlib",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
@@ -763,9 +1373,24 @@
       "description": "A specialized predictive maintenance platform for aviation engine test cells and component test rigs, monitoring vibration, temperature, and performance parameters for early failure detection.",
       "primaryCategory": "industrial-ai-predictive-operations",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace", "physical-ai-engineering"],
-      "tags": ["Predictive Maintenance", "Test Rig", "Aviation", "Sensors", "Failure Prediction"],
-      "technologyStack": ["Python", "TensorFlow", "InfluxDB", "Grafana", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace",
+        "physical-ai-engineering"
+      ],
+      "tags": [
+        "Predictive Maintenance",
+        "Test Rig",
+        "Aviation",
+        "Sensors",
+        "Failure Prediction"
+      ],
+      "technologyStack": [
+        "Python",
+        "TensorFlow",
+        "InfluxDB",
+        "Grafana",
+        "Nebula Studio"
+      ],
       "maturity": "planned",
       "status": "planned",
       "repositoryUrl": null,
@@ -780,9 +1405,24 @@
       "description": "An intelligent assistant that processes PCB imagery to extract netlists, identify components, infer schematic topology, and generate documentation — accelerating indigenisation engineering.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "defence-aerospace",
-      "secondaryCollections": ["defence-aerospace", "agentic-ai-autonomous-workflows"],
-      "tags": ["PCB", "Reverse Engineering", "Computer Vision", "Schematic Inference", "Indigenisation"],
-      "technologyStack": ["Python", "OpenCV", "PyTorch", "KiCad", "Nebula Studio"],
+      "secondaryCollections": [
+        "defence-aerospace",
+        "agentic-ai-autonomous-workflows"
+      ],
+      "tags": [
+        "PCB",
+        "Reverse Engineering",
+        "Computer Vision",
+        "Schematic Inference",
+        "Indigenisation"
+      ],
+      "technologyStack": [
+        "Python",
+        "OpenCV",
+        "PyTorch",
+        "KiCad",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
@@ -797,9 +1437,24 @@
       "description": "A comprehensive platform addressing Survey of India's digital transformation requirements: national geospatial data infrastructure, standards compliance, citizen-facing services, and interoperable API ecosystem.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
       "industry": "government",
-      "secondaryCollections": ["geoai-earth-intelligence", "agentic-ai-autonomous-workflows"],
-      "tags": ["Geospatial Platform", "RFP Response", "Government", "Data Infrastructure", "Compliance"],
-      "technologyStack": ["Python", "FastAPI", "PostGIS", "React", "Nebula Studio"],
+      "secondaryCollections": [
+        "geoai-earth-intelligence",
+        "agentic-ai-autonomous-workflows"
+      ],
+      "tags": [
+        "Geospatial Platform",
+        "RFP Response",
+        "Government",
+        "Data Infrastructure",
+        "Compliance"
+      ],
+      "technologyStack": [
+        "Python",
+        "FastAPI",
+        "PostGIS",
+        "React",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/survey-of-india-platform",
@@ -814,9 +1469,24 @@
       "description": "A geospatial intelligence platform for coastal and marine environments — vessel tracking, environmental monitoring, habitat mapping, and maritime security analytics.",
       "primaryCategory": "climate-environment-sustainability",
       "industry": "climate-environment",
-      "secondaryCollections": ["geoai-earth-intelligence", "computer-vision-visual-intelligence"],
-      "tags": ["Marine", "Coastal", "AIS", "Satellite", "Domain Awareness"],
-      "technologyStack": ["Python", "GeoServer", "Leaflet", "PostGIS", "Nebula Studio"],
+      "secondaryCollections": [
+        "geoai-earth-intelligence",
+        "computer-vision-visual-intelligence"
+      ],
+      "tags": [
+        "Marine",
+        "Coastal",
+        "AIS",
+        "Satellite",
+        "Domain Awareness"
+      ],
+      "technologyStack": [
+        "Python",
+        "GeoServer",
+        "Leaflet",
+        "PostGIS",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
@@ -831,9 +1501,23 @@
       "description": "A planning and analytics platform that evaluates infrastructure projects against sustainability metrics, performs lifecycle carbon accounting, and models environmental impact scenarios.",
       "primaryCategory": "climate-environment-sustainability",
       "industry": "construction-infrastructure",
-      "secondaryCollections": ["enterprise-applications-decision-intelligence"],
-      "tags": ["Sustainability", "Infrastructure", "Carbon Accounting", "LCA", "Planning"],
-      "technologyStack": ["Python", "Streamlit", "Brightway2", "GeoPandas", "Nebula Studio"],
+      "secondaryCollections": [
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Sustainability",
+        "Infrastructure",
+        "Carbon Accounting",
+        "LCA",
+        "Planning"
+      ],
+      "technologyStack": [
+        "Python",
+        "Streamlit",
+        "Brightway2",
+        "GeoPandas",
+        "Nebula Studio"
+      ],
       "maturity": "concept",
       "status": "planned",
       "repositoryUrl": null,
