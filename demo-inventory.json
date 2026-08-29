@@ -75,8 +75,8 @@
       ],
       "maturity": "beta",
       "status": "active",
-      "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io",
-      "liveUrl": "https://studio-public-demos.github.io/showcase/nepal-flash-flood/",
+      "repositoryUrl": "https://github.com/studio-public-demos/nepal-flash-flood-digital-twin",
+      "liveUrl": "https://studio-public-demos.github.io/nepal-flash-flood-digital-twin/",
       "dataProvenance": "Real Nepal corridor geography, runtime Cesium terrain, OpenStreetMap/HOT context, and representative synthetic scenario outputs. Geopera and Planet Source Cooperative are cited; non-commercial imagery/model products are not bundled.",
       "screenshots": []
     },
