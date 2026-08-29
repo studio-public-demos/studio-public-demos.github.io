@@ -572,10 +572,10 @@ async function sampleCorridorTerrain() {
     const heights = crossValleySamples.map((sample) => sample.heightM);
     state.terrainStatus = `Runtime terrain sampled across ${state.terrainSections.length} OSM river valley sections: ${Math.min(...heights).toFixed(0)}-${Math.max(...heights).toFixed(0)} m`;
   } catch (error) {
-    console.warn("Terrain sampling unavailable; flood overlay remains clamped to globe surface.", error);
+    console.info("Detailed terrain sampling unavailable; flood overlay remains clamped to the rendered globe surface.", error);
     state.terrainSamples = centerline.map((point) => ({ lon: point[0] ?? 0, lat: point[1] ?? 0, heightM: 0 }));
     state.terrainSections = [];
-    state.terrainStatus = "Terrain provider unavailable for sampling; overlay is clamped to fallback surface";
+    state.terrainStatus = "3D terrain provider is visible; detailed sampled height grid unavailable, so flood overlay is clamped to the rendered globe surface";
   }
 }
 function withTimeout(promise, timeoutMs, message) {
