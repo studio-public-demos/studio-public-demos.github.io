@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-08-29",
-    "total_demos": 25,
-    "live_demos": 21,
+    "last_updated": "2026-09-06",
+    "total_demos": 26,
+    "live_demos": 22,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -84,7 +84,7 @@
       "repo_name": "open-london-3d-showcase",
       "name": "Open London 3D Drive",
       "summary": "Browser-based 3D urban navigation through Westminster to Trafalgar Square. Automated drive simulation with 5 camera modes, 4 lighting presets, and real-time performance monitoring.",
-      "description": "An interactive 3D urban drive experience through central London using open data from OpenStreetMap. Features automated route following, camera modes (driver, chase, orbit, pedestrian, overview), dawn/day/dusk/night lighting, and performance metrics panel — all running in the browser without proprietary APIs.",
+      "description": "An interactive 3D urban drive experience through central London using open data from OpenStreetMap. Features automated route following, camera modes (driver, chase, orbit, pedestrian, overview), dawn/day/dusk/night lighting, and performance metrics panel \u2014 all running in the browser without proprietary APIs.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": [
         "geospatial-smart-cities",
@@ -115,7 +115,7 @@
     {
       "repo_name": "open-london-3d-drive",
       "name": "Open London 3D Drive (Implementation)",
-      "summary": "Full-stack implementation repository for the London 3D drive — data pipeline, processing, Docker deployment, and web application source.",
+      "summary": "Full-stack implementation repository for the London 3D drive \u2014 data pipeline, processing, Docker deployment, and web application source.",
       "description": "The engineering implementation behind the London 3D showcase. Contains the Python data acquisition pipeline (Overpass API fetch), geo-processing scripts, the Vite + TypeScript web application, and Docker Compose deployment configuration. This is the development/implementation counterpart to the showcase repo.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": [
@@ -200,12 +200,12 @@
       "maturity": "case-study",
       "repoUrl": "https://github.com/studio-public-demos/circato-ocean-plastic-tfw-dashboard",
       "dataProvenance": "Publicly available information and representative assumptions",
-      "title": "CIRCATO — Repo-Only Case Study"
+      "title": "CIRCATO \u2014 Repo-Only Case Study"
     },
     {
       "repo_name": "royal-biryani",
       "name": "Royal Biryani",
-      "summary": "Restaurant landing page with interactive 3D hero scene — authentic dum biryani brand showcase.",
+      "summary": "Restaurant landing page with interactive 3D hero scene \u2014 authentic dum biryani brand showcase.",
       "description": "A visually rich restaurant landing page featuring an interactive Three.js 3D hero scene. Demonstrates Studio's capability for commercial brand websites with immersive 3D elements, built with Vite + React + Three.js.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
       "industry": [
@@ -235,7 +235,7 @@
     {
       "repo_name": "factory-bim",
       "name": "Factory BIM Viewer",
-      "summary": "Interactive 3D Building Information Model viewer for an industrial factory complex — built with Three.js.",
+      "summary": "Interactive 3D Building Information Model viewer for an industrial factory complex \u2014 built with Three.js.",
       "description": "A browser-based BIM viewer that renders a detailed 3D model of an industrial factory. Supports orbit controls, section planes, component selection, and metadata display. Demonstrates Studio's AEC (Architecture, Engineering, Construction) visualization capabilities.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": [
@@ -296,7 +296,7 @@
     {
       "repo_name": "guntur-change-detection-dashboard",
       "name": "Guntur Change Detection Dashboard",
-      "summary": "Interactive geospatial dashboard visualizing building-level change detection across Guntur, India (2017–2022).",
+      "summary": "Interactive geospatial dashboard visualizing building-level change detection across Guntur, India (2017\u20132022).",
       "description": "A geospatial intelligence dashboard that maps and quantifies urban change across the Guntur region using multi-temporal satellite imagery analysis. Features interactive maps, change heatmaps, building-level statistics, and temporal comparison tools for urban planning and development monitoring.",
       "primaryCategory": "geoai-earth-intelligence",
       "industry": [
@@ -322,7 +322,7 @@
       "repoUrl": "https://github.com/studio-public-demos/guntur-change-detection-dashboard",
       "pagesUrl": "https://studio-public-demos.github.io/guntur-change-detection-dashboard/",
       "dataProvenance": "Sentinel-2 satellite imagery (ESA Copernicus), OpenStreetMap",
-      "title": "Guntur Building Change Detection | 2017–2022"
+      "title": "Guntur Building Change Detection | 2017\u20132022"
     },
     {
       "repo_name": "3d-gis-globe",
@@ -448,7 +448,7 @@
     {
       "repo_name": "vlm-aerodynamics-demo",
       "name": "VLM Aerodynamics Simulator",
-      "summary": "Interactive 3D wing aerodynamics simulator using Vortex Lattice Method — NACA 2412 airfoil at variable angle of attack.",
+      "summary": "Interactive 3D wing aerodynamics simulator using Vortex Lattice Method \u2014 NACA 2412 airfoil at variable angle of attack.",
       "description": "An interactive aerospace engineering tool that visualizes Vortex Lattice Method aerodynamics results on a 3D wing. Features adjustable angle of attack, lift/drag coefficient display, pressure distribution visualization, and real-time 3D rendering of the wing with aerodynamic overlay. Includes a Python VLM computation backend.",
       "primaryCategory": "physical-ai-engineering",
       "industry": [
@@ -479,7 +479,7 @@
     {
       "repo_name": "geovision-pro-showcase",
       "name": "GeoVision Pro",
-      "summary": "LiDAR and surveying solutions showcase — interactive geospatial data visualization platform.",
+      "summary": "LiDAR and surveying solutions showcase \u2014 interactive geospatial data visualization platform.",
       "description": "A professional geospatial services showcase demonstrating LiDAR data processing, surveying workflow visualization, and 3D terrain modeling capabilities. Features interactive maps, point cloud visualization, and surveying methodology presentations.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": [
@@ -509,7 +509,7 @@
     {
       "repo_name": "nefertiti-viewer",
       "name": "Nefertiti 3D Monument Viewer",
-      "summary": "Interactive 3D visualization of the Bust of Nefertiti — high-fidelity GLB model with physically-based rendering.",
+      "summary": "Interactive 3D visualization of the Bust of Nefertiti \u2014 high-fidelity GLB model with physically-based rendering.",
       "description": "A browser-based 3D monument viewer for cultural heritage artifacts. Renders the iconic Nefertiti bust as a high-fidelity GLB model with physically-based rendering (PBR), orbit controls, and lighting presets. Demonstrates Studio's 3D reconstruction and cultural heritage visualization capabilities.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": [
@@ -539,7 +539,7 @@
     {
       "repo_name": "sponza-viewer",
       "name": "Sponza Palace 3D Viewer",
-      "summary": "Interactive 3D viewer for the Sponza Palace atrium — real-time rendering with GLTF model and Draco compression.",
+      "summary": "Interactive 3D viewer for the Sponza Palace atrium \u2014 real-time rendering with GLTF model and Draco compression.",
       "description": "A real-time 3D architectural visualization of the classic Sponza atrium scene. Features physically-based materials, dynamic lighting, Draco-compressed geometry, and interactive camera controls. Demonstrates Studio's architectural visualization and 3D graphics capabilities with optimized asset delivery.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": [
@@ -571,7 +571,7 @@
     {
       "repo_name": "salesflow-crm-showcase",
       "name": "SalesFlow CRM Showcase",
-      "summary": "AI-powered sales CRM platform — pipeline management, deal insights, Slack alerts, and AI sales assistant.",
+      "summary": "AI-powered sales CRM platform \u2014 pipeline management, deal insights, Slack alerts, and AI sales assistant.",
       "description": "A modern CRM platform showcase featuring AI-powered deal insights, interactive pipeline visualization, automated Slack alerts for deal milestones, and an AI sales assistant for opportunity analysis. Demonstrates Studio's enterprise application development capabilities.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
       "industry": [
@@ -600,7 +600,7 @@
     {
       "repo_name": "salesflow-crm-deploy",
       "name": "SalesFlow CRM Backend",
-      "summary": "SalesFlow CRM deployment — FastAPI backend with SQLite, AI engine, and Slack integration.",
+      "summary": "SalesFlow CRM deployment \u2014 FastAPI backend with SQLite, AI engine, and Slack integration.",
       "description": "The backend implementation for the SalesFlow CRM platform. Includes a FastAPI server with SQLite database, AI-powered deal analysis engine, automated Slack notification service, and REST API endpoints. This is the deployable backend counterpart to the CRM showcase frontend.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
       "industry": [
@@ -659,7 +659,7 @@
       "repoUrl": "https://github.com/studio-public-demos/shm-bridge-specification",
       "pagesUrl": "https://studio-public-demos.github.io/shm-bridge-specification/",
       "dataProvenance": "IRC, MORTH, BIS, ISO, SAMCO, FHWA standards (publicly available reference documents)",
-      "title": "SHM Bridge Specification — India"
+      "title": "SHM Bridge Specification \u2014 India"
     },
     {
       "repo_name": "bim-cloud-pipeline-showcase",
@@ -762,9 +762,9 @@
     },
     {
       "repo_name": "civic-index-india-geoportal",
-      "name": "Nebula Civic Index — GeoIndia",
-      "summary": "An open public-data discovery and intelligence platform for India's geospatial data — faceted search, an interactive state map, portal assessment, data-gap analysis and source comparison, assembled and verified with Studio AI.",
-      "description": "An open index of public geospatial datasets, services and portals for India (100+ datasets, 29 portals, 16 themes). Features faceted search, Ask Studio natural-language queries, a MapLibre choropleth, 0–100 portal assessment, data-availability gap analysis and authoritative-vs-alternative source comparison. The catalogue is independently curated from primary sources, link-verified, and downloadable as open data (CC-BY 4.0). Built with NebulaCloud Studio.",
+      "name": "Nebula Civic Index \u2014 GeoIndia",
+      "summary": "An open public-data discovery and intelligence platform for India's geospatial data \u2014 faceted search, an interactive state map, portal assessment, data-gap analysis and source comparison, assembled and verified with Studio AI.",
+      "description": "An open index of public geospatial datasets, services and portals for India (100+ datasets, 29 portals, 16 themes). Features faceted search, Ask Studio natural-language queries, a MapLibre choropleth, 0\u2013100 portal assessment, data-availability gap analysis and authoritative-vs-alternative source comparison. The catalogue is independently curated from primary sources, link-verified, and downloadable as open data (CC-BY 4.0). Built with NebulaCloud Studio.",
       "primaryCategory": "geoai-earth-intelligence",
       "industry": [
         "government",
@@ -789,7 +789,44 @@
       "repoUrl": "https://github.com/studio-public-demos/civic-index-india-geoportal",
       "pagesUrl": "https://studio-public-demos.github.io/civic-index-india-geoportal/",
       "dataProvenance": "Independently curated public geospatial portals (ISRO/Bhuvan, Survey of India, India-WRIS, data.gov.in, OpenStreetMap, Natural Earth, Microsoft/Google open buildings, ESA/Copernicus, etc.); Natural Earth boundaries (public domain)",
-      "title": "Nebula Civic Index — GeoIndia"
+      "title": "Nebula Civic Index \u2014 GeoIndia"
+    },
+    {
+      "repo_name": "atlas-v2",
+      "name": "Atlas v2 - Spatial Intelligence Platform",
+      "summary": "Nebula Atlas v2: Multi-domain spatial, spatiotemporal, and digital-twin intelligence platform with AI-powered public safety capabilities.",
+      "description": "Nebula Atlas v2: Multi-domain spatial, spatiotemporal, and digital-twin intelligence platform. Atlas Sentinel demonstrates public-safety capabilities with CCTV, ANPR, vehicle tracking, AI-powered investigation, and multi-source intelligence fusion.",
+      "primaryCategory": "digital-twins-spatial-intelligence",
+      "industry": [
+        "government",
+        "public-safety",
+        "law-enforcement"
+      ],
+      "tags": [
+        "Agentic AI",
+        "Computer Vision",
+        "Video Intelligence",
+        "GIS",
+        "Public Safety",
+        "Multi-Domain Intelligence",
+        "Geospatial",
+        "Incident Tracking",
+        "CCTV",
+        "ANPR"
+      ],
+      "technologyStack": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "MapLibre GL JS",
+        "Python",
+        "NebulaCloud Studio"
+      ],
+      "maturity": "production",
+      "repoUrl": "https://github.com/studio-public-demos/atlas-v2",
+      "pagesUrl": "https://studio-public-demos.github.io/atlas-v2/",
+      "dataProvenance": "Demonstration data with synthetic CCTV, ANPR, and incident records for public safety use case demonstration",
+      "title": "Nebula Atlas v2 - Spatial Intelligence Platform"
     }
   ]
 }

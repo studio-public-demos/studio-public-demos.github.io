@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2026-08-29",
+    "last_updated": "2026-09-06",
     "total_demos": 51,
     "categories": [
       "agentic-ai-autonomous-workflows",
@@ -43,7 +43,8 @@
       "prototype",
       "concept",
       "planned"
-    ]
+    ],
+    "total_count": 52
   },
   "demos": [
     {
@@ -448,7 +449,7 @@
       "id": "open-london-3d-drive",
       "name": "Open London 3D Drive",
       "summary": "Browser-based 3D urban navigation prototype covering Westminster to Trafalgar Square with automated drive simulation.",
-      "description": "An interactive 3D urban drive experience through central London using open data. Features 5 camera modes, automated route following, 4 lighting presets, and performance monitoring — all running in the browser without proprietary APIs.",
+      "description": "An interactive 3D urban drive experience through central London using open data. Features 5 camera modes, automated route following, 4 lighting presets, and performance monitoring \u2014 all running in the browser without proprietary APIs.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": "geospatial-smart-cities",
       "secondaryCollections": [
@@ -943,7 +944,7 @@
     {
       "id": "autonomous-project-execution",
       "name": "Autonomous Project Execution",
-      "summary": "Demonstration of Studio's core autonomous execution capability — planning, building, and verifying software projects end-to-end.",
+      "summary": "Demonstration of Studio's core autonomous execution capability \u2014 planning, building, and verifying software projects end-to-end.",
       "description": "A showcase of autonomous software engineering workflows where AI agents plan architecture, write code, run tests, fix issues, and deploy applications without human intervention.",
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
@@ -966,7 +967,7 @@
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/autonomous-project-execution",
       "liveUrl": null,
-      "dataProvenance": "N/A — capability demonstration",
+      "dataProvenance": "N/A \u2014 capability demonstration",
       "screenshots": []
     },
     {
@@ -994,7 +995,7 @@
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/supervisor-agent-workflow",
       "liveUrl": null,
-      "dataProvenance": "N/A — capability demonstration",
+      "dataProvenance": "N/A \u2014 capability demonstration",
       "screenshots": []
     },
     {
@@ -1203,7 +1204,7 @@
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/agentic-qa-deployment",
       "liveUrl": null,
-      "dataProvenance": "N/A — capability demonstration",
+      "dataProvenance": "N/A \u2014 capability demonstration",
       "screenshots": []
     },
     {
@@ -1430,7 +1431,7 @@
       "id": "pcb-reverse-engineering-assistant",
       "name": "PCB Reverse Engineering Assistant",
       "summary": "AI-assisted PCB reverse engineering tool combining visual analysis with schematic inference.",
-      "description": "An intelligent assistant that processes PCB imagery to extract netlists, identify components, infer schematic topology, and generate documentation — accelerating indigenisation engineering.",
+      "description": "An intelligent assistant that processes PCB imagery to extract netlists, identify components, infer schematic topology, and generate documentation \u2014 accelerating indigenisation engineering.",
       "primaryCategory": "computer-vision-visual-intelligence",
       "industry": "defence-aerospace",
       "secondaryCollections": [
@@ -1461,7 +1462,7 @@
     {
       "id": "survey-of-india-platform",
       "name": "Survey of India Platform",
-      "summary": "Enterprise geospatial platform for Survey of India RFP response — digital mapping infrastructure, data standards, and citizen services.",
+      "summary": "Enterprise geospatial platform for Survey of India RFP response \u2014 digital mapping infrastructure, data standards, and citizen services.",
       "description": "A comprehensive platform addressing Survey of India's digital transformation requirements: national geospatial data infrastructure, standards compliance, citizen-facing services, and interoperable API ecosystem.",
       "primaryCategory": "enterprise-applications-decision-intelligence",
       "industry": "government",
@@ -1494,7 +1495,7 @@
       "id": "coastal-marine-intelligence",
       "name": "Coastal Marine Intelligence",
       "summary": "Integrated coastal and marine monitoring platform combining satellite, AIS, and buoy data for maritime domain awareness.",
-      "description": "A geospatial intelligence platform for coastal and marine environments — vessel tracking, environmental monitoring, habitat mapping, and maritime security analytics.",
+      "description": "A geospatial intelligence platform for coastal and marine environments \u2014 vessel tracking, environmental monitoring, habitat mapping, and maritime security analytics.",
       "primaryCategory": "climate-environment-sustainability",
       "industry": "climate-environment",
       "secondaryCollections": [
@@ -1615,6 +1616,38 @@
       "liveUrl": "https://studio-public-demos.github.io/municipal-property-intelligence/",
       "dataProvenance": "OpenStreetMap, Google Open Buildings, Microsoft building footprints, Google 2.5D Temporal, Census of India 2011 (public totals)",
       "screenshots": []
+    },
+    {
+      "id": "atlas-v2",
+      "name": "Atlas v2 - Spatial Intelligence Platform",
+      "category": "digital-twins-spatial-intelligence",
+      "industries": [
+        "government",
+        "public-safety",
+        "law-enforcement"
+      ],
+      "technologies": [
+        "agentic-ai",
+        "computer-vision",
+        "digital-twins",
+        "geoai"
+      ],
+      "description": "Nebula Atlas v2: Multi-domain spatial, spatiotemporal, and digital-twin intelligence platform. Atlas Sentinel demonstrates public-safety capabilities with CCTV, ANPR, vehicle tracking, AI-powered investigation, and multi-source intelligence fusion.",
+      "maturity": "production",
+      "github_repo": "studio-public-demos/atlas-v2",
+      "live_url": "https://studio-public-demos.github.io/atlas-v2/",
+      "tags": [
+        "Agentic AI",
+        "Computer Vision",
+        "Video Intelligence",
+        "GIS",
+        "Public Safety",
+        "Multi-Domain Intelligence",
+        "Geospatial",
+        "Incident Tracking",
+        "CCTV",
+        "ANPR"
+      ]
     }
   ]
 }
