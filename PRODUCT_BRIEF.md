@@ -39,3 +39,10 @@ Defence & Aerospace, Geospatial & Smart Cities, Manufacturing, Climate & Environ
 - 25 active, 13 planned
 - Maturity: 1 production, 7 beta, 19 prototype, 9 concept, 2 planned
 - Showcase HTML built and ready for deployment
+
+## Featured Narrated Demo
+
+Finance Model Studio Capability now includes a polished narrated product demo video for CFOs, founders, finance teams, analysts, and investors:
+
+- Demo page: https://studio-public-demos.github.io/showcase/finance-model-studio-capability/demo.html
+- MP4: https://studio-public-demos.github.io/showcase/finance-model-studio-capability/assets/demo-video/finance-model-studio-demo.mp4

@@ -161,6 +161,8 @@ footer p{font-size:.875rem}footer a{color:var(--accent-sky);font-weight:600}
 .detail-section h4{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-xs);margin-bottom:10px}
 .detail-tags{display:flex;flex-wrap:wrap;gap:6px}
 .detail-stack{display:flex;flex-wrap:wrap;gap:4px}
+.detail-video{max-width:960px;margin:0 0 32px;background:#fff;border:1px solid var(--border);border-radius:8px;padding:12px;box-shadow:0 18px 40px rgba(15,23,42,.08)}
+.detail-video video{display:block;width:100%;border-radius:6px;background:#000}
 .stack-chip{font-family:var(--f-mono);font-size:11px;padding:4px 10px;border-radius:4px;background:var(--bg);border:1px solid var(--border);color:var(--text-soft)}
 
 @media(max-width:1024px){.cat-grid{grid-template-columns:repeat(2,1fr)}.demos-grid{grid-template-columns:1fr}}
@@ -318,8 +320,10 @@ function renderDetail(repoName){
     <div class="detail-desc">${d.description}</div>
     <div class="detail-links">
       ${d.pagesUrl?`<a href="${d.pagesUrl}" target="_blank" class="btn btn-primary">Launch Live Demo</a>`:''}
+      ${d.demoVideoPageUrl?`<a href="${d.demoVideoPageUrl}" target="_blank" class="btn btn-secondary">Watch Product Demo</a>`:''}
       <a href="${d.repoUrl}" target="_blank" class="btn btn-secondary">View Repository</a>
     </div>
+    ${d.videoUrl?`<div class="detail-video"><video controls poster="${d.posterUrl||''}"><source src="${d.videoUrl}" type="video/mp4"></video></div>`:''}
     <div class="detail-section"><h4>Capability Tags</h4><div class="detail-tags">${d.tags.map(t=>`<span class="demo-tag" style="font-size:12px;padding:4px 12px">${t}</span>`).join('')}</div></div>
     <div class="detail-section"><h4>Technology Stack</h4><div class="detail-stack">${d.technologyStack.map(t=>`<span class="stack-chip">${t}</span>`).join('')}</div></div>
     ${d.dataProvenance?`<div class="detail-section"><h4>Data Provenance</h4><p style="color:var(--text-soft);font-size:.9rem">${d.dataProvenance}</p></div>`:''}

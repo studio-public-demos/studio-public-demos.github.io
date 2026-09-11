@@ -856,6 +856,9 @@
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/finance-model-studio-capability",
       "pagesUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/",
+      "demoVideoPageUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/demo.html",
+      "videoUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/assets/demo-video/finance-model-studio-demo.mp4",
+      "posterUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/assets/social-preview.png",
       "dataProvenance": "Representative sample business brief and model assumptions. All generated outputs are demonstration materials; no proprietary customer data or internal Studio implementation is included.",
       "title": "Finance Model Studio Capability"
     }

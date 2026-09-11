@@ -12,10 +12,13 @@ The screenshots and sample workbook in this repository are generated showcase ou
 - `assets/screenshots/profit-and-loss.png`
 - `assets/social-preview.png`
 - `assets/outputs/EQ_24_Month_Integrated_Financial_Model_Base_Case.xlsx`
+- `assets/demo-video/finance-model-studio-demo.mp4`
+- `assets/demo-video/finance-model-studio-demo-kajal.mp3`
+- `assets/demo-video/narration.ssml`
 
 ## External Assets
 
-No third-party images, icons, templates, datasets, or proprietary external media are included in this showcase package.
+No third-party images, icons, templates, datasets, or proprietary external media are included in this showcase package. The narrated audio was generated with AWS Polly using the Indian English female voice `Kajal`.
 
 ## Data Notice
 
@@ -24,4 +27,3 @@ The workbook is a representative sample created for demonstration purposes. It s
 ## IP Notice
 
 This repository intentionally excludes proprietary source code, prompts, workflows, implementation details, infrastructure, internal APIs, secrets, and Studio runtime components.
-

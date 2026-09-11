@@ -1677,6 +1677,9 @@
       "status": "active",
       "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/finance-model-studio-capability",
       "liveUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/",
+      "demoVideoPageUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/demo.html",
+      "videoUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/assets/demo-video/finance-model-studio-demo.mp4",
+      "posterUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/assets/social-preview.png",
       "dataProvenance": "Representative sample business brief and model assumptions. All generated outputs are demonstration materials; no proprietary customer data or internal Studio implementation is included.",
       "screenshots": [
         "showcase/finance-model-studio-capability/assets/screenshots/investor-dashboard.png"

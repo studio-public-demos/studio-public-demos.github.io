@@ -56,19 +56,31 @@ The result is a decision-ready workbook designed for fundraising discussions, bo
 
 Live demo page:
 
-https://studio-public-demos.github.io/
+https://studio-public-demos.github.io/showcase/finance-model-studio-capability/
+
+Narrated product demo:
+
+https://studio-public-demos.github.io/showcase/finance-model-studio-capability/demo.html
 
 Recommended demo treatment:
 
 - Show screenshots of the generated workbook
 - Offer a downloadable sample output workbook
-- Include a short walkthrough video
+- Lead with the narrated product demo video
 - Use only sample or synthetic planning data
 - Keep source code, prompts, workflows, and implementation files private
 
 ## Demo Video
 
-Suggested video structure:
+Watch or download the polished narrated product demonstration:
+
+- Demo page: https://studio-public-demos.github.io/showcase/finance-model-studio-capability/demo.html
+- MP4: https://studio-public-demos.github.io/showcase/finance-model-studio-capability/assets/demo-video/finance-model-studio-demo.mp4
+- Local asset: `assets/demo-video/finance-model-studio-demo.mp4`
+
+The video uses AWS Polly Indian English female voice `Kajal` and presents the capability as a presales-style Solution Architect walkthrough.
+
+Video structure:
 
 1. Start with the business question: "Can Studio turn a fundraising brief into an investor-ready model?"
 2. Show the generated Investor Dashboard
@@ -76,10 +88,6 @@ Suggested video structure:
 4. Show acquisition, revenue, cost, cash flow, P&L, and balance sheet schedules
 5. Show the Model Checks tab passing validation
 6. End with the CTA: "Bring your brief. Studio turns it into a working financial model."
-
-Video placeholder:
-
-`assets/videos/demo-walkthrough.mp4`
 
 ## Project Screenshots
 
@@ -294,4 +302,3 @@ Bring your business brief, fundraising plan, budget, or operating assumptions.
 Request a Studio demo:
 
 https://studio-public-demos.github.io/
-

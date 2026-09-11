@@ -25,7 +25,10 @@ This one shows the full finance workflow: from narrative assumptions to an audit
 CTA: Bring your brief. Studio turns it into a working financial model.
 
 Explore the showcase:
-https://studio-public-demos.github.io/
+https://studio-public-demos.github.io/showcase/finance-model-studio-capability/
+
+Watch the narrated product demo:
+https://studio-public-demos.github.io/showcase/finance-model-studio-capability/demo.html
 
 ## Short LinkedIn Version
 
@@ -35,7 +38,11 @@ Give Studio a business brief or fundraising plan. Get back a working Excel model
 
 CTA: Bring your brief. Studio turns it into a working financial model.
 
-https://studio-public-demos.github.io/
+Watch the demo:
+https://studio-public-demos.github.io/showcase/finance-model-studio-capability/demo.html
+
+Explore the showcase:
+https://studio-public-demos.github.io/showcase/finance-model-studio-capability/
 
 ## X / Twitter Thread
 
@@ -55,7 +62,8 @@ The goal is an editable, auditable model that helps teams make decisions.
 
 5/ CTA: Bring your brief. Studio turns it into a working financial model.
 
-https://studio-public-demos.github.io/
+Watch the narrated product demo:
+https://studio-public-demos.github.io/showcase/finance-model-studio-capability/demo.html
 
 ## Founder-Focused Hook
 
@@ -92,4 +100,3 @@ Slide 6: P&L, cash flow, balance sheet
 Slide 7: Model Checks: PASS
 
 Slide 8: CTA: Bring your brief. Studio turns it into a working financial model.
-
