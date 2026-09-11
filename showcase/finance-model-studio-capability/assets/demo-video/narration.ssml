@@ -1,0 +1,42 @@
+<speak>
+  <prosody rate="92%">
+    Hello, I am a Solution Architect at NebulaCloud Studio.
+    In this short demonstration, I will show how Studio turns a finance brief into a decision-ready Excel financial model.
+  </prosody>
+  <break time="400ms"/>
+  <prosody rate="91%">
+    We started with a detailed seed-stage business brief: acquisition assumptions, pricing, analyst capacity, compliance milestones, GTM spend, hiring, operating costs, and funding deployment.
+    Instead of leaving those ideas as static text, Studio translated them into a linked, formula-driven financial workbook.
+  </prosody>
+  <break time="350ms"/>
+  <prosody rate="91%">
+    The output includes editable assumptions, customer acquisition funnels, revenue schedules, cost schedules, profit and loss, balance sheet logic, cash runway, funding deployment, dashboards, and automated validation checks.
+  </prosody>
+  <break time="350ms"/>
+  <prosody rate="91%">
+    For CFOs and finance teams, this means faster planning cycles, cleaner scenario discussions, and a stronger bridge between strategy and numbers.
+    For founders, it means investor conversations can start from a structured model rather than a rough spreadsheet.
+    For analysts and FP and A teams, it means repeatable modeling patterns with transparent checks.
+    And for investors, it creates a clearer view of assumptions, burn, runway, unit economics, and capital efficiency.
+  </prosody>
+  <break time="400ms"/>
+  <prosody rate="91%">
+    In this sample, Studio created a twenty four month integrated model with eleven workbook sheets and a passing validation status.
+    The investor dashboard summarizes users, revenue, gross margin, EBITDA, acquisition channels, funding allocation, CAC, and runway in one place.
+  </prosody>
+  <break time="350ms"/>
+  <prosody rate="91%">
+    The same approach can be used for startup fundraising models, board plans, SaaS revenue models, investor diligence packs, capital allocation plans, regulated startup planning, and unit economics analysis.
+  </prosody>
+  <break time="350ms"/>
+  <prosody rate="91%">
+    What makes this powerful is not only the workbook.
+    It is the Studio workflow: bring a brief, describe the business logic, review assumptions, and generate a polished deliverable with checks, charts, and executive-ready outputs.
+    Beautiful, useful projects become easier to create because Studio handles the heavy structure while your team keeps control of the business judgement.
+  </prosody>
+  <break time="450ms"/>
+  <prosody rate="90%">
+    If you are a CFO, founder, finance leader, analyst, or investor, NebulaCloud Studio can help you move from planning narrative to decision-ready finance model.
+    Bring your brief. Studio turns it into a working model.
+  </prosody>
+</speak>

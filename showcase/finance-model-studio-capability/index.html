@@ -61,6 +61,8 @@
     .download h2{margin:0 0 8px;font-size:28px}
     .download p{margin:0;color:#cbd5e1;line-height:1.6}
     .download .btn{background:#fff;color:#0f172a}
+    .video-shell{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;box-shadow:var(--shadow)}
+    .video-shell video{display:block;width:100%;border-radius:8px;background:#000}
     .notice{margin-top:22px;border:1px solid #fed7aa;background:#fff7ed;color:#7c2d12;border-radius:10px;padding:16px 18px;line-height:1.55;max-width:900px}
     footer{background:#fff;border-top:1px solid var(--line);padding:32px 0;color:#64748b;font-size:14px}
     @media(max-width:900px){.container{padding:0 20px}.nav-center{display:none}.studio-btn{display:none}.hero{min-height:auto;padding:44px 0}h1{font-size:32px}.desc{font-size:18px}.stats,.screens,.cards{grid-template-columns:1fr}.download{align-items:flex-start;flex-direction:column}}
@@ -94,6 +96,7 @@
           <p class="desc">A public NebulaCloud Studio capability showcase demonstrating how a detailed business or fundraising brief can become a formula-driven Excel financial model with editable assumptions, acquisition and revenue funnels, cost schedules, P&amp;L, balance sheet, cash runway, funding deployment, dashboard charts, and automated validation checks.</p>
           <div class="actions">
             <a class="btn primary" href="assets/outputs/EQ_24_Month_Integrated_Financial_Model_Base_Case.xlsx">Download Sample Workbook</a>
+            <a class="btn secondary" href="demo.html">Watch Demo Video</a>
             <a class="btn secondary" href="https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/finance-model-studio-capability">View Repository</a>
           </div>
 
@@ -127,6 +130,20 @@
           </div>
 
           <div class="notice"><strong>Notice:</strong> this public showcase demonstrates generated outputs only. Proprietary source code, implementation details, prompts, workflows, datasets, infrastructure, and deployment configuration are intentionally not included.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo-video">
+      <div class="container">
+        <div class="section-head">
+          <h2>Narrated Product Demo</h2>
+          <p>A presales-style walkthrough with an AWS Polly Indian English female voice explaining what Studio created, who it helps, and how teams can create polished finance projects with ease.</p>
+        </div>
+        <div class="video-shell">
+          <video controls poster="assets/social-preview.png">
+            <source src="assets/demo-video/finance-model-studio-demo.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </section>
