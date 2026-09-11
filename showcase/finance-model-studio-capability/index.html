@@ -6,117 +6,156 @@
   <title>Finance Model Studio Capability | NebulaCloud Studio</title>
   <meta name="description" content="NebulaCloud Studio finance-model generation showcase for CFOs, founders, finance teams, analysts, and investors.">
   <meta property="og:title" content="Finance Model Studio Capability">
-  <meta property="og:description" content="Bring your brief. Studio turns it into a working financial model.">
+  <meta property="og:description" content="Investor-ready Excel financial models from business briefs.">
   <meta property="og:image" content="assets/social-preview.png">
   <style>
-    :root{
-      --bg:#f8fafc;--ink:#0f172a;--muted:#475569;--line:#dbe3ef;--brand:#155e75;--brand2:#ea580c;--ok:#15803d;--card:#fff;
-      --shadow:0 18px 45px rgba(15,23,42,.10);--r:14px;
-      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    }
+    :root{--bg:#f8fafc;--card:#fff;--ink:#0f172a;--soft:#334155;--muted:#64748b;--line:#dbe3ef;--blue:#1d4ed8;--blue-soft:#eff6ff;--teal:#155e75;--purple:#6d28d9;--shadow:0 18px 48px rgba(15,23,42,.08);--r:10px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--ink)}
     a{color:inherit}
-    .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-    header{padding:28px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.88);position:sticky;top:0;z-index:5;backdrop-filter:blur(10px)}
-    nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{font-weight:800;letter-spacing:.06em;font-size:13px;color:var(--brand)}
-    .navlinks{display:flex;gap:18px;font-size:14px;color:var(--muted);flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;padding:12px 16px;text-decoration:none;font-weight:800;border:1px solid transparent}
-    .btn.primary{background:var(--brand);color:white}
-    .btn.secondary{border-color:var(--line);background:white;color:var(--ink)}
-    .hero{padding:76px 0 54px;background:linear-gradient(180deg,#fff 0%,#f8fafc 100%)}
-    .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:42px;align-items:center}
-    .eyebrow{display:inline-flex;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);background:#e0f2fe;border:1px solid #bae6fd;border-radius:999px;padding:7px 10px;margin-bottom:18px}
-    h1{font-size:54px;line-height:1.02;margin:0 0 18px;letter-spacing:-.02em}
-    .hero p{font-size:19px;line-height:1.65;color:var(--muted);margin:0 0 26px}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-    .hero-img{background:white;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
-    .hero-img img{width:100%;display:block}
-    .notice{margin-top:20px;padding:14px 16px;border:1px solid #fed7aa;background:#fff7ed;border-radius:10px;color:#7c2d12;font-size:14px;line-height:1.5}
-    section{padding:58px 0}
-    h2{font-size:34px;margin:0 0 14px}
-    .lead{font-size:17px;line-height:1.7;color:var(--muted);max-width:820px;margin:0 0 26px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:0 8px 24px rgba(15,23,42,.05)}
+    .container{max-width:1390px;margin:0 auto;padding:0 32px}
+    nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav-inner{height:88px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .logo{text-decoration:none;font-family:Georgia,serif;font-size:20px;letter-spacing:.18em;color:#0f172a;text-transform:uppercase}
+    .nav-center{display:flex;align-items:center;gap:14px;color:#475569;font-weight:700}
+    .nav-center a{text-decoration:none;padding:11px 16px;border-radius:8px}
+    .nav-center a:hover{background:var(--blue-soft);color:#0b4eea}
+    .studio-btn{background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff;text-decoration:none;padding:14px 24px;border-radius:8px;font-weight:800;box-shadow:0 10px 24px rgba(37,99,235,.28)}
+    .hero{position:relative;min-height:760px;padding:86px 0 70px;overflow:hidden;background:linear-gradient(120deg,#f8fafc 0%,#f4f8ff 55%,#eef4ff 100%)}
+    .detail{position:relative;z-index:1;max-width:930px}
+    .back{display:inline-flex;align-items:center;gap:6px;margin-bottom:42px;background:#eff6ff;color:#0b4eea;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:800}
+    h1{font-family:Georgia,serif;text-transform:uppercase;font-size:46px;line-height:1.12;letter-spacing:.035em;margin:0 0 20px;color:#071b3a}
+    .meta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+    .chip{font-family:"SFMono-Regular",Consolas,monospace;font-size:13px;font-weight:700;padding:8px 13px;border-radius:6px;background:#eef6ff;color:#0b4eea}
+    .chip.beta{background:#eef6ff;color:#1d4ed8;border-radius:999px}
+    .chip.industry{background:#f5f3ff;color:var(--purple)}
+    .desc{font-size:22px;line-height:1.7;color:#334155;margin:0 0 34px;max-width:850px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:42px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;text-decoration:none;font-weight:800;padding:16px 26px;border:1px solid transparent;font-size:16px}
+    .btn.primary{background:#2355d7;color:#fff;box-shadow:0 10px 24px rgba(37,99,235,.25)}
+    .btn.secondary{background:#fff;color:#020617;border-color:var(--line)}
+    .detail-section{margin:0 0 34px}
+    .detail-section h2{font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;margin:0 0 14px}
+    .tags,.stack,.users{display:flex;flex-wrap:wrap;gap:9px}
+    .tag,.stack-chip,.user-chip{font-size:14px;border:1px solid var(--line);background:#fff;color:#1e293b;padding:8px 12px;border-radius:6px}
+    .stack-chip{font-family:"SFMono-Regular",Consolas,monospace;font-size:13px}
+    .provenance{font-size:17px;line-height:1.7;color:#475569;max-width:900px;margin:0}
+    section{padding:68px 0;background:#fff;border-top:1px solid var(--line)}
+    section.alt{background:#f8fafc}
+    .section-head{max-width:880px;margin-bottom:28px}
+    .section-head h2{font-size:34px;line-height:1.15;margin:0 0 12px}
+    .section-head p{font-size:17px;line-height:1.7;color:var(--muted);margin:0}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:0 8px 24px rgba(15,23,42,.04)}
+    .stat strong{display:block;font-size:32px;color:var(--teal);margin-bottom:4px}
+    .stat span{color:var(--muted);font-size:14px}
+    .screens{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+    figure img{display:block;width:100%;height:auto}
+    figcaption{border-top:1px solid var(--line);padding:13px 16px;color:#475569;font-size:14px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:0 8px 24px rgba(15,23,42,.04)}
     .card h3{margin:0 0 10px;font-size:18px}
-    .card p{margin:0;color:var(--muted);line-height:1.6;font-size:15px}
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
-    .stat{background:white;border:1px solid var(--line);border-radius:12px;padding:18px}
-    .stat strong{display:block;font-size:28px;color:var(--brand)}
-    .stat span{font-size:13px;color:var(--muted)}
-    .shots{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-    figure{margin:0;background:white;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:0 8px 24px rgba(15,23,42,.06)}
-    figure img{width:100%;display:block}
-    figcaption{padding:12px 14px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
-    .users{display:flex;flex-wrap:wrap;gap:10px}
-    .pill{border:1px solid var(--line);background:white;border-radius:999px;padding:10px 13px;font-weight:700;color:#334155}
-    .band{background:#0f172a;color:white}
-    .band .lead,.band p{color:#cbd5e1}
-    .band .card{background:#111c2f;border-color:#24344f}
-    .band .card h3{color:white}
-    .band .card p{color:#cbd5e1}
-    .output{display:flex;align-items:center;justify-content:space-between;gap:20px;background:white;border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
-    .output p{margin:6px 0 0;color:var(--muted)}
-    footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;background:white}
-    @media(max-width:900px){.hero-grid,.grid,.shots,.stats{grid-template-columns:1fr}h1{font-size:38px}.navlinks{display:none}.output{align-items:flex-start;flex-direction:column}}
+    .card p{margin:0;color:#475569;line-height:1.62;font-size:15px}
+    .download{display:flex;align-items:center;justify-content:space-between;gap:24px;background:#0f172a;color:#fff;border-radius:12px;padding:30px;box-shadow:var(--shadow)}
+    .download h2{margin:0 0 8px;font-size:28px}
+    .download p{margin:0;color:#cbd5e1;line-height:1.6}
+    .download .btn{background:#fff;color:#0f172a}
+    .notice{margin-top:22px;border:1px solid #fed7aa;background:#fff7ed;color:#7c2d12;border-radius:10px;padding:16px 18px;line-height:1.55;max-width:900px}
+    footer{background:#fff;border-top:1px solid var(--line);padding:32px 0;color:#64748b;font-size:14px}
+    @media(max-width:900px){.container{padding:0 20px}.nav-center{display:none}.studio-btn{display:none}.hero{min-height:auto;padding:44px 0}h1{font-size:32px}.desc{font-size:18px}.stats,.screens,.cards{grid-template-columns:1fr}.download{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <a class="brand" href="/">STUDIO PUBLIC DEMOS</a>
-        <div class="navlinks">
-          <a href="#outputs">Outputs</a>
-          <a href="#users">Users</a>
-          <a href="#use-cases">Use Cases</a>
-          <a href="#cta">CTA</a>
-        </div>
-      </nav>
+  <nav>
+    <div class="container nav-inner">
+      <a class="logo" href="/">Studio Demos</a>
+      <div class="nav-center">
+        <a href="/?category=enterprise-applications-decision-intelligence">Categories</a>
+        <a href="/?technology=Financial%20Modeling">By Technology</a>
+        <a href="/?industry=Enterprise">By Industry</a>
+        <a href="/">Browse All</a>
+      </div>
+      <a class="studio-btn" href="https://nebulacloud.studio/">nebulacloud.studio</a>
     </div>
-  </header>
+  </nav>
 
   <main>
     <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="eyebrow">New Studio Capability</span>
-          <h1>Finance models built from your brief.</h1>
-          <p>NebulaCloud Studio turns business briefs, fundraising memos, and planning assumptions into working Excel financial models for CFOs, founders, finance teams, analysts, and investors.</p>
-          <div class="cta-row">
-            <a class="btn primary" href="assets/outputs/EQ_24_Month_Integrated_Financial_Model_Base_Case.xlsx">Download Sample Workbook</a>
-            <a class="btn secondary" href="https://studio-public-demos.github.io/">Explore Studio Demos</a>
+      <div class="container">
+        <div class="detail">
+          <a class="back" href="/?demo=finance-model-studio-capability">← Back to Catalogue</a>
+          <h1>Finance Model Studio Capability</h1>
+          <div class="meta">
+            <span class="chip">Enterprise &amp; Decision Intelligence</span>
+            <span class="chip beta">BETA</span>
+            <span class="chip industry">Enterprise</span>
           </div>
-          <div class="notice"><strong>IP-safe showcase:</strong> this public page demonstrates generated outputs only. Source code, prompts, workflows, datasets, infrastructure, and implementation details are intentionally excluded.</div>
-        </div>
-        <div class="hero-img">
-          <img src="assets/screenshots/investor-dashboard.png" alt="Investor dashboard screenshot from generated financial model">
-        </div>
-      </div>
-    </section>
+          <p class="desc">A public NebulaCloud Studio capability showcase demonstrating how a detailed business or fundraising brief can become a formula-driven Excel financial model with editable assumptions, acquisition and revenue funnels, cost schedules, P&amp;L, balance sheet, cash runway, funding deployment, dashboard charts, and automated validation checks.</p>
+          <div class="actions">
+            <a class="btn primary" href="assets/outputs/EQ_24_Month_Integrated_Financial_Model_Base_Case.xlsx">Download Sample Workbook</a>
+            <a class="btn secondary" href="https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/finance-model-studio-capability">View Repository</a>
+          </div>
 
-    <section>
-      <div class="wrap">
-        <h2>What This Demonstrates</h2>
-        <p class="lead">The sample project shows a detailed seed-stage company brief converted into a 24-month integrated financial model with assumptions, acquisition logic, revenue streams, cost schedules, financial statements, investor dashboard, and automated model checks.</p>
-        <div class="stats">
-          <div class="stat"><strong>24</strong><span>Monthly forecast periods</span></div>
-          <div class="stat"><strong>11</strong><span>Workbook sheets</span></div>
-          <div class="stat"><strong>PASS</strong><span>Model validation status</span></div>
-          <div class="stat"><strong>.xlsx</strong><span>Generated workbook output</span></div>
+          <div class="detail-section">
+            <h2>Capability Tags</h2>
+            <div class="tags">
+              <span class="tag">Financial Modeling</span>
+              <span class="tag">CFO</span>
+              <span class="tag">FP&amp;A</span>
+              <span class="tag">Fundraising</span>
+              <span class="tag">Investor Dashboard</span>
+              <span class="tag">Excel</span>
+              <span class="tag">Runway Analysis</span>
+              <span class="tag">Decision Intelligence</span>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <h2>Technology Stack</h2>
+            <div class="stack">
+              <span class="stack-chip">Excel</span>
+              <span class="stack-chip">Financial Modeling</span>
+              <span class="stack-chip">Dashboarding</span>
+              <span class="stack-chip">NebulaCloud Studio</span>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <h2>Data Provenance</h2>
+            <p class="provenance">Representative sample business brief and model assumptions. All generated outputs are demonstration materials; no proprietary customer data or internal Studio implementation is included.</p>
+          </div>
+
+          <div class="notice"><strong>Notice:</strong> this public showcase demonstrates generated outputs only. Proprietary source code, implementation details, prompts, workflows, datasets, infrastructure, and deployment configuration are intentionally not included.</div>
         </div>
       </div>
     </section>
 
     <section id="outputs">
-      <div class="wrap">
-        <h2>Generated Outputs</h2>
-        <p class="lead">The focus is on what Studio produces: a usable, editable, auditable finance deliverable that can support fundraising, board discussions, FP&A, diligence, and operating decisions.</p>
-        <div class="shots">
+      <div class="container">
+        <div class="section-head">
+          <h2>Generated Outputs</h2>
+          <p>The showcase centers on the deliverable: an editable Excel workbook suitable for investor review, board planning, FP&amp;A, diligence, and management discussions.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>24</strong><span>Monthly forecast periods</span></div>
+          <div class="stat"><strong>11</strong><span>Workbook sheets</span></div>
+          <div class="stat"><strong>PASS</strong><span>Model validation status</span></div>
+          <div class="stat"><strong>.xlsx</strong><span>Downloadable output</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <div class="screens">
+          <figure>
+            <img src="assets/screenshots/investor-dashboard.png" alt="Investor dashboard screenshot from generated financial model">
+            <figcaption>Investor dashboard with users, revenue, gross margin, EBITDA, cash runway, GTM spend, CAC, and charts.</figcaption>
+          </figure>
           <figure>
             <img src="assets/screenshots/model-checks.png" alt="Model checks tab showing PASS validations">
-            <figcaption>Automated model checks with PASS/WARNING/FAIL logic.</figcaption>
+            <figcaption>Automated validation sheet showing reconciliations and business-rule checks.</figcaption>
           </figure>
           <figure>
             <img src="assets/screenshots/funding-deployment.png" alt="Funding deployment schedule screenshot">
@@ -124,81 +163,81 @@
           </figure>
           <figure>
             <img src="assets/screenshots/profit-and-loss.png" alt="Monthly P&L schedule screenshot">
-            <figcaption>Linked monthly P&L with Year 1 and Year 2 summaries.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/diagrams/conceptual-architecture.svg" alt="Conceptual architecture diagram">
-            <figcaption>Conceptual workflow only; no internal Studio architecture is disclosed.</figcaption>
+            <figcaption>Linked monthly P&amp;L with Year 1 and Year 2 summaries.</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section id="users" class="band">
-      <div class="wrap">
-        <h2>Designed For Finance Decision-Makers</h2>
-        <p class="lead">This capability is aimed at professionals who need to move from narrative assumptions to decision-ready numbers quickly.</p>
+    <section id="users">
+      <div class="container">
+        <div class="section-head">
+          <h2>Intended Users</h2>
+          <p>Built for the people who need to move from planning assumptions to decision-ready numbers quickly.</p>
+        </div>
         <div class="users">
-          <span class="pill">CFOs</span>
-          <span class="pill">Fractional CFOs</span>
-          <span class="pill">Founders</span>
-          <span class="pill">Finance Teams</span>
-          <span class="pill">FP&A Teams</span>
-          <span class="pill">Financial Analysts</span>
-          <span class="pill">Investors</span>
-          <span class="pill">VC Teams</span>
-          <span class="pill">Accelerators</span>
-          <span class="pill">Advisory Firms</span>
+          <span class="user-chip">CFOs</span>
+          <span class="user-chip">Fractional CFOs</span>
+          <span class="user-chip">Founders</span>
+          <span class="user-chip">Finance Teams</span>
+          <span class="user-chip">FP&amp;A Teams</span>
+          <span class="user-chip">Financial Analysts</span>
+          <span class="user-chip">Investors</span>
+          <span class="user-chip">VC Teams</span>
+          <span class="user-chip">Accelerators</span>
+          <span class="user-chip">Advisory Firms</span>
         </div>
       </div>
     </section>
 
-    <section id="use-cases">
-      <div class="wrap">
-        <h2>Example Use Cases</h2>
-        <div class="grid">
+    <section id="use-cases" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Example Use Cases</h2>
+          <p>Representative finance workflows that can be turned into structured, auditable model outputs.</p>
+        </div>
+        <div class="cards">
           <div class="card"><h3>Startup Fundraising</h3><p>Convert a seed or Series A funding brief into a model covering users, CAC, revenue, gross margin, burn, runway, and capital deployment.</p></div>
-          <div class="card"><h3>Board Planning</h3><p>Create monthly operating plans with hiring, spend, revenue, cash, P&L, balance sheet, dashboard, and validation checks.</p></div>
-          <div class="card"><h3>FP&A Forecasting</h3><p>Turn department budgets and growth assumptions into a structured forecast workbook with management KPIs.</p></div>
+          <div class="card"><h3>Board Planning</h3><p>Create monthly operating plans with hiring, spend, revenue, cash, P&amp;L, balance sheet, dashboard, and validation checks.</p></div>
+          <div class="card"><h3>FP&amp;A Forecasting</h3><p>Turn department budgets and growth assumptions into a structured forecast workbook with management KPIs.</p></div>
           <div class="card"><h3>Investor Diligence</h3><p>Evaluate CAC, conversion, churn, revenue per user, gross margin, burn multiple, runway, and funding efficiency.</p></div>
           <div class="card"><h3>SaaS Revenue Models</h3><p>Model pricing, subscription roll-forward, churn, MRR, ARR, expansion revenue, and SaaS KPI dashboards.</p></div>
-          <div class="card"><h3>Capital Allocation</h3><p>Link funding envelopes to product, GTM, compliance, operations, G&A, contingency, and business outcomes.</p></div>
+          <div class="card"><h3>Capital Allocation</h3><p>Link funding envelopes to product, GTM, compliance, operations, G&amp;A, contingency, and business outcomes.</p></div>
           <div class="card"><h3>Unit Economics</h3><p>Build contribution-margin models for fintech, marketplaces, SaaS, and transaction-led businesses.</p></div>
           <div class="card"><h3>Runway Analysis</h3><p>Forecast opening cash, receipts, operating costs, capex, working capital, burn, closing cash, and runway.</p></div>
-          <div class="card"><h3>Regulated Startup Planning</h3><p>Separate compliance cash spend, P&L expense, deposits, audits, and regulatory readiness milestones.</p></div>
+          <div class="card"><h3>Regulated Startup Planning</h3><p>Separate compliance cash spend, P&amp;L expense, deposits, audits, and regulatory readiness milestones.</p></div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="wrap">
-        <h2>Technical Highlights</h2>
-        <p class="lead">High-level capabilities demonstrated without exposing proprietary implementation:</p>
-        <div class="grid">
-          <div class="card"><h3>Formula-Linked Workbook</h3><p>Major outputs flow from editable assumptions and linked schedules.</p></div>
-          <div class="card"><h3>Automated Validation</h3><p>Model checks flag structural, reconciliation, and business-rule issues.</p></div>
-          <div class="card"><h3>Investor Dashboard</h3><p>Charts and KPI summaries translate detailed schedules into decision-ready outputs.</p></div>
+    <section id="architecture">
+      <div class="container">
+        <div class="section-head">
+          <h2>Conceptual Architecture</h2>
+          <p>High-level workflow only. Internal Studio orchestration, prompts, implementation logic, and infrastructure are not disclosed.</p>
         </div>
+        <figure>
+          <img src="assets/diagrams/conceptual-architecture.svg" alt="Conceptual architecture diagram">
+          <figcaption>Business brief to assumptions, linked schedules, financial statements, dashboards, checks, and workbook output.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section id="cta">
-      <div class="wrap">
-        <div class="output">
+    <section id="cta" class="alt">
+      <div class="container">
+        <div class="download">
           <div>
             <h2>Bring your brief. Studio turns it into a working financial model.</h2>
-            <p>Use Studio for fundraising models, board forecasts, FP&A planning, investor diligence, unit economics, and runway analysis.</p>
+            <p>Use Studio for fundraising models, board forecasts, FP&amp;A planning, investor diligence, unit economics, and runway analysis.</p>
           </div>
-          <a class="btn primary" href="assets/outputs/EQ_24_Month_Integrated_Financial_Model_Base_Case.xlsx">Download Sample</a>
+          <a class="btn" href="assets/outputs/EQ_24_Month_Integrated_Financial_Model_Base_Case.xlsx">Download Sample</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      Built with NebulaCloud Studio. This showcase contains generated outputs and public marketing material only. It does not include source code, prompts, workflows, internal APIs, secrets, or implementation details.
-    </div>
+    <div class="container">Built with NebulaCloud Studio. This public showcase contains generated outputs and marketing material only.</div>
   </footer>
 </body>
 </html>
