@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-09-06",
-    "total_demos": 26,
-    "live_demos": 22,
+    "last_updated": "2026-09-11",
+    "total_demos": 27,
+    "live_demos": 23,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -827,6 +827,37 @@
       "pagesUrl": "https://studio-public-demos.github.io/atlas-v2/",
       "dataProvenance": "Demonstration data with synthetic CCTV, ANPR, and incident records for public safety use case demonstration",
       "title": "Nebula Atlas v2 - Spatial Intelligence Platform"
+    },
+    {
+      "repo_name": "finance-model-studio-capability",
+      "name": "Finance Model Studio Capability",
+      "summary": "Investor-ready Excel financial models from business briefs for CFOs, founders, finance teams, analysts, and investors.",
+      "description": "A public NebulaCloud Studio capability showcase demonstrating how a detailed business or fundraising brief can become a formula-driven Excel financial model with editable assumptions, acquisition and revenue funnels, cost schedules, P&L, balance sheet, cash runway, funding deployment, dashboard charts, and automated validation checks. The showcase publishes generated outputs only; proprietary source code, prompts, workflows, datasets and implementation details are intentionally excluded.",
+      "primaryCategory": "enterprise-applications-decision-intelligence",
+      "industry": [
+        "enterprise"
+      ],
+      "tags": [
+        "Financial Modeling",
+        "CFO",
+        "FP&A",
+        "Fundraising",
+        "Investor Dashboard",
+        "Excel",
+        "Runway Analysis",
+        "Decision Intelligence"
+      ],
+      "technologyStack": [
+        "Excel",
+        "Financial Modeling",
+        "Dashboarding",
+        "NebulaCloud Studio"
+      ],
+      "maturity": "beta",
+      "repoUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/finance-model-studio-capability",
+      "pagesUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/",
+      "dataProvenance": "Representative sample business brief and model assumptions. All generated outputs are demonstration materials; no proprietary customer data or internal Studio implementation is included.",
+      "title": "Finance Model Studio Capability"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2026-09-06",
-    "total_demos": 51,
+    "last_updated": "2026-09-11",
+    "total_demos": 53,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -44,7 +44,7 @@
       "concept",
       "planned"
     ],
-    "total_count": 52
+    "total_count": 53
   },
   "demos": [
     {
@@ -1647,6 +1647,39 @@
         "Incident Tracking",
         "CCTV",
         "ANPR"
+      ]
+    },
+    {
+      "id": "finance-model-studio-capability",
+      "name": "Finance Model Studio Capability",
+      "summary": "Investor-ready Excel financial models from business briefs for CFOs, founders, finance teams, analysts, and investors.",
+      "description": "A public NebulaCloud Studio capability showcase demonstrating how a detailed business or fundraising brief can become a formula-driven Excel financial model with editable assumptions, acquisition and revenue funnels, cost schedules, P&L, balance sheet, cash runway, funding deployment, dashboard charts, and automated validation checks. The showcase publishes generated outputs only; proprietary source code, prompts, workflows, datasets and implementation details are intentionally excluded.",
+      "primaryCategory": "enterprise-applications-decision-intelligence",
+      "industry": "enterprise",
+      "secondaryCollections": [],
+      "tags": [
+        "Financial Modeling",
+        "CFO",
+        "FP&A",
+        "Fundraising",
+        "Investor Dashboard",
+        "Excel",
+        "Runway Analysis",
+        "Decision Intelligence"
+      ],
+      "technologyStack": [
+        "Excel",
+        "Financial Modeling",
+        "Dashboarding",
+        "NebulaCloud Studio"
+      ],
+      "maturity": "beta",
+      "status": "active",
+      "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/finance-model-studio-capability",
+      "liveUrl": "https://studio-public-demos.github.io/showcase/finance-model-studio-capability/",
+      "dataProvenance": "Representative sample business brief and model assumptions. All generated outputs are demonstration materials; no proprietary customer data or internal Studio implementation is included.",
+      "screenshots": [
+        "showcase/finance-model-studio-capability/assets/screenshots/investor-dashboard.png"
       ]
     }
   ]

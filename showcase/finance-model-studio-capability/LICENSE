@@ -1,0 +1,26 @@
+Showcase Materials License
+
+Copyright (c) 2026 NebulaCloud Studio
+
+Permission is granted to view, share, and reference the public showcase materials contained in this repository for evaluation, portfolio, marketing, and demonstration purposes.
+
+This license applies only to the public showcase materials included in this repository, such as the README, screenshots, diagrams, attribution notes, and sample generated outputs.
+
+This license does not grant rights to:
+
+- NebulaCloud Studio source code
+- Proprietary implementation details
+- Internal prompts or agent workflows
+- AI orchestration logic
+- Studio runtime components
+- Infrastructure or deployment configuration
+- Internal APIs
+- Proprietary datasets
+- Customer data
+- Models, checkpoints, or fine-tuning datasets
+- Trademarks, brand assets, or logos except as expressly permitted
+
+The materials are provided "as is", without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and noninfringement.
+
+Nothing in this repository constitutes financial, investment, legal, tax, accounting, or regulatory advice.
+
