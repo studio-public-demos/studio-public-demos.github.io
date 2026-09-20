@@ -83,8 +83,8 @@
     {
       "repo_name": "open-london-3d-showcase",
       "name": "Open London 3D Drive",
-      "summary": "Browser-based 3D urban navigation through Westminster to Trafalgar Square. Automated drive simulation with 5 camera modes, 4 lighting presets, and real-time performance monitoring.",
-      "description": "An interactive 3D urban drive experience through central London using open data from OpenStreetMap. Features automated route following, camera modes (driver, chase, orbit, pedestrian, overview), dawn/day/dusk/night lighting, and performance metrics panel \u2014 all running in the browser without proprietary APIs.",
+      "summary": "An explainable, road-aware 3D journey through Westminster that combines open geospatial data, guided navigation, landmark storytelling, and source confidence.",
+      "description": "A browser-native spatial experience from Westminster Bridge to Trafalgar Square. An OSRM route follows OpenStreetMap road topology while MapLibre and Three.js keep the basemap, 3D city context, vehicle, and four procedural landmarks in one geospatial frame. Five camera modes, four authored lighting presets, navigation guidance, building-height provenance, and live rendering metrics demonstrate a reusable foundation for public-engagement and corridor-visualization prototypes.",
       "primaryCategory": "digital-twins-spatial-intelligence",
       "industry": [
         "geospatial-smart-cities",
@@ -92,56 +92,26 @@
       ],
       "tags": [
         "3D Visualization",
-        "Urban Digital Twin",
+        "Spatial Storytelling",
         "Navigation",
         "OpenStreetMap",
+        "OSRM",
         "WebGIS",
         "MapLibre",
         "Three.js"
       ],
       "technologyStack": [
-        "TypeScript",
+        "JavaScript",
         "MapLibre GL JS",
         "Three.js",
         "Vite",
-        "Python"
+        "OSRM"
       ],
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/open-london-3d-showcase",
       "pagesUrl": "https://studio-public-demos.github.io/open-london-3d-showcase/",
-      "dataProvenance": "OpenStreetMap via Overpass API (ODbL 1.0)",
+      "dataProvenance": "OpenStreetMap corridor data (ODbL 1.0) with OSRM road routing",
       "title": "Open London 3D Drive"
-    },
-    {
-      "repo_name": "open-london-3d-drive",
-      "name": "Open London 3D Drive (Implementation)",
-      "summary": "Full-stack implementation repository for the London 3D drive \u2014 data pipeline, processing, Docker deployment, and web application source.",
-      "description": "The engineering implementation behind the London 3D showcase. Contains the Python data acquisition pipeline (Overpass API fetch), geo-processing scripts, the Vite + TypeScript web application, and Docker Compose deployment configuration. This is the development/implementation counterpart to the showcase repo.",
-      "primaryCategory": "digital-twins-spatial-intelligence",
-      "industry": [
-        "geospatial-smart-cities",
-        "transportation"
-      ],
-      "tags": [
-        "Data Pipeline",
-        "Urban Digital Twin",
-        "OpenStreetMap",
-        "Docker",
-        "Python",
-        "TypeScript"
-      ],
-      "technologyStack": [
-        "Python",
-        "TypeScript",
-        "Docker",
-        "Three.js",
-        "MapLibre GL JS"
-      ],
-      "maturity": "beta",
-      "repoUrl": "https://github.com/studio-public-demos/open-london-3d-drive",
-      "pagesUrl": null,
-      "dataProvenance": "OpenStreetMap via Overpass API (ODbL 1.0)",
-      "title": "Open London 3D Drive (Implementation)"
     },
     {
       "repo_name": "nexustwin-industrial-digital-twin",
