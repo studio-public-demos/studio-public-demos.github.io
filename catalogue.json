@@ -110,6 +110,8 @@
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/open-london-3d-showcase",
       "pagesUrl": "https://studio-public-demos.github.io/open-london-3d-showcase/",
+      "videoUrl": "https://studio-public-demos.github.io/open-london-3d-showcase/assets/demo-video/open-london-3d-drive-demo.mp4",
+      "posterUrl": "https://studio-public-demos.github.io/open-london-3d-showcase/assets/demo-video/open-london-3d-drive-poster.png",
       "dataProvenance": "OpenStreetMap corridor data (ODbL 1.0) with OSRM road routing",
       "title": "Open London 3D Drive"
     },
