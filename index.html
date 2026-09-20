@@ -323,7 +323,7 @@ function renderDetail(repoName){
       ${d.demoVideoPageUrl?`<a href="${d.demoVideoPageUrl}" target="_blank" class="btn btn-secondary">Watch Product Demo</a>`:''}
       <a href="${d.repoUrl}" target="_blank" class="btn btn-secondary">View Repository</a>
     </div>
-    ${d.videoUrl?`<div class="detail-video"><video controls poster="${d.posterUrl||''}"><source src="${d.videoUrl}" type="video/mp4"></video></div>`:''}
+    ${d.videoUrl?`<div class="detail-video"><video controls playsinline webkit-playsinline preload="metadata" poster="${d.posterUrl||''}" aria-label="${d.name} demo video"><source src="${d.videoUrl}" type="video/mp4"></video></div>`:''}
     <div class="detail-section"><h4>Capability Tags</h4><div class="detail-tags">${d.tags.map(t=>`<span class="demo-tag" style="font-size:12px;padding:4px 12px">${t}</span>`).join('')}</div></div>
     <div class="detail-section"><h4>Technology Stack</h4><div class="detail-stack">${d.technologyStack.map(t=>`<span class="stack-chip">${t}</span>`).join('')}</div></div>
     ${d.dataProvenance?`<div class="detail-section"><h4>Data Provenance</h4><p style="color:var(--text-soft);font-size:.9rem">${d.dataProvenance}</p></div>`:''}
