@@ -148,8 +148,8 @@
     {
       "repo_name": "circato-ocean-plastic-tfw-dashboard",
       "name": "CIRCATO — Interactive Evidence Package",
-      "summary": "Interactive circular-construction evidence package combining coastal leakage mapping, live unit economics, batch traceability, and HVAC savings analysis.",
-      "description": "An independent NebulaCloud Studio technology demonstrator connecting geospatial opportunity analysis, commercial modelling, material traceability, thermal-performance comparison, and interactive decision support.",
+      "summary": "Explore circular-construction scenarios through maps, adjustable models and synthetic batch records.",
+      "description": "Independent NebulaCloud Studio demonstrator of coastal scenario mapping, adjustable unit economics, synthetic batch traceability and illustrative thermal comparisons. No official EPR connection, customer operations, certified performance or measured environmental benefits are claimed.",
       "primaryCategory": "climate-environment-sustainability",
       "industry": [
         "climate-environment",
@@ -164,16 +164,22 @@
         "Traceability"
       ],
       "technologyStack": [
-        "Python",
-        "Leaflet",
-        "Chart.js",
+        "Interactive maps",
+        "Scenario modelling",
+        "Browser dashboards",
         "NebulaCloud Studio"
       ],
       "maturity": "beta",
       "repoUrl": "https://github.com/studio-public-demos/circato-ocean-plastic-tfw-dashboard",
-      "dataProvenance": "Publicly available information and representative assumptions",
+      "dataProvenance": "Synthetic district values, generic synthetic batch records and illustrative model assumptions; OpenStreetMap basemap and attributed community boundaries. No certified performance or customer operations.",
       "title": "CIRCATO — Interactive Evidence Package",
-      "pagesUrl": "https://studio-public-demos.github.io/circato-ocean-plastic-tfw-dashboard/"
+      "pagesUrl": "https://studio-public-demos.github.io/circato-ocean-plastic-tfw-dashboard/",
+      "screenshots": [
+        "https://raw.githubusercontent.com/studio-public-demos/circato-ocean-plastic-tfw-dashboard/main/assets/screenshots/hotspot-map.png"
+      ],
+      "ipProtectionStatus": "pending-private-hosting-migration",
+      "videoUrl": "https://raw.githubusercontent.com/studio-public-demos/circato-ocean-plastic-tfw-dashboard/main/assets/videos/circato-walkthrough.mp4",
+      "posterUrl": "https://raw.githubusercontent.com/studio-public-demos/circato-ocean-plastic-tfw-dashboard/main/assets/social-preview.png"
     },
     {
       "repo_name": "royal-biryani",
