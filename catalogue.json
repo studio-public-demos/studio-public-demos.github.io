@@ -19,10 +19,10 @@
   "demos": [
     {
       "repo_name": "nebula-thermal-studio",
-      "name": "Nebula Thermal Studio — Electrical Enclosure Screening",
-      "title": "Nebula Thermal Studio — Engineering Screening Showcase",
-      "summary": "IP-protected engineering case study demonstrating preliminary electrical enclosure heat-loss assessment, design options and report output.",
-      "description": "Portfolio showcase of a working private browser prototype: configure enclosure conditions, edit synthetic device heat-loss inputs, review indicative bulk-air temperature risk, explore scenarios and document assumptions. Public page is a case study only; no calculation engine, customer data, standards-compliance claim or agent runtime is distributed.",
+      "name": "Solar Combiner Thermal Engineering — Evidence-Led Case Study",
+      "title": "Real Solar PV Combiner Thermal Engineering | Nebula Cloud Studio",
+      "summary": "Real public 16-input solar combiner reference with sourced gPV fuse losses, calculated conductor I²R, thermal evidence gaps and an IP-protected scenario explorer.",
+      "description": "Working private engineering application studies Trinity Touch's publicly documented 1000V 16-input combiner alongside ETI's published 20A gPV fuse heat-loss data and explicitly assumed wire geometry. Precomputed scenario explorer shows 77.616W partial heat loss at 15A/string and 146.081W at 20A/string, while correctly blocking IEC sign-off. No proprietary engine, private customer data or manufacturer endorsement.",
       "primaryCategory": "physical-ai-engineering",
       "industry": [
         "manufacturing",
@@ -30,23 +30,24 @@
         "construction-infrastructure"
       ],
       "tags": [
-        "Electrical Engineering",
-        "Enclosure Thermal Screening",
-        "Engineering Automation",
-        "Design Scenarios",
-        "IP Protected",
-        "Synthetic Data"
+        "Solar PV",
+        "DC Combiner Box",
+        "Electrical Thermal Engineering",
+        "Heat Loss",
+        "Manufacturer Evidence",
+        "Engineering Validation",
+        "IP Protected"
       ],
       "technologyStack": [
-        "Deterministic Engineering Screening",
-        "Browser Workbench",
+        "Private Python Engineering Service",
+        "Physics-Based I²R Screening",
         "Nebula Cloud Studio"
       ],
       "maturity": "prototype",
       "accessMode": "request",
       "repoUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/nebula-thermal-studio",
       "pagesUrl": "https://studio-public-demos.github.io/showcase/nebula-thermal-studio/",
-      "dataProvenance": "Fictional thermal-screening sample values and original portfolio-only visualization; no manufacturer-validated data or customer information."
+      "dataProvenance": "Public Trinity Touch 16 In 1 Out Combiner Box specification; public ETI CH10x38 20A fuse dissipation at 14A/20A; conductor geometry and currents are explicitly stated author assumptions. Monitoring allowance from another product variant is explicitly qualified. No customer BOM."
     },
     {
       "repo_name": "nepal-flash-flood-digital-twin",
