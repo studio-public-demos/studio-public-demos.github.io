@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2026-09-11",
-    "total_demos": 53,
+    "last_updated": "2026-11-07",
+    "total_demos": 54,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -44,9 +44,40 @@
       "concept",
       "planned"
     ],
-    "total_count": 53
+    "total_count": 54
   },
   "demos": [
+    {
+      "id": "nebula-thermal-studio",
+      "name": "Nebula Thermal Studio — Electrical Enclosure Screening",
+      "summary": "IP-protected project portfolio showing preliminary enclosure thermal screening, a synthetic assessment and a private-engine demo path.",
+      "description": "Working private thermal-screening prototype; published page documents synthetic engineering-screening workflow, representative sample outputs, limitations and private-demo CTA. No public calculation engine or customer content.",
+      "primaryCategory": "physical-ai-engineering",
+      "industry": "manufacturing",
+      "secondaryCollections": [
+        "industrial-ai-predictive-operations",
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Electrical Engineering",
+        "Thermal Screening",
+        "Enclosures",
+        "Engineering Reports",
+        "Synthetic Data"
+      ],
+      "technologyStack": [
+        "Deterministic Engineering Screening",
+        "Browser Workbench",
+        "Nebula Cloud Studio"
+      ],
+      "maturity": "prototype",
+      "status": "active",
+      "accessMode": "request",
+      "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/nebula-thermal-studio",
+      "liveUrl": "https://studio-public-demos.github.io/showcase/nebula-thermal-studio/",
+      "dataProvenance": "Original synthetic engineering-screening sample; all customer and proprietary calculation data excluded.",
+      "screenshots": []
+    },
     {
       "id": "nepal-flash-flood-digital-twin",
       "name": "Nepal Flash Flood Digital Twin",

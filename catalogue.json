@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-10-09",
-    "total_demos": 27,
+    "last_updated": "2026-11-07",
+    "total_demos": 28,
     "live_demos": 25,
     "categories": [
       "agentic-ai-autonomous-workflows",
@@ -17,6 +17,37 @@
     ]
   },
   "demos": [
+    {
+      "repo_name": "nebula-thermal-studio",
+      "name": "Nebula Thermal Studio — Electrical Enclosure Screening",
+      "title": "Nebula Thermal Studio — Engineering Screening Showcase",
+      "summary": "IP-protected engineering case study demonstrating preliminary electrical enclosure heat-loss assessment, design options and report output.",
+      "description": "Portfolio showcase of a working private browser prototype: configure enclosure conditions, edit synthetic device heat-loss inputs, review indicative bulk-air temperature risk, explore scenarios and document assumptions. Public page is a case study only; no calculation engine, customer data, standards-compliance claim or agent runtime is distributed.",
+      "primaryCategory": "physical-ai-engineering",
+      "industry": [
+        "manufacturing",
+        "energy-utilities",
+        "construction-infrastructure"
+      ],
+      "tags": [
+        "Electrical Engineering",
+        "Enclosure Thermal Screening",
+        "Engineering Automation",
+        "Design Scenarios",
+        "IP Protected",
+        "Synthetic Data"
+      ],
+      "technologyStack": [
+        "Deterministic Engineering Screening",
+        "Browser Workbench",
+        "Nebula Cloud Studio"
+      ],
+      "maturity": "prototype",
+      "accessMode": "request",
+      "repoUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/nebula-thermal-studio",
+      "pagesUrl": "https://studio-public-demos.github.io/showcase/nebula-thermal-studio/",
+      "dataProvenance": "Fictional thermal-screening sample values and original portfolio-only visualization; no manufacturer-validated data or customer information."
+    },
     {
       "repo_name": "nepal-flash-flood-digital-twin",
       "name": "Nepal Flash Flood Digital Twin",

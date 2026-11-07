@@ -300,7 +300,7 @@ function renderCard(d){
     <div class="demo-tags">${d.tags.slice(0,4).map(t=>`<span class="demo-tag">${t}</span>`).join('')}${d.tags.length>4?`<span class="demo-tag">+${d.tags.length-4}</span>`:''}</div>
     <div class="demo-footer">
       <span>${d.technologyStack.slice(0,3).join(' · ')}</span>
-      <span>${d.pagesUrl?`<a href="${d.pagesUrl}" target="_blank" class="demo-live-btn">Live →</a>`:`<span style="color:var(--text-xs)">Repo only</span>`}</span>
+      <span>${d.pagesUrl?`<a href="${d.pagesUrl}" target="_blank" class="demo-live-btn">${d.repo_name==="nebula-thermal-studio"?"Case Study →":"Live →"}</a>`:`<span style="color:var(--text-xs)">Repo only</span>`}</span>
     </div>
   </div>`;
 }
@@ -320,7 +320,7 @@ function renderDetail(repoName){
     </div>
     <div class="detail-desc">${d.description}</div>
     <div class="detail-links">
-      ${d.pagesUrl?`<a href="${d.pagesUrl}" target="_blank" class="btn btn-primary">Launch Live Demo</a>`:''}
+      ${d.pagesUrl?`<a href="${d.pagesUrl}" target="_blank" class="btn btn-primary">${d.repo_name==="nebula-thermal-studio"?"View Case Study":"Launch Live Demo"}</a>`:''}
       ${d.demoVideoPageUrl?`<a href="${d.demoVideoPageUrl}" target="_blank" class="btn btn-secondary">Watch Product Demo</a>`:''}
       <a href="${d.repoUrl}" target="_blank" class="btn btn-secondary">View Repository</a>
     </div>
