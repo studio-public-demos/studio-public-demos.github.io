@@ -1,74 +1,78 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
 endobj
 4 0 obj
-<<
-/Contents 8 0 R /MediaBox [ 0 0 595.28 841.89 ] /Parent 7 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<<
-/PageMode /UseNone /Pages 7 0 R /Type /Catalog
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<<
-/Author (anonymous) /CreationDate (D:20261107085543+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20261107085543+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (unspecified) /Title (untitled) /Trapped /False
->>
+<< /Length 2188 >>
+stream
+0.06 0.17 0.23 rg
+0 752 595 90 re f
+1 1 1 rg
+BT /F2 21 Tf 1 0 0 1 42 805 Tm (NEBULA THERMAL STUDIO) Tj ET
+BT /F1 13 Tf 1 0 0 1 42 782 Tm (Electrical Enclosure Screening - Example Report) Tj ET
+0.01 0.56 0.53 rg
+BT /F2 11 Tf 1 0 0 1 42 725 Tm (SYNTHETIC SAMPLE  /  PRELIMINARY ENGINEERING SCREEN) Tj ET
+0.12 0.19 0.23 rg
+BT /F1 12 Tf 1 0 0 1 42 688 Tm (Case reference: DEMO-ENC-001) Tj ET
+BT /F1 12 Tf 1 0 0 1 42 667 Tm (Report date: 2026-11-07) Tj ET
+BT /F1 12 Tf 1 0 0 1 42 646 Tm (Purpose: Illustrative workflow and reporting output only.) Tj ET
+0.91 0.96 0.96 rg
+42 434 511 187 re f
+0.10 0.23 0.27 rg
+BT /F2 15 Tf 1 0 0 1 59 591 Tm (RESULT SUMMARY) Tj ET
+BT /F1 12 Tf 1 0 0 1 59 558 Tm (Assumed component heat losses) Tj ET
+BT /F2 15 Tf 1 0 0 1 390 558 Tm (181.4 W) Tj ET
+BT /F1 12 Tf 1 0 0 1 59 516 Tm (Indicative internal bulk-air temperature) Tj ET
+BT /F2 15 Tf 1 0 0 1 390 516 Tm (67.5 C) Tj ET
+BT /F1 12 Tf 1 0 0 1 59 474 Tm (Difference from illustrative selected limit) Tj ET
+BT /F2 15 Tf 1 0 0 1 390 474 Tm (+12.5 K) Tj ET
+0.78 0.85 0.87 RG
+58 539 m 536 539 l S
+58 497 m 536 497 l S
+0.12 0.19 0.23 rg
+BT /F2 14 Tf 1 0 0 1 42 393 Tm (Engineering disposition: REVIEW REQUIRED) Tj ET
+BT /F1 11 Tf 1 0 0 1 42 362 Tm (Inputs are fictional; calculations are preliminary screening estimates.) Tj ET
+BT /F1 11 Tf 1 0 0 1 42 340 Tm (Review actual device loss data, enclosure conditions, applicable standards,) Tj ET
+BT /F1 11 Tf 1 0 0 1 42 321 Tm (component limits and laboratory evidence before design decisions.) Tj ET
+0.96 0.89 0.75 rg
+42 150 511 138 re f
+0.37 0.25 0.10 rg
+BT /F2 13 Tf 1 0 0 1 58 261 Tm (CRITICAL LIMITATIONS) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 234 Tm (NOT an IEC 61439 design verification or IEC TR 60890 implementation.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 212 Tm (NOT manufacturer-approved equipment sizing or safety certification.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 190 Tm (NOT a component hot-spot or independently validated cooling assessment.) Tj ET
+0.38 0.48 0.53 rg
+BT /F1 10 Tf 1 0 0 1 42 101 Tm (Public portfolio output only. Proprietary engine and customer data excluded.) Tj ET
+BT /F1 10 Tf 1 0 0 1 42 79 Tm (Nebula Cloud Studio  |  https://nebulacloud.studio/) Tj ET
+endstream
 endobj
 7 0 obj
-<<
-/Count 1 /Kids [ 4 0 R ] /Type /Pages
->>
-endobj
-8 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1676
->>
-stream
-Gatm;gN)%,&:N/3lr0h,8.5M#]KA6`1?5>e)4P>Hr'F8Bba&B6J9:1nmk-";N9.S"8>@%/iapG=S@sJ>L`bcob6Hm'%Ndnk?l\_P0G+T3Y@*qtJl%2)$3B0bA.W^al\WW*&g9MP'(DJmYkg'D#5B,A"I!gD6]bno(nleN8!7Lq#@CmY)L*K<+lj+1H8GTnp$)t2YAV*]^jZ4Tipue%aT$qk".@oZE"BkH*=Pidc^rN08\EIK;;%hFiQO=D>bcBG&"G"d?Ws:JV:T[a>%>/V;@oP^Tn"9.30OXO,3F`D)[sJaU%agj.(hn/bTgKGFmh@qFOcQVBBm?#BpqJeQ%ap;L'NGImpC22W4K!^V.tr1Si7RR799mnr1U3e.q-65*&GE5Jt&7K@?Mhd/FbcHOcVsNUIm'<g@+J[m4j+JeZDb*Jf(c6WOXWsj*Id"Q$I6CNVFCE'TrXic>4DRn.;9EnTGN'U1mr/*8uG+*pMDN\jP/3k+AFdfK6FsMRoB:A6UVrO@a'SBk7WM:Zi/H$q'tq-RIqA*:Ktdn:AX=q<:;0M&>G;f/IFN7:i0qRd*kj\+ZYG:&I50iTWpfO^b8/\`p=8<P%QZ^dQ&.FL8)W&tgIR!1#AkNSdL0;7OaGkLMW@aK"65c7BC"fU6>;`1]JRp]1_Y3'=0,+rN.]m^`B%lBKhte=s/HRUK;>n$*u_[ifZ'm"ON*r1bE,mjb6.=;Yj8`JLSpPGHbFJ0T:5r;`[Uq.Z*$LTJ3Bm(1X7KFP52gRL;roa%l(Df9W7?AKJKjn+[!7*1On?`YHo]!*jG\t\MOXp9PI!VObJ_#1`BC5L\$SjqS:ZU#G5.#F%+MO`ebeFU\5pZ($B0tA/6:_ffXbuSH8P^W*INB:gjauiW?V#*si,:OXf4$OkHKEpeQB\HWUNs-9RBVp*U8i<A1$O-3jeh`_G2BCSuY@gX"?/_`9AIV_SEl!gK5DG+eOD!K$O68Q(/73"bS:X72FL+D5(V3"(Y,`JP>3TTuiW:!2gA"gKRT?*n3(+p.;MSS'#?d"Ic])72[K/.#X.l2[I718S^W08,ICD&QU>a[aBiEo#L2jNG9:A+MUM1)/qS22I+2M83=04?EO+go8-W^3%=%M5KZDbrq!;H37>Lb5$63K.Q"H,mNJ&Z.1lNEah0]H!3)NgZNo`UCU$-bkqPSWp[8fe8`"oXW?L,9?M64FIW=Tmi>((BMD]ii=lj1G%fMN%\>d;MVMBi.Y/+7.?=N8EB;Ia.CS>bM%aI^b^!GEBt_Z^a-QYb2/O8g*9W2Qjs2h"g2k!K-uBRG[<,o@kp>p][fQY:oLRr:9RDI_XmTP8RnG1QRR^b#enX48'Ls^J&'5:esUO0QZSS;;7ies#jG8K,O0PWScLn'_.O]F3*f`KZnE4^IQJshhdc:mDTE=XXHbq&GG:_[]Y!!Q-+9fc.=E85H&B/Q:(o1`tsMSC;=*@VJuP1K!KVk#@UhPQ@7H2>cUK6KPkjUglr+mmU-OXcpKFEY;s,9A/)d[eJcoc_2=BjZ`3Uf;l=A1qIH>D['lRsL)Ef'cHL#<*)oU1@[Q+ol`IHELXYP-&'%Hs,LfH>8lMS'Lfdg/clUp+M2E5BktLj"WW6oFPh9,4K?%._D5C4#@Z!d<;]RaXZL4&oq3+]$)((]B[YMXMedAU0K^iam-N=,N\0_I~>endstream
+<< /Producer (Nebula Cloud Studio public showcase) /Title (Synthetic Enclosure Thermal Screening Report) >>
 endobj
 xref
-0 9
+0 8
 0000000000 65535 f 
-0000000061 00000 n 
-0000000102 00000 n 
-0000000209 00000 n 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
 0000000321 00000 n 
-0000000520 00000 n 
-0000000588 000000 n 
-000000849 00000 n 
-0000000908 00000 n 
+0000000396 00000 n 
+0000002635 00000 n 
 trailer
-<<
-/ID 
-[<ae5cf0ba05dd4e15efe62c92032a21cc><ae5cf0ba05dd4e15efe62c92032a21cc>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 6 0 R
-/Root 5 0 R
-/Size 9
->>
+<< /Size 8 /Root 1 0 R /Info 7 0 R >>
 startxref
-2675
+2758
 %%EOF
