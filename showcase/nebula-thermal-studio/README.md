@@ -35,6 +35,7 @@ Real product reference; manufacturer-linked fuse loss; conductor I²R; controlla
 Solar PV OEMs, combiner-box designers, electrical equipment manufacturers, EPC engineers, LV panel designers, product engineering and quality teams.
 
 ## 11. Example Use Cases
+- Compare published 20 A / 1000 V gPV fuse power loss from ETI (3.2 W), Socomec (3.2 W), and Legrand (1.09 W): 67.52 W nominal difference for an assumed 32 links, without claiming electrical interchangeability.
 - Compare partial heat contributions at 14, 15, 16, 18 and 20 A per string.
 - Identify when 20 A example gPV fuses can no longer be modeled from available manufacturer data.
 - Prepare the missing-evidence checklist for an IEC design review.
@@ -50,9 +51,10 @@ Public reference product + assumed engineering scenario → traceable loss estim
 The cited Trinity Touch product, its precise internal BOM and actual operating circuit are **not** claimed to be identical to this example scenario. ETI fuses are **third-party evaluation components**, not confirmed as installed. Copper dimensions, temperature, polarity count and ambient are assumptions; the TRICHECK <3 W allowance is published for **another product variant**. The public enclosure external size includes a mounting clamp and cannot be used to infer effective UA. Disconnect, joint, busbar, fuse-holder, SPD and auxiliary losses are incomplete. **No enclosure temperature is calculated without calibrated heat transfer properties; there is no IEC TR 60890/IEC 61439 compliance or thermal certification.**
 
 ## 15. Performance Summary (Verified Only)
-Private implementation passed **20 unit/integration checks**, plus Chromium desktop/mobile interaction testing on representative cases. No scientific accuracy benchmark, IEC validation, OEM endorsement or production uptime claim.
+Private implementation passed **23 unit/integration checks**, plus Chromium desktop/mobile interaction testing on representative cases. No scientific accuracy benchmark, IEC validation, OEM endorsement or production uptime claim.
 
 ## 16. Attribution
+Additional sources: [Socomec 60PV0020](https://emea.socomec.com/en/reference/60pv0020) and [Legrand 414630](https://www.legrand.co.ug/en/catalog/products/cartridge-fuse-for-photovoltaic-application-1000v-20a-414630), manufacturer nominal 20A dissipation only.
 [Trinity Touch 16 In 1 Out product reference](https://www.trinitytouch.co.uk/backup/solution/16-in-1-out-combiner-box/), [ETI CH10x38 gPV fuse data](https://www.fuse.etigroup.eu/products-and-solutions/fuse-links-d-d0-c/photovoltaic-fuse-links-ch-gpv), [Trinity Touch TRICHECK monitoring reference](https://www.trinitytouch.com/solution/dc-scb-tricheck-16-input/), [IEC TR 60890 scope](https://webstore.iec.ch/en/publication/66007). Research references: [FreeCAD PanelWB](https://github.com/QuakeString/FreeCAD-PanelWB) (LGPL-2.1+), [ThermalPath](https://github.com/flash631/thermalpath) (MIT). No third-party code or IEC protected text distributed.
 
 ## 17. Built with NebulaCloud Studio

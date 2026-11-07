@@ -9,6 +9,9 @@ The project is an **independent engineering research demonstration**, not a deli
 - Trinity Touch, [DC SCB TRICHECK 16 Input](https://www.trinitytouch.com/solution/dc-scb-tricheck-16-input/) — a different product variant with monitoring electronics consuming **less than 3 W**; used only as an explicitly labeled illustrative allowance, not evidence of a BOM item fitted in the selected product.
 - [IEC TR 60890:2022 official publication page](https://webstore.iec.ch/en/publication/66007) — descriptive scope only; no paid standard text or algorithms reproduced.
 
+- Socomec, [60PV0020 20A gPV](https://emea.socomec.com/en/reference/60pv0020) — nominal 20A fuse power loss 3.2 W.
+- Legrand, [414630 20A/1000V gPV](https://www.legrand.co.ug/en/catalog/products/cartridge-fuse-for-photovoltaic-application-1000v-20a-414630) — nominal 20A fuse power loss 1.09 W; manufacturer operating/setting temperature range -25 to 40°C. A possible thermal benefit is NOT an approval to substitute parts.
+
 ## Open-source research references (no copied implementation)
 
 - [FreeCAD PanelWB](https://github.com/QuakeString/FreeCAD-PanelWB), LGPL-2.1-or-later: electrical cabinet CAD, BOM and preliminary thermal workflow. The repository's roadmap identifies a full IEC 60890 curve method as future work.
