@@ -1,58 +1,444 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<meta name="theme-color" content="#0b2634"><meta name="description" content="Evidence-led solar DC combiner engineering case study: publicly documented 16-input hardware, published fuse thermal loss, conductor I²R analysis and real design-screening outputs.">
-<meta property="og:title" content="Solar Combiner Thermal Engineering | Nebula Cloud Studio">
-<meta property="og:description" content="Traceable real-product engineering study, not a dummy dashboard. 16-input DC combiner • 240 A • 77.6 W partial modeled heat loss • manufacturer-linked evidence.">
-<title>Real Solar Combiner Engineering Use Case | Nebula Cloud Studio</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8fafc">
+<title>Solar Combiner Thermal Engineering | Studio Public Demos</title>
+<meta name="description" content="A real-reference solar combiner engineering use case: traceable manufacturer gPV fuse heat losses, conductor I²R, five documented operating scenarios, comparison of component choices, and explicit verification gates.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Solar Combiner Thermal Engineering | NebulaCloud Studio">
+<meta property="og:description" content="Explore a 16-string DC combiner heat-loss study with traceable public references and precomputed engineering outputs. Private calculation engine remains protected.">
+<meta property="og:image" content="https://studio-public-demos.github.io/showcase/nebula-thermal-studio/assets/social-preview.svg">
+<meta property="og:url" content="https://studio-public-demos.github.io/showcase/nebula-thermal-studio/">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cinzel:wght@400;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#081e2c;--panel:#112c3c;--panel2:#163548;--ink:#eaf7f8;--sub:#adcad4;--mint:#5ee0c7;--sun:#f6ca82;--line:#32546a;--alert:#ed9d7e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 55% 28% at 90% 0%,#0d6b624b,transparent),var(--bg);font:16px/1.6 system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink)}.wrap{max-width:1170px;margin:auto;padding:0 25px}a{color:var(--mint)}.nav{border-bottom:1px solid #375467;background:#09202fdd;backdrop-filter:blur(14px);position:sticky;top:0;z-index:10}.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:10px}.brand{color:#f6ffff;text-decoration:none;font-weight:900;letter-spacing:.035em}.brand strong{color:var(--mint)}.navlinks{display:flex;gap:23px}.navlinks a{color:var(--sub);text-decoration:none;font-size:13px}.navlinks a:hover{color:var(--mint)}.hero{padding:78px 0 50px;display:grid;grid-template-columns:1.04fr .96fr;gap:38px;align-items:center}.over{color:var(--mint);font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.15em}.hero h1{font-size:clamp(35px,5.4vw,64px);letter-spacing:-.055em;line-height:1.08;margin:17px 0 20px}.hero h1 em{font-style:normal;color:var(--mint)}.hero p{color:var(--sub);font-size:17px}.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.badge{border:1px solid #396474;background:#133747;padding:7px 12px;border-radius:40px;color:#d3ecef;font-size:11px;font-weight:800}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;padding:12px 18px;border:1px solid #548391;background:#1a3b4b;border-radius:10px;text-decoration:none;font-weight:750;color:#e9ffff;font-size:14px}.btn.primary{background:var(--mint);border-color:var(--mint);color:#073b35}.notice{border:1px solid #705735;background:#362a256b;border-radius:12px;padding:17px 21px;color:#ffd8a7;font-size:13px}.product{background:linear-gradient(150deg,#133b47,#102838);padding:22px;border:1px solid #426675;border-radius:19px;box-shadow:0 24px 70px #03111a8d}.product .row{display:flex;justify-content:space-between;gap:10px;align-items:center}.label{color:var(--sub);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:850}.product h3{font-size:20px;margin:7px 0 16px}.trace{font-size:12px;color:#c0dcdf}.diagram{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px 0}.fuse{border:1px solid #418b82;border-radius:9px;background:linear-gradient(150deg,#0c554e,#154453);padding:14px 7px;color:#b9fff1;text-align:center;font-size:11px}.fuse b{display:block;font-size:16px;color:#faffff}.arrow{font-size:26px;text-align:center;color:#7bddc7;line-height:1.4}.busbar{border:2px solid #6cdcc6;background:#0c534d;border-radius:9px;padding:12px 16px;text-align:center;font-weight:850}.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.spec{border:1px solid #355769;background:#0c2839;border-radius:12px;padding:13px}.spec b{display:block;font-size:22px;line-height:1.2}.spec span{font-size:11px;color:var(--sub)}section{border-bottom:1px solid #29475b;padding:65px 0}h2{font-size:clamp(28px,3.8vw,43px);line-height:1.16;letter-spacing:-.04em;margin:14px 0}h3{font-size:19px;margin:10px 0}.lead{color:var(--sub);font-size:16px;max-width:800px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:23px}.card p{margin:7px 0;color:var(--sub);font-size:13px}.kicker{color:var(--mint);font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:850}.value{font-size:36px;line-height:1.3;font-weight:900;letter-spacing:-.04em}.small{font-size:12px;color:var(--sub)}.case{background:#effafa;border-radius:17px;color:#123242;padding:25px;margin-top:24px}.case h3{margin:0 0 12px;color:#0d4346}.case p{color:#50707e;font-size:13px}.pillgroup{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.pillgroup button{font:inherit;cursor:pointer;padding:9px 15px;border-radius:8px;background:#fff;border:1px solid #bdd3d6;color:#234f53;font-weight:800}.pillgroup button.active{background:#096e64;color:white;border-color:#096e64}.whitebox{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0}.whitebox .box{background:white;padding:16px;border:1px solid #ccdcdf;border-radius:11px}.box span{display:block;color:#57737e;font-size:11px}.box b{font-size:25px;letter-spacing:-.025em}.tablewrap{overflow-x:auto}.budget{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}.budget th{text-align:left;color:#526c74;background:#d9eeeb;font-size:11px;text-transform:uppercase;letter-spacing:.08em}.budget td,.budget th{padding:12px 11px;border-bottom:1px solid #d1e3e5}.budget td:nth-child(2){font-weight:850}.budget tr:last-child{background:#e2f6ef}.cite{display:inline-block;border-radius:4px;background:#d6f1e7;color:#1b7061;font-size:10px;padding:3px 6px;font-weight:750}.cite.assume{background:#fff0d1;color:#94691e}.warning{border-left:4px solid #c38b48;background:#fff6e7;color:#665238;padding:13px 16px;margin-top:18px;font-size:13px}.blockers{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}.block{background:#162e3e;border:1px solid #345367;border-radius:11px;padding:19px}.block b{display:block;margin-bottom:5px}.block p{color:var(--sub);font-size:13px;margin:0}.sources{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}.source{border:1px solid #31566a;border-radius:12px;background:#122e3f;padding:17px}.source a{display:block;font-weight:850;text-decoration:none;font-size:14px}.source span{display:block;margin-top:7px;color:var(--sub);font-size:12px}.cta{background:linear-gradient(145deg,#0c4b4a,#18415f);text-align:center;border:1px solid #3a7e81;border-radius:20px;padding:47px 25px}.cta .lead{margin:auto}.footer{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;padding:32px 0 45px;color:var(--sub);font-size:12px}.caption{font-size:11px;color:var(--sub);line-height:1.55}@media(max-width:870px){.hero{grid-template-columns:1fr;padding:50px 0 40px}.navlinks{display:none}.grid3{grid-template-columns:1fr}.whitebox{grid-template-columns:1fr}.grid2,.sources,.blockers{grid-template-columns:1fr}}@media(max-width:520px){.wrap{padding:0 16px}.hero h1{font-size:38px}.specs{grid-template-columns:repeat(3,1fr)}.spec b{font-size:18px}.case{padding:18px}.diagram{gap:4px}.fuse{font-size:9px;padding:11px 2px}.fuse b{font-size:14px}}
-</style></head>
-<body><header class="nav"><div class="wrap"><a class="brand" href="https://nebulacloud.studio">◆ NEBULA CLOUD <strong>STUDIO</strong></a><div class="navlinks"><a href="#challenge">Problem</a><a href="#study">Case Explorer</a><a href="#engineering">Limitations</a><a href="#sources">References</a><a href="#contact">Request Demo</a></div></div></header>
-<main class="wrap"><div class="hero"><div><div class="over">Real product reference / solar engineering</div><h1>Inside a <em>solar combiner</em> thermal design review.</h1><p>From a publicly documented 16-string / 1000 V DC product to an evidence-linked engineering heat budget. A working private application calculates circuit losses, compares operating scenarios and exposes exactly what cannot yet be verified.</p><div class="badges"><span class="badge">16 DC inputs</span><span class="badge">Manufacturer power-loss data</span><span class="badge">Electrical I²R calculations</span><span class="badge">Private computation engine</span></div><div class="actions"><a href="#study" class="btn primary">Explore the actual calculation ↓</a><a href="#contact" class="btn">Request private working demo ↗</a></div></div>
-<div class="product"><div class="row"><div class="label">Reference equipment / documented specification</div><span class="badge">1000 V DC</span></div><h3>16-input / 1-output PV combiner box</h3><div class="trace">Conceptual circuit representation — not a manufacturer wiring diagram, CAD model or installed BOM.</div><div class="diagram" aria-label="Illustrative grid of 16 input string circuits"><div class="fuse">String <b>01</b></div><div class="fuse">String <b>02</b></div><div class="fuse">String <b>03</b></div><div class="fuse">String <b>04</b></div><div class="fuse">String <b>05</b></div><div class="fuse">String <b>06</b></div><div class="fuse">String <b>07</b></div><div class="fuse">String <b>08</b></div><div class="fuse">String <b>09</b></div><div class="fuse">String <b>10</b></div><div class="fuse">String <b>11</b></div><div class="fuse">String <b>12</b></div><div class="fuse">String <b>13</b></div><div class="fuse">String <b>14</b></div><div class="fuse">String <b>15</b></div><div class="fuse">String <b>16</b></div></div><div class="arrow">↓</div><div class="busbar">DC output / selected 400 A disconnector reference</div><div class="specs"><div class="spec"><b>16</b><span>Strings</span></div><div class="spec"><b>26 A</b><span>Channel monitor max</span></div><div class="spec"><b>400 A</b><span>Max switch rating</span></div></div><p class="caption">Product basis: Trinity Touch's publicly published 16 In 1 Out Combiner Box. Source linked below. Parameters of distinct product variants are not treated as interchangeable.</p></div></div>
-<div class="notice"><b>Scope and IP notice.</b> This is an independent engineering use-case demonstration referencing publicly available product specifications. It is not commissioned, approved or endorsed by Trinity Touch or Siemens. All operating currents and cable geometries are explicitly assumed; component losses are only partially known. No IEC 61439/60890 certification is claimed. Proprietary source, backend, prompts and orchestration stay private.</div>
-<section id="challenge"><div class="over">01 / The actual engineering challenge</div><h2>Will the enclosure manage the heat generated inside it?</h2><p class="lead">For a combiner box, fuse-link resistance, copper branch wiring, output conductor sizing, disconnect contacts, monitoring electronics, solar exposure and thermal behavior all matter. Simply knowing a switch is rated 400 A does not verify its installed enclosure's temperature rise.</p><div class="grid3"><article class="card"><div class="kicker">Published product</div><h3>Specific electrical topology</h3><p>Trinity Touch's 16-input / 1-output reference provides rated voltage, channel measurement capability and switch rating. The published exterior measures 1210 × 748 × 250 mm including mounting clamps.</p></article><article class="card"><div class="kicker">Third-party fuse evidence</div><h3>Loss is current dependent</h3><p>ETI publishes 1.3 W at 14 A and 3.2 W at 20 A for a 20 A, 1000 V gPV fuse. We interpolate only between those documented operating points.</p></article><article class="card"><div class="kicker">Calculation discipline</div><h3>Copper loss scales with I²</h3><p>Branch and output copper resistive losses are computed using user-entered length, conductor size and temperature assumptions, which remain clearly separated from manufacturer facts.</p></article></div></section>
-<section id="study"><div class="over">02 / Explore an evidence-backed operating case</div><h2>Five operating-current scenarios. Actual calculation outputs.</h2><p class="lead">Select a precomputed scenario from the private working engine. This public interface is a result explorer, not a redistributed copy of the application or its numerical algorithm.</p>
-<div class="case"><h3>Reference: 16 strings / 1000 VDC / selected 400 A switch</h3><p><b>Scenario assumptions:</b> two 20 A gPV fuse links per string; 0.4 m × 6 mm² for each positive/negative branch run; 0.55 m × 95 mm² for each positive/negative output run; copper modeled at 60°C; 40°C ambient; 55°C illustrative internal limit. These are not product-maker BOM details or actual thermal test conditions.</p>
-<div class="pillgroup" role="group" aria-label="Precomputed engineering cases"><button data-case="14">14 A</button><button data-case="15" class="active">15 A</button><button data-case="16">16 A</button><button data-case="18">18 A</button><button data-case="20">20 A</button></div>
-<div class="whitebox"><div class="box"><span>Combined DC current</span><b id="current">240 A</b></div><div class="box"><span>Incomplete modeled heat subtotal</span><b id="subtotal">77.62 W</b></div><div class="box"><span>Required effective UA for partial heat only</span><b id="ua">5.174 W/K</b></div></div>
-<div class="tablewrap"><table class="budget" aria-label="Heat budget by evidence quality"><thead><tr><th>Loss category</th><th id="case-head">15 A case</th><th>Data confidence</th></tr></thead><tbody><tr><td>32 example ETI gPV fuse links</td><td id="fuses">51.73 W</td><td><span class="cite">Manufacturer + interpolation</span></td></tr><tr><td>32 modeled input copper runs</td><td id="branch">9.58 W</td><td><span class="cite assume">Assumed geometry + I²R</span></td></tr><tr><td>2 modeled output copper runs</td><td id="output">13.31 W</td><td><span class="cite assume">Assumed geometry + I²R</span></td></tr><tr><td>Monitoring electronics allowance</td><td>3.00 W</td><td><span class="cite assume">Other product variant, &lt;3 W</span></td></tr><tr><td><b>Partially modeled subtotal</b></td><td><b id="sumline">77.62 W</b></td><td><b>NOT total enclosure loss</b></td></tr></tbody></table></div>
-<div class="warning"><b>Engineering sign-off: BLOCKED.</b> The disconnector, busbars, fuse-holder contacts, SPD and auxiliary losses are not fully known. Installed BOM and effective enclosure thermal performance are not validated. The required-UA number is only an algebraic screening target for this incomplete heat subtotal; no enclosure temperature or cooling rating is asserted.</div></div>
-<p class="caption">For intermediate fuse load points, the private model linearly interpolates published ETI 14A and 20A values. It refuses to extrapolate outside 14–20 A. The example fuse is an alternative publicly documented reference, not a claim that this is the installed product.</p></section>
-<section id="component-choice"><div class="over">03 / Second real engineering use case</div><h2>Manufacturer-specific fuse losses can change the heat budget.</h2>
-<p class="lead">At exactly 20 A nominal current, three public manufacturers report different heat dissipation for their specific 20 A / 1000 V gPV fuse SKUs. With <b>32 assumed fuse links</b> in a 16-string/two-pole reference design, this is a material BOM-engineering question—not a claim that the parts can be swapped without electrical and environmental evaluation.</p>
-<div class="grid3">
-<article class="card"><div class="kicker">ETI CH10x38 20 A</div><div class="value">3.20 W</div><p>Per link at 20 A · <b>102.40 W</b> for 32 links.</p><a href="https://www.fuse.etigroup.eu/products-and-solutions/fuse-links-d-d0-c/photovoltaic-fuse-links-ch-gpv" target="_blank" rel="noopener noreferrer">View manufacturer rating ↗</a></article>
-<article class="card"><div class="kicker">Socomec 60PV0020 20 A</div><div class="value">3.20 W</div><p>Per link at 20 A · <b>102.40 W</b> for 32 links.</p><a href="https://emea.socomec.com/en/reference/60pv0020" target="_blank" rel="noopener noreferrer">View manufacturer rating ↗</a></article>
-<article class="card"><div class="kicker">Legrand 414630 20 A</div><div class="value">1.09 W</div><p>Per link at 20 A · <b>34.88 W</b> for 32 links. Temperature constraints must be checked.</p><a href="https://www.legrand.co.ug/en/catalog/products/cartridge-fuse-for-photovoltaic-application-1000v-20a-414630" target="_blank" rel="noopener noreferrer">View manufacturer rating ↗</a></article>
-</div><div class="notice" style="margin-top:22px"><b>Important:</b> The nominal difference is <b>67.52 W for the assumed 32 links</b>. It does <em>not</em> establish equivalent protection characteristics, suitable breaking capacity, thermal derating, terminal compatibility or approval for this enclosure. Legrand's published operating/setting temperature range reaches 40°C; a 40°C ambient scenario is not a basis for assuming safe internal operating temperature. No below-rated current loss is inferred for Socomec or Legrand without a published part-specific curve.</div></section>
-<section id="engineering"><div class="over">04 / Why engineering evidence matters</div><h2>A conclusion supported by evidence—and a list of what is missing.</h2><p class="lead">The prototype's purpose is not to produce an attractive but fictional cabinet temperature. It determines which losses can be modeled from published values and design assumptions, then explicitly blocks an unsupported compliance judgment.</p>
-<div class="blockers"><article class="block"><b>01. Confirm the actual BOM</b><p>Exact fuse, holder, disconnect, SPD, conductor and controller SKUs; count both protected polarities only if that is the installed circuit design.</p></article><article class="block"><b>02. Obtain component power-loss curves</b><p>Include connection resistance, full-current losses, thermal derating and the permitted ambient conditions.</p></article><article class="block"><b>03. Validate enclosure heat-transfer data</b><p>The public size includes external mounting clamps. It does not provide a validated heat-transfer area or calibrated effective thermal conductance.</p></article><article class="block"><b>04. Perform applicable IEC verification</b><p>Follow the licensed standard's valid method, required inputs and limitations and, where applicable, compare with physical tests.</p></article></div>
-<div class="grid2"><div class="card"><div class="kicker">Demonstrated in the private software</div><h3>Working engineering application</h3><p>Editable string count/current, fuse arrangement, branch and output wiring lengths/sizes, operating ambient, CSV-style loss register, source-backed assumptions, scenario comparison and PDF report generation. The software also flags rating conflicts and suppresses unsupported fuse-loss extrapolation.</p></div><div class="card"><div class="kicker">Not claimed</div><h3>No fake compliance or agentic capability</h3><p>The private calculation service is deterministic; it is not yet a qualified IEC TR 60890 implementation or a live AI-agent-connected thermal engineering system. Studio document intelligence and automated data ingestion are potential next-phase integrations, not features proven by this use case.</p></div></div></section>
-<section id="sources"><div class="over">05 / Source provenance & open-source research</div><h2>Trace the reference facts.</h2><p class="lead">Public manufacturer specifications, component loss data and engineering literature are linked rather than reproduced. We reviewed existing open-source engineering systems without copying their implementation into this public showcase.</p>
-<div class="sources">
-<div class="source"><a href="https://www.trinitytouch.co.uk/backup/solution/16-in-1-out-combiner-box/" target="_blank" rel="noopener noreferrer">↗ Trinity Touch: 16 In 1 Out Combiner Box</a><span>Public product reference: 16 strings, 1000V, maximum 400A switch, max 26A/channel and 1210 × 748 × 250mm with mounting clamp.</span></div>
-<div class="source"><a href="https://www.fuse.etigroup.eu/products-and-solutions/fuse-links-d-d0-c/photovoltaic-fuse-links-ch-gpv" target="_blank" rel="noopener noreferrer">↗ ETI: 20A 1000V gPV fuse loss data</a><span>Published 14A/20A heat dissipation: 1.3W and 3.2W. Candidate evaluation SKU, not confirmed fitted hardware.</span></div>
-<div class="source"><a href="https://www.trinitytouch.com/solution/dc-scb-tricheck-16-input/" target="_blank" rel="noopener noreferrer">↗ Trinity Touch: TRICHECK 16 Input</a><span>Distinct product variant with &lt;3W monitoring power. Included only as an explicitly labeled conservative illustrative allowance.</span></div>
-<div class="source"><a href="https://webstore.iec.ch/en/publication/66007" target="_blank" rel="noopener noreferrer">↗ IEC TR 60890:2022 / official description</a><span>Scope of the standard; licensed full calculations and qualified validation are NOT implemented in this prototype.</span></div>
-<div class="source"><a href="https://github.com/QuakeString/FreeCAD-PanelWB" target="_blank" rel="noopener noreferrer">↗ FreeCAD PanelWB (LGPL-2.1-or-later)</a><span>Open-source electrical panel CAD/BOM and preliminary enclosure thermal report. Future full IEC method identified as work-in-progress.</span></div>
-<div class="source"><a href="https://github.com/flash631/thermalpath" target="_blank" rel="noopener noreferrer">↗ ThermalPath (MIT)</a><span>Open thermal resistance and conservation models used as methodological research reference; no third-party code redistributed.</span></div></div>
+:root{--bg:#f8fafc;--bg-alt:#fff;--ink:#0f172a;--soft:#334155;--muted:#64748b;--quiet:#94a3b8;--line:#dbe3ef;--line2:#e2e8f0;--blue:#1d4ed8;--blue2:#2563eb;--sky:#0ea5e9;--pale:#eff6ff;--green:#059669;--green-pale:#ecfdf5;--amber:#b45309;--amber-pale:#fffbeb;--red:#b91c1c;--red-pale:#fef2f2;--navy:#0f172a;--shadow:0 15px 40px rgba(15,23,42,.075);--r:12px;--r-lg:18px;--f:'Inter',system-ui,sans-serif;--head:'Cinzel',Georgia,serif;--mono:'JetBrains Mono',Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;font-family:var(--f);background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:var(--blue)}
+button{font-family:inherit}
+button:focus-visible,a:focus-visible{outline:3px solid #38bdf8;outline-offset:3px}
+.container{width:min(100% - 48px,1300px);margin:auto}
+nav{position:sticky;top:0;z-index:12;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{height:84px;display:flex;gap:24px;align-items:center;justify-content:space-between}
+.logo{text-decoration:none;font-family:var(--head);font-size:19px;letter-spacing:.075em;color:#102139;font-weight:700;white-space:nowrap}
+.nav-center{display:flex;align-items:center;gap:7px}
+.nav-center a{padding:11px 14px;font-size:14px;color:#475569;font-weight:700;text-decoration:none;border-radius:8px;white-space:nowrap}
+.nav-center a:hover{background:var(--pale);color:var(--blue)}
+.nav-cta{background:linear-gradient(135deg,#1e40af,#2563eb);color:white;text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:800;white-space:nowrap;box-shadow:0 8px 24px #2563eb2b;font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:9px;text-decoration:none;font-size:14px;font-weight:800;border:1px solid var(--line);min-height:48px;transition:transform .18s,background .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--blue);color:white;border-color:var(--blue);box-shadow:0 10px 24px #1d4ed82a}
+.btn.secondary{background:white;color:var(--ink)}
+.btn.outline{background:transparent;color:var(--blue);border-color:#c7d2fe}
+.btn.small{padding:9px 16px;min-height:39px}
+.hero{position:relative;background:linear-gradient(115deg,#f8fafc 12%,#f3f8ff 65%,#eaf4ff 100%);border-bottom:1px solid var(--line);padding:50px 0 76px;overflow:hidden}
+.hero:before{content:"";width:680px;height:680px;border:1px solid #c6e1ff;opacity:.55;border-radius:50%;position:absolute;right:-300px;top:-360px;pointer-events:none}
+.breadcrumb{display:inline-flex;gap:7px;align-items:center;text-decoration:none;background:#eaf2ff;color:var(--blue);border:1px solid #d6e5ff;padding:9px 15px;border-radius:8px;font-size:13px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:42px;align-items:center;margin-top:45px}
+.eyebrow{color:var(--blue);font:800 12px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase}
+h1{font:700 clamp(35px,4.1vw,56px)/1.14 var(--head);text-transform:uppercase;letter-spacing:.018em;margin:15px 0 20px;color:#0b2341}
+h1 span{color:var(--blue)}
+.hero .lead{color:#475569;font-size:18px;line-height:1.75;max-width:715px;margin:0 0 25px}
+.meta,.tags{display:flex;gap:9px;flex-wrap:wrap}
+.chip{font:700 12px/1.2 var(--mono);padding:8px 11px;border-radius:7px;background:#eaf2ff;color:#1d4ed8;border:1px solid #dbeafe}
+.chip.beta{border-radius:30px;background:#dcfce7;color:#166534;border-color:#bbf7d0}
+.chip.industry{background:#f5f3ff;color:#6d28d9;border-color:#ede9fe}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+.trust{margin-top:25px;color:#64748b;font-size:12px;display:flex;align-items:flex-start;gap:7px}
+.trust b{color:#334155}
+.mock{border:1px solid #c7d9e7;border-radius:16px;background:#fff;overflow:hidden;box-shadow:0 24px 64px #15325b27}
+.mock-top{background:#102a3a;color:#d2f3f2;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:9px}
+.mock-logo{font-size:13px;font-weight:800;letter-spacing:-.02em}.mock-logo b{color:#5ee0c7}
+.mock-tag{font:700 10px var(--mono);color:#a8d3d8;border:1px solid #315968;border-radius:20px;padding:5px 9px}
+.mock-body{padding:19px;background:#f4f7f9}
+.mock-label{font:700 10px/1.3 var(--mono);color:#64748b;letter-spacing:.1em;text-transform:uppercase}
+.mock-title{font-size:18px;font-weight:800;line-height:1.35;margin:6px 0 16px;color:#183849}
+.mock-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.mock-stats>div{background:white;border:1px solid #dae4eb;border-radius:10px;padding:13px 10px}
+.mock-stats strong{display:block;font:800 clamp(18px,2.2vw,26px)/1.25 var(--f);color:#183849;margin:6px 0}
+.mock-stats span{font-size:10px;color:#64748b}
+.mock-stats .warn strong{color:#b45309}
+.mock-note{background:#fff8eb;border:1px solid #f8d49a;color:#9a5c12;margin:13px 0;padding:10px 13px;font-size:11px;border-radius:8px}
+.mock-table{background:white;border:1px solid #dae4eb;border-radius:10px;overflow:hidden}
+.mock-table .line{display:grid;grid-template-columns:2fr .75fr 1fr;gap:5px;font-size:11px;padding:8px 10px;border-bottom:1px solid #ecf1f4;color:#334155}
+.mock-table .line.head{background:#eaf0f4;font-size:9px;letter-spacing:.05em;text-transform:uppercase;color:#5f7583;font-weight:800}
+.mock-table .line:last-child{border:0;font-weight:800;background:#e8f4f2;color:#0f6256}
+.mock-table .line span:nth-child(2){text-align:right}
+.mock-foot{display:block;text-align:right;font-size:10px;color:#718096;padding:12px 3px 0}
+.strip{background:white;border-bottom:1px solid var(--line)}
+.strip-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.strip-grid>div{padding:27px 25px;border-right:1px solid var(--line)}
+.strip-grid>div:first-child{padding-left:0}
+.strip-grid>div:last-child{border-right:0}
+.strip strong{display:block;font-size:24px;line-height:1.3;color:#0b4c7c;font-weight:800}
+.strip span{font-size:12px;color:var(--muted)}
+section.section{padding:76px 0}
+section.section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-head{max-width:850px;margin:0 0 31px}
+.section-head h2{font-size:clamp(27px,3vw,38px);letter-spacing:-.04em;line-height:1.18;color:#102743;margin:11px 0 12px}
+.section-head p{font-size:16px;line-height:1.75;color:#64748b;margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:0 9px 30px #0f172a0c}
+.card h3{font-size:17px;margin:8px 0 10px}
+.card p{font-size:14px;color:#475569;margin:0}
+.card .count{color:#2563eb;font:800 13px var(--mono)}
+.reference-card{padding:26px;border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:var(--shadow)}
+.reference-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px}
+.topology{background:linear-gradient(140deg,#f1f9ff,#eaf7f4);border:1px solid #cce2e4;border-radius:12px;padding:18px}
+.topology-label{font:700 11px var(--mono);color:#475569;margin-bottom:11px}
+.string-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.string{background:white;border:1px solid #bfd4df;border-radius:7px;text-align:center;padding:10px 3px;font:700 12px var(--mono);color:#17466c}
+.bus{height:12px;background:#2563eb;border-radius:8px;margin:14px 7px 4px;position:relative}
+.bus:before,.bus:after{content:"";position:absolute;width:2px;background:#2563eb;top:-10px;height:12px}
+.bus:before{left:15%}.bus:after{right:15%}
+.output{background:#dbeafe;color:#1e40af;border:1px solid #a9c9ef;text-align:center;border-radius:8px;padding:10px;font-size:13px;font-weight:800}
+.ref-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0}
+.ref-fact{padding:14px 15px;background:#f7fbff;border:1px solid #e0ebf7;border-radius:8px}
+.ref-fact strong{display:block;font-size:22px;color:#174e8b;line-height:1.2}
+.ref-fact span{font-size:11px;color:#64748b}
+.mininote{border-left:3px solid #f59e0b;background:#fffaf0;padding:12px 15px;font-size:12px;color:#785314;line-height:1.65}
+.label-title{font:800 12px var(--mono);color:#1d4ed8;text-transform:uppercase;letter-spacing:.08em}
+.src-link{display:inline-flex;gap:6px;align-items:center;font-size:12px;font-weight:800;text-decoration:none;margin-top:14px}
+.screen{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden;box-shadow:var(--shadow)}
+.screen-top{height:39px;background:#f0f4f8;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font:700 11px var(--mono);color:#64748b;border-bottom:1px solid var(--line)}
+.screen-body{padding:20px}
+.check-list{display:grid;gap:12px}
+.check{display:flex;gap:10px;border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff}
+.check .mark{background:#fee2e2;color:#b91c1c;display:flex;align-items:center;justify-content:center;width:23px;height:23px;border-radius:50%;font-size:14px;flex-shrink:0}
+.check strong{display:block;font-size:12px}
+.check small{display:block;color:#64748b;font-size:11px;margin-top:2px}
+.preview-chart{background:#fff;border:1px solid var(--line);border-radius:11px;padding:17px}
+.chart-title{font-size:13px;font-weight:800;color:#334155}
+.chart-note{font-size:11px;color:#64748b;margin-top:12px}
+.chart-svg{display:block;width:100%;height:auto;margin-top:12px}
+.proof-note{font-size:11px;color:#64748b;margin:15px 0 0}
+.explorer{background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);overflow:hidden}
+.explorer-header{padding:25px 29px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:start;gap:15px}
+.explorer-header h3{font-size:19px;line-height:1.35;margin:5px 0}
+.explorer-header p{color:#64748b;font-size:13px;margin:0;max-width:740px}
+.flag{background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;padding:8px 11px;font:800 11px var(--mono);border-radius:20px;white-space:nowrap}
+.explorer-body{padding:26px 29px}
+.assumption{font-size:12px;color:#475569;background:#f8fafc;padding:13px 16px;border:1px solid #e2e8f0;border-radius:9px;margin-bottom:20px}
+.scenario-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 20px}
+.scenario-tabs button{padding:10px 17px;min-height:42px;background:white;border:1px solid #cbd5e1;border-radius:8px;color:#475569;font:800 13px var(--mono);cursor:pointer}
+.scenario-tabs button[aria-selected="true"]{background:#1d4ed8;color:white;border-color:#1d4ed8;box-shadow:0 5px 15px #1d4ed827}
+.scenario-tabs button:hover:not([aria-selected="true"]){background:#eff6ff}
+.live-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:10px 0 23px}
+.live-kpi{border:1px solid var(--line);border-radius:9px;padding:18px;background:#f9fbfe}
+.live-kpi small{color:#64748b;font-size:11px;display:block}
+.live-kpi strong{display:block;margin:5px 0;font-size:clamp(23px,2.4vw,31px);line-height:1.2;color:#0b4c7c}
+.live-kpi span{color:#64748b;font-size:10px}
+.table-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;background:#f1f5f9;color:#475569;font:800 10px var(--mono);text-transform:uppercase;letter-spacing:.055em}
+th,td{padding:12px 13px;border-bottom:1px solid #e2e8f0}
+td:nth-child(2){font-family:var(--mono);font-weight:700}
+tbody tr:last-child td{background:#eff6ff;color:#1e40af;font-weight:800}
+.evidence{display:inline-block;font:700 10px var(--mono);border-radius:5px;padding:5px 6px;background:#d1fae5;color:#065f46}
+.evidence.assumed{background:#fef3c7;color:#92400e}
+.evidence.missing{background:#fee2e2;color:#991b1b}
+.callout{border-radius:9px;padding:16px 19px;font-size:13px;line-height:1.7;margin-top:20px}
+.callout.warn{border:1px solid #fed7aa;background:#fff7ed;color:#7c2d12}
+.callout.blue{border:1px solid #bfdbfe;background:#eff6ff;color:#1e40af}
+.differences{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.difference{background:#fff;border:1px solid var(--line);border-radius:11px;padding:23px}
+.difference .number{font-size:30px;color:#0f4273;font-weight:800;margin:9px 0}
+.difference .number small{font-size:12px;font-weight:700;color:#64748b}
+.difference b{display:block;font-size:14px}
+.difference a{font-size:12px;font-weight:800;display:inline-block;margin-top:13px}
+.difference p{font-size:12px;color:#64748b}
+.key-delta{padding:23px;border-radius:11px;background:#0f172a;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:17px;margin-top:17px}
+.key-delta strong{font-size:25px;color:#93c5fd;white-space:nowrap}
+.key-delta p{font-size:12px;color:#cbd5e1;margin:4px 0 0}
+.source-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.source{display:flex;flex-direction:column;gap:6px;padding:18px 19px;border-radius:10px;background:#fff;border:1px solid var(--line)}
+.source a{font-size:13px;font-weight:800;text-decoration:none;line-height:1.5}
+.source p{font-size:12px;color:#64748b;margin:0}
+.artifact{display:flex;justify-content:space-between;align-items:center;gap:25px;background:#0f172a;color:#fff;border-radius:14px;padding:30px;box-shadow:var(--shadow)}
+.artifact h3{font-size:24px;line-height:1.3;margin:0 0 8px}
+.artifact p{color:#cbd5e1;font-size:14px;margin:0}
+.artifact .btn{background:white;color:#0f172a;white-space:nowrap}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.rights{border:1px solid #cbd5e1;background:#f8fafc;padding:22px 25px;border-radius:11px}
+.rights h3{font-size:15px;margin:0 0 10px}
+.rights p{color:#475569;font-size:13px;margin:0}
+.cta-section{background:linear-gradient(120deg,#0f172a,#123b61);padding:65px 0;text-align:center;color:white}
+.cta-section h2{font:700 clamp(28px,3vw,42px)/1.2 var(--head);text-transform:uppercase;margin:13px 0}
+.cta-section p{max-width:800px;margin:0 auto 28px;color:#cbd5e1}
+.cta-section .btn.secondary{color:#0f172a}
+.footer{border-top:1px solid var(--line);padding:30px 0;background:#fff;color:#64748b;font-size:12px}
+.footer .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.footer a{color:#475569;text-decoration:none}
+#study,#case,#outputs,#validation,#sources{scroll-margin-top:92px}
+@media(max-width:1160px){.nav-center{gap:0}.nav-center a{font-size:12px;padding:9px}.nav-cta{font-size:12px;padding:11px}.hero-grid{gap:25px}.container{width:min(100% - 40px,1300px)}}
+@media(max-width:930px){.nav-center{display:none}.hero-grid,.reference-layout{grid-template-columns:1fr}.hero{padding:35px 0 55px}.mock{max-width:700px}.strip-grid,.grid3,.differences{grid-template-columns:repeat(2,1fr)}.strip-grid>div:nth-child(2){border-right:none}.strip-grid>div:nth-child(n+3){border-top:1px solid var(--line)}.source-grid,.foot-grid{grid-template-columns:1fr}}
+@media(max-width:660px){.container{width:min(100% - 32px,1300px)}.nav-inner{height:68px}.logo{font-size:15px;letter-spacing:.04em}.nav-cta{padding:9px 11px}.hero-grid{margin-top:28px}.hero .lead{font-size:16px}h1{font-size:34px}.strip-grid,.grid3,.grid2,.differences,.live-kpis{grid-template-columns:1fr}.strip-grid>div{border-right:none;border-top:1px solid var(--line);padding:15px 0!important}.strip-grid>div:first-child{border-top:0}.reference-card{padding:16px}.explorer-header{display:block;padding:18px}.explorer-body{padding:18px}.flag{display:inline-block;margin-top:11px}.key-delta,.artifact{display:block}.key-delta strong{display:block;margin-top:12px}.artifact .btn{margin-top:16px}.hero .actions .btn{width:100%}section.section{padding:55px 0}.mock-stats strong{font-size:19px}.mock-body{padding:12px}.mock-stats>div{padding:10px 8px}.mock-table .line{font-size:9px;padding:7px}.mock-top{padding:10px}.mock-tag{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<nav aria-label="Site navigation">
+  <div class="container nav-inner">
+    <a class="logo" href="/">STUDIO DEMOS</a>
+    <div class="nav-center">
+      <a href="/?category=physical-ai-engineering">Categories</a>
+      <a href="/?technology=Electrical%20Engineering">By Technology</a>
+      <a href="/?industry=energy-utilities">By Industry</a>
+      <a href="/">Browse All</a>
+    </div>
+    <a class="nav-cta" href="https://nebulacloud.studio/">nebulacloud.studio ↗</a>
+  </div>
+</nav>
+<main>
+<header class="hero">
+  <div class="container">
+    <a class="breadcrumb" href="/?demo=nebula-thermal-studio">← Back to Catalogue</a>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Studio engineering project showcase / 2026</div>
+        <h1>Solar Combiner<br><span>Thermal Engineering</span></h1>
+        <div class="meta">
+          <span class="chip">Physical AI &amp; Engineering</span>
+          <span class="chip beta">WORKING PROTOTYPE</span>
+          <span class="chip industry">Energy &amp; Utilities</span>
+        </div>
+        <p class="lead">A real-reference engineering workbench for a published 16-input solar DC combiner box: manufacturer-linked fuse dissipation, calculated conductor losses, five operating scenarios, and explicit thermal verification gates.</p>
+        <div class="actions">
+          <a class="btn primary" href="#study">Explore the engineering case ↓</a>
+          <a class="btn secondary" href="#outputs">View generated output ↗</a>
+        </div>
+        <p class="trust"><b>Independent public-reference study.</b> No manufacturer endorsement or customer BOM. The calculation engine and internal Studio implementation remain private.</p>
+      </div>
+      <div class="mock" aria-label="Presentation-only preview of the private engineering dashboard layout and published study values">
+        <div class="mock-top"><div class="mock-logo">◆ Nebula<b>Thermal Studio</b></div><div class="mock-tag">ENGINEERING • EVIDENCE-LED</div></div>
+        <div class="mock-body">
+          <div class="mock-label">THERMAL ENGINEERING WORKBENCH</div>
+          <div class="mock-title">DC combiner / 16 input strings</div>
+          <div class="mock-stats">
+            <div><span>Combined current</span><strong>240 A</strong><span>16 × 15 A</span></div>
+            <div><span>Modeled heat subtotal*</span><strong>77.6 W</strong><span>Partial, not total</span></div>
+            <div class="warn"><span>Design verification</span><strong>BLOCKED</strong><span>Missing evidence</span></div>
+          </div>
+          <div class="mock-note">Only components with documented or declared loss assumptions are included. No unvalidated temperature is reported.</div>
+          <div class="mock-table">
+            <div class="line head"><span>Subsystem</span><span>Loss</span><span>Evidence</span></div>
+            <div class="line"><span>gPV fuse links</span><span>51.73 W</span><span>Published + interpolated</span></div>
+            <div class="line"><span>Input copper runs</span><span>9.58 W</span><span>Assumed geometry</span></div>
+            <div class="line"><span>Output copper runs</span><span>13.31 W</span><span>Assumed geometry</span></div>
+            <div class="line"><span>Monitoring allowance</span><span>3.00 W</span><span>Different variant</span></div>
+            <div class="line"><span>Partial modeled subtotal</span><span>77.62 W</span><span>NOT assembly total</span></div>
+          </div>
+          <small class="mock-foot">Interface reconstruction for presentation; not an actual application screenshot.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="strip"><div class="container strip-grid" aria-label="Case-study summary">
+  <div><strong>16</strong><span>Real product-reference string inputs</span></div>
+  <div><strong>5</strong><span>Precomputed operating-current scenarios</span></div>
+  <div><strong>3</strong><span>Published gPV fuse references compared</span></div>
+  <div><strong>23</strong><span>Reported automated checks in private prototype</span></div>
+</div></div>
+
+<section class="section" id="challenge">
+ <div class="container">
+  <div class="section-head"><span class="eyebrow">01 / Business Problem</span><h2>Electrical assemblies need defensible thermal inputs—not a fictional temperature.</h2><p>Solar DC combiner enclosures concentrate fuse links, wiring, switching, monitoring electronics and protective equipment. Thermal assessment must distinguish actual manufacturer evidence from engineering assumptions, and must stop when essential data is missing.</p></div>
+  <div class="grid3">
+   <article class="card"><span class="count">01 — Input fragmentation</span><h3>Device losses across a mixed BOM</h3><p>Fuse losses, cabling geometry and auxiliary electrical loads come from separate product data and design assumptions.</p></article>
+   <article class="card"><span class="count">02 — Thermal uncertainty</span><h3>A real heat-rise calculation needs more</h3><p>Enclosure construction, disconnector/contact losses, installation conditions and validated heat-transfer information cannot be inferred from a product photo.</p></article>
+   <article class="card"><span class="count">03 — Engineering output</span><h3>Reviewable before procurement</h3><p>Teams need a loss register, scenario comparisons, missing-data checklist and documented technical decisions—not an unjustified compliance badge.</p></article>
+  </div>
+ </div>
 </section>
-<section id="contact"><div class="cta"><div class="over">A working private demonstration is available</div><h2>Bring a real enclosure specification and BOM.</h2><p class="lead">Nebula Cloud Studio can scope the next step around manufacturer-specific losses, an enclosure heat-transfer validation plan, published standards and an auditable engineering report—while protecting your data and our implementation.</p><div class="actions" style="justify-content:center"><a href="https://nebulacloud.studio/" class="btn primary">Discuss an engineering PoC ↗</a><a href="https://studio-public-demos.github.io/" class="btn">Explore other Studio use cases ↗</a></div></div></section>
-<footer class="footer"><div>© 2026 GVB Geomatics Pvt. Ltd. / Nebula Cloud Studio. Independent public-reference engineering research case.</div><div><a href="./README.md">Technical case study</a> · <a href="./ATTRIBUTIONS.md">Attributions</a> · <a href="./LICENSE">Rights</a></div></footer></main>
-<script>/* Presentation only: no engineering calculation or proprietary runtime is distributed. */
-const cases={
-14:{current:224,loss:64.533,ua:4.302,fuses:41.600,branch:8.342,output:11.591},
-15:{current:240,loss:77.616,ua:5.174,fuses:51.733,branch:9.577,output:13.306},
-16:{current:256,loss:90.903,ua:6.060,fuses:61.867,branch:10.896,output:15.140},
-18:{current:288,loss:118.084,ua:7.872,fuses:82.133,branch:13.790,output:19.161},
-20:{current:320,loss:146.081,ua:9.739,fuses:102.400,branch:17.025,output:23.656}};
-document.querySelectorAll('[data-case]').forEach(b=>b.addEventListener('click',()=>{
-const amps=Number(b.dataset.case),v=cases[amps],d=n=>n.toFixed(2)+' W';
-document.getElementById('current').textContent=v.current+' A';document.getElementById('subtotal').textContent=d(v.loss);
-document.getElementById('ua').textContent=v.ua.toFixed(3)+' W/K';document.getElementById('fuses').textContent=d(v.fuses);
-document.getElementById('branch').textContent=d(v.branch);document.getElementById('output').textContent=d(v.output);
-document.getElementById('sumline').textContent=d(v.loss);document.getElementById('case-head').textContent=amps+' A case';
-document.querySelectorAll('[data-case]').forEach(z=>z.classList.toggle('active',z===b));
-}));
-</script></body></html>
+
+<section class="section alt" id="case">
+ <div class="container">
+  <div class="section-head"><span class="eyebrow">02 / Actual Reference Product</span><h2>16-input / 1-output, 1000 V DC combiner box</h2><p>The hardware configuration comes from a publicly listed Trinity Touch solar combiner, not an invented device. The circuit illustration below is conceptual; our engineering model uses a clearly labeled <em>example</em> component selection and operating scenario.</p></div>
+  <div class="reference-card">
+    <div class="reference-layout">
+      <div class="topology" role="img" aria-label="Conceptual visualization of 16 PV string input channels converging on one DC output">
+       <div class="topology-label">16 DC INPUT CHANNELS / CONCEPTUAL TOPOLOGY</div>
+       <div class="string-grid"><div class="string">01</div><div class="string">02</div><div class="string">03</div><div class="string">04</div><div class="string">05</div><div class="string">06</div><div class="string">07</div><div class="string">08</div><div class="string">09</div><div class="string">10</div><div class="string">11</div><div class="string">12</div><div class="string">13</div><div class="string">14</div><div class="string">15</div><div class="string">16</div></div>
+       <div class="bus"></div><div class="output">ONE DC OUTPUT / SWITCH REFERENCE</div>
+      </div>
+      <div>
+        <div class="label-title">Publicly documented product specification</div>
+        <div class="ref-facts">
+         <div class="ref-fact"><strong>1000 V</strong><span>Nominal DC reference</span></div>
+         <div class="ref-fact"><strong>16 → 1</strong><span>Input/output arrangement</span></div>
+         <div class="ref-fact"><strong>400 A</strong><span>Published max switch rating</span></div>
+         <div class="ref-fact"><strong>26 A</strong><span>Published channel monitoring maximum</span></div>
+        </div>
+        <div class="mininote"><b>Data integrity:</b> The published 1210 × 748 × 250 mm envelope includes mounting clamps, so it is not treated as a validated heat-transfer surface. The actual installed component BOM and installed conductor geometry are not provided.</div>
+        <a class="src-link" href="https://www.trinitytouch.co.uk/backup/solution/16-in-1-out-combiner-box/" target="_blank" rel="noopener noreferrer">↗ Open the manufacturer product reference</a>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="study">
+ <div class="container">
+  <div class="section-head"><span class="eyebrow">03 / Interactive Results Demonstration</span><h2>Explore five precomputed thermal-loss scenarios.</h2><p>These values come from the private working engineering prototype. Changing a scenario below displays a <b>precomputed result</b>, not a public copy of the calculation engine. Every number is categorized by evidence quality.</p></div>
+  <div class="explorer">
+    <div class="explorer-header">
+      <div><span class="label-title">DC combiner case explorer</span><h3>16 strings · example ETI 20 A / 1000 V gPV fuse · copper runs</h3><p>Compare partial heat-loss contributions at different current levels. The same illustrative geometry and reference component assumptions are held constant.</p></div>
+      <span class="flag">⚠ DESIGN SIGN-OFF BLOCKED</span>
+    </div>
+    <div class="explorer-body">
+      <div class="assumption"><strong>Author-declared scenario assumptions:</strong> 2 fuse links/string; 0.4 m × 6 mm² copper per input polarity; 0.55 m × 95 mm² copper per output polarity; 60°C copper; 40°C ambient; 55°C illustrative limit. These are not Trinity Touch's actual installed details.</div>
+      <span class="label-title" id="current-heading">Select operating current per string</span>
+      <div class="scenario-tabs" role="tablist" aria-labelledby="current-heading">
+        <button type="button" role="tab" data-a="14" aria-selected="false">14 A</button>
+        <button type="button" role="tab" data-a="15" aria-selected="true">15 A</button>
+        <button type="button" role="tab" data-a="16" aria-selected="false">16 A</button>
+        <button type="button" role="tab" data-a="18" aria-selected="false">18 A</button>
+        <button type="button" role="tab" data-a="20" aria-selected="false">20 A</button>
+      </div>
+      <div class="live-kpis" aria-live="polite">
+        <div class="live-kpi"><small>Combined current</small><strong id="total-current">240 A</strong><span>16 strings × selected current</span></div>
+        <div class="live-kpi"><small>Incomplete modeled heat subtotal</small><strong id="subtotal">77.62 W</strong><span>Not total enclosure heat loss</span></div>
+        <div class="live-kpi"><small>Required effective UA*</small><strong id="ua">5.174 W/K</strong><span>Screening target for subtotal only</span></div>
+      </div>
+      <div class="table-scroll"><table aria-label="Evidence-tagged partial heat budget"><thead><tr><th>Heat contribution</th><th>Loss</th><th>Evidence classification</th></tr></thead>
+      <tbody><tr><td>32 × example ETI gPV fuse links</td><td id="fuse-loss">51.73 W</td><td><span class="evidence">Manufacturer + interpolation</span></td></tr>
+      <tr><td>32 × assumed branch copper runs</td><td id="branch-loss">9.58 W</td><td><span class="evidence assumed">Assumed length/section + I²R</span></td></tr>
+      <tr><td>2 × assumed output copper runs</td><td id="output-loss">13.31 W</td><td><span class="evidence assumed">Assumed length/section + I²R</span></td></tr>
+      <tr><td>Monitoring electronics allowance</td><td>3.00 W</td><td><span class="evidence assumed">Different product variant</span></td></tr>
+      <tr><td>Partial modeled subtotal</td><td id="subtotal-row">77.62 W</td><td><span class="evidence missing">NOT assembly total</span></td></tr></tbody></table></div>
+      <div class="callout warn"><strong>Not a certified temperature-rise result.</strong> No internal enclosure temperature is reported. The disconnector, busbars, fuse-holder and joint losses, SPD, auxiliaries, enclosure transfer characteristics and actual BOM are incomplete. The UA figure is only the algebraic effective conductance required to dispose of the <em>partial</em> modeled heat over the illustrative 15 K allowance.</div>
+      <p class="proof-note">Fuse manufacturer endpoints: 1.3 W at 14 A, 3.2 W at 20 A for an ETI 20 A / 1000 V gPV example; interpolation is limited to that range. The public display contains selected outputs only—no private engine, customer data or internal execution workflow.</p>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="section alt" id="outputs">
+ <div class="container">
+  <div class="section-head"><span class="eyebrow">04 / Generated Outputs &amp; User Experience</span><h2>Report what can be supported. Flag what cannot.</h2><p>The private application generates assessment reports, evidence registers and what-if reviews. The public presentation reproduces the evidence and output format while withholding implementation.</p></div>
+  <div class="grid2">
+    <div class="screen">
+     <div class="screen-top"><span>VIEW 01 / EVIDENCE REGISTER</span><span>Design review</span></div>
+     <div class="screen-body">
+       <div class="label-title">Source-to-result traceability</div>
+       <h3>Manufacturer-supported vs assumed inputs</h3>
+       <div class="table-scroll"><table><thead><tr><th>Input</th><th>Evidence</th></tr></thead><tbody>
+       <tr><td>16 input strings</td><td><span class="evidence">Published specification</span></td></tr>
+       <tr><td>20 A gPV fuse loss</td><td><span class="evidence">Published manufacturer data</span></td></tr>
+       <tr><td>0.4 m copper branch</td><td><span class="evidence assumed">Engineering assumption</span></td></tr>
+       <tr><td>60°C conductor temperature</td><td><span class="evidence assumed">Engineering assumption</span></td></tr>
+       <tr><td>Enclosure effective UA</td><td><span class="evidence missing">Measured data missing</span></td></tr>
+       </tbody></table></div>
+     </div>
+    </div>
+    <div class="screen">
+      <div class="screen-top"><span>VIEW 02 / DESIGN GATES</span><span>Engineering approval</span></div>
+      <div class="screen-body">
+       <div class="label-title">Safety and quality review</div><h3>Evidence needed before release</h3>
+       <div class="check-list">
+        <div class="check"><span class="mark">!</span><div><strong>Disconnector and contact-loss data</strong><small>Actual OEM SKU, load-loss values and connection characteristics.</small></div></div>
+        <div class="check"><span class="mark">!</span><div><strong>Complete populated assembly BOM</strong><small>Fuse holder, SPD, auxiliaries, busbars, joints and layout.</small></div></div>
+        <div class="check"><span class="mark">!</span><div><strong>Valid thermal methodology and testing</strong><small>Applicable IEC method, enclosure properties and measurements.</small></div></div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:22px" class="artifact"><div><h3>View the published sample assessment</h3><p>Source-linked assumptions, partial engineering results and clear limitations. This is a public-safe HTML output—not a certification report.</p></div><a class="btn" href="assets/outputs/real-pv-combiner-screening.html">Open sample report ↗</a></div>
+  <p class="proof-note">The two views above are public-safe interface reconstructions based on verified features of the private prototype. They are not presented as pixel-perfect screenshots.</p>
+ </div>
+</section>
+
+<section class="section" id="comparison">
+ <div class="container">
+  <div class="section-head"><span class="eyebrow">05 / Second Engineering Use Case</span><h2>Component selection changes the thermal budget.</h2><p>A 20 A, 1000 V gPV fuse is not thermally identical across all manufacturers. We compare published nominal loss specifications, then identify the electrical compatibility checks that must precede substitution.</p></div>
+  <div class="differences">
+    <div class="difference"><span class="label-title">ETI CH10×38</span><div class="number">3.20 <small>W per link</small></div><b>102.40 W / 32 hypothetical links</b><p>Published loss at 20 A. Selected example family for the current-sweep assessment.</p><a href="https://www.fuse.etigroup.eu/products-and-solutions/fuse-links-d-d0-c/photovoltaic-fuse-links-ch-gpv" target="_blank" rel="noopener noreferrer">View ETI source ↗</a></div>
+    <div class="difference"><span class="label-title">Socomec 60PV0020</span><div class="number">3.20 <small>W per link</small></div><b>102.40 W / 32 hypothetical links</b><p>Published nominal current loss; no unsupported part-load estimate.</p><a href="https://emea.socomec.com/en/reference/60pv0020" target="_blank" rel="noopener noreferrer">View Socomec source ↗</a></div>
+    <div class="difference"><span class="label-title">Legrand 414630</span><div class="number">1.09 <small>W per link</small></div><b>34.88 W / 32 hypothetical links</b><p>Published at 20 A; its operating-temperature range requires special evaluation.</p><a href="https://www.legrand.co.ug/en/catalog/products/cartridge-fuse-for-photovoltaic-application-1000v-20a-414630" target="_blank" rel="noopener noreferrer">View Legrand source ↗</a></div>
+  </div>
+  <div class="key-delta"><div><b>Why comparison matters</b><p>Nominal loss difference for 32 assumed fuses. Not equivalent protection, not a substitution recommendation and not a validated enclosure temperature prediction.</p></div><strong>67.52 W difference</strong></div>
+ </div>
+</section>
+
+<section class="section alt" id="validation">
+ <div class="container">
+  <div class="section-head"><span class="eyebrow">06 / Technical Highlights &amp; Limitations</span><h2>A working engineering workflow—with responsible boundaries.</h2><p>The private proof of concept is engineered to expose uncertainty rather than present partial results as IEC-approved design verification.</p></div>
+  <div class="foot-grid">
+   <div class="card"><div class="label-title">Demonstrated privately</div><h3>Implementation coverage</h3><p>Editable current and string count; selected fuse reference and polarity arrangement; conductor lengths, areas and temperature; traceable heat-loss register; current-scenario comparison; rating/availability guards; private PDF reports; desktop/mobile browser tests.</p><p style="margin-top:12px"><b>Testing reported:</b> 23 automated checks passed in the private implementation. This is software test evidence, not physical accuracy validation.</p></div>
+   <div class="card"><div class="label-title">Still requires validation</div><h3>Not a replacement for IEC design verification</h3><p>Actual component data, contact/joint/disconnector losses, enclosure heat-transfer method, installation environment, thermal measurement and IEC TR 60890 / IEC 61439 verification remain pending. No live AI-agent thermal execution, laboratory accuracy benchmark, CFD or independent certification is claimed.</p></div>
+  </div>
+  <div class="callout blue"><b>Conceptual workflow:</b> Public product specification + engineering assumptions → verified inputs → deterministic screening → engineering review and reporting. This is a user journey only, not an internal architecture, API design or implementation disclosure.</div>
+  <div class="rights" style="margin-top:19px"><h3>IP-Protected Showcase Notice</h3><p>This is a public project showcase created using NebulaCloud Studio. The proprietary source code, implementation details, prompts, workflows, datasets, infrastructure and deployment configuration are intentionally not included. It is an independent reference case and has not been commissioned or endorsed by the product manufacturers.</p></div>
+ </div>
+</section>
+
+<section class="section" id="sources">
+ <div class="container">
+  <div class="section-head"><span class="eyebrow">07 / Attribution &amp; Engineering Sources</span><h2>Every real-world reference can be checked.</h2><p>The functional references below are public manufacturer specifications and open-source research projects. We did not copy third-party software into this public showcase.</p></div>
+  <div class="source-grid">
+    <div class="source"><a href="https://www.trinitytouch.co.uk/backup/solution/16-in-1-out-combiner-box/" target="_blank" rel="noopener noreferrer">↗ Trinity Touch — 16 In 1 Out Combiner Box</a><p>16 inputs, 1000 V DC, external dimensions, monitoring and disconnector rating. Reference product only; BOM unknown.</p></div>
+    <div class="source"><a href="https://www.fuse.etigroup.eu/products-and-solutions/fuse-links-d-d0-c/photovoltaic-fuse-links-ch-gpv" target="_blank" rel="noopener noreferrer">↗ ETI — gPV Fuse Links</a><p>Published 20 A fuse dissipation endpoints at 14 A and 20 A.</p></div>
+    <div class="source"><a href="https://emea.socomec.com/en/reference/60pv0020" target="_blank" rel="noopener noreferrer">↗ Socomec — 60PV0020</a><p>20 A nominal fuse-loss reference used in manufacturer comparison.</p></div>
+    <div class="source"><a href="https://www.legrand.co.ug/en/catalog/products/cartridge-fuse-for-photovoltaic-application-1000v-20a-414630" target="_blank" rel="noopener noreferrer">↗ Legrand — 414630</a><p>20 A gPV fuse dissipation and operating-temperature specification.</p></div>
+    <div class="source"><a href="https://www.trinitytouch.com/solution/dc-scb-tricheck-16-input/" target="_blank" rel="noopener noreferrer">↗ TRICHECK 16 Input Reference</a><p>Different product variant: monitoring power &lt;3 W. Treated only as a model allowance.</p></div>
+    <div class="source"><a href="https://webstore.iec.ch/en/publication/66007" target="_blank" rel="noopener noreferrer">↗ IEC TR 60890:2022 Official Description</a><p>Scope of the relevant calculation methodology; no protected standards text reproduced.</p></div>
+    <div class="source"><a href="https://github.com/QuakeString/FreeCAD-PanelWB" target="_blank" rel="noopener noreferrer">↗ FreeCAD PanelWB — Open Source</a><p>Electrical cabinet layout/BOM and preliminary thermal engineering research reference (LGPL-2.1+).</p></div>
+    <div class="source"><a href="https://github.com/flash631/thermalpath" target="_blank" rel="noopener noreferrer">↗ ThermalPath — Open Source</a><p>Thermal network and conservation research reference (MIT). Not redistributed here.</p></div>
+  </div>
+ </div>
+</section>
+<section class="cta-section">
+ <div class="container">
+  <span class="eyebrow" style="color:#93c5fd">Built with NebulaCloud Studio</span>
+  <h2>Bring an engineering problem. <br>See the working workflow.</h2>
+  <p>We can demonstrate the private application, review an actual enclosure BOM under appropriate confidentiality terms, and scope a standards-validated engineering extension.</p>
+  <a class="btn secondary" href="https://nebulacloud.studio/">Discuss a private engineering demo ↗</a>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="container"><span>© 2026 GVB Geomatics Pvt. Ltd. · NebulaCloud Studio · Independent research showcase</span><span><a href="/">Project Catalogue</a> &nbsp;·&nbsp; <a href="./README.md">Case-study README</a> &nbsp;·&nbsp; <a href="./ATTRIBUTIONS.md">Attributions</a> &nbsp;·&nbsp; <a href="./LICENSE">Showcase License</a></span></div></footer>
+<script>
+/* Public visualisation presents precomputed outputs only. No private calculation engine is distributed. */
+(function(){
+  'use strict';
+  const datasets={
+    14:[224,64.533,4.302,41.600,8.342,11.591],
+    15:[240,77.616,5.174,51.733,9.577,13.306],
+    16:[256,90.903,6.060,61.867,10.896,15.140],
+    18:[288,118.084,7.872,82.133,13.790,19.161],
+    20:[320,146.081,9.739,102.400,17.025,23.656]
+  };
+  const tabs=Array.from(document.querySelectorAll('[data-a]'));
+  const byId=id=>document.getElementById(id);
+  function select(btn){
+    const key=Number(btn.getAttribute('data-a'));
+    const v=datasets[key];
+    if(!v)return;
+    tabs.forEach(t=>{const chosen=t===btn;t.setAttribute('aria-selected',String(chosen));t.tabIndex=chosen?0:-1;});
+    const loss=n=>n.toFixed(2)+' W';
+    byId('total-current').textContent=v[0]+' A';byId('subtotal').textContent=loss(v[1]);
+    byId('ua').textContent=v[2].toFixed(3)+' W/K';
+    byId('fuse-loss').textContent=loss(v[3]);byId('branch-loss').textContent=loss(v[4]);
+    byId('output-loss').textContent=loss(v[5]);byId('subtotal-row').textContent=loss(v[1]);
+  }
+  tabs.forEach((tab,i)=>{
+    tab.tabIndex=tab.getAttribute('aria-selected')==='true'?0:-1;
+    tab.addEventListener('click',()=>select(tab));
+    tab.addEventListener('keydown',e=>{
+      if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft'&&e.key!=='Home'&&e.key!=='End')return;
+      e.preventDefault();
+      const next=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+      select(tabs[next]);tabs[next].focus();
+    });
+  });
+})();
+</script>
+</body></html>

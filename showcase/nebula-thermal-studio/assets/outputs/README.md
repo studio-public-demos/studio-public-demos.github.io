@@ -1,6 +1,8 @@
-# Generated Outputs (Public-Safe)
-This directory contains the [real solar combiner engineering screening report](./real-pv-combiner-screening.html), containing public product specification references, the **15 A/string 77.616 W incomplete heat-loss subtotal**, evidence classifications and explicit omissions.
+# Public output assets
 
-A prior fictional numerical-only report has been withdrawn to prevent confusion. For the **actual private PDF and interactive application**, request a guided demonstration through [Nebula Cloud Studio](https://nebulacloud.studio/).
+- [**Real-product-referenced PV combiner screening report (HTML)**](./real-pv-combiner-screening.html) — source references, partial heat-loss schedule and mandatory engineering limitations.
+- [**Five precomputed scenarios (CSV)**](./solar-combiner-precomputed-results.csv) — selected outputs from the private application, with explicit BLOCKED status.
 
-No proprietary calculation engine, customer data, customer BOM or standards-protected methodology is published.
+All example conductor sizes, lengths, operating currents and polarity arrangement are user-declared demonstration assumptions rather than a manufacturer-supplied BOM. The results are **not total assembly loss, compliant temperature-rise verification, or certification**.
+
+The public project intentionally excludes numerical source code, proprietary orchestration, internal prompts, datasets, customer information and deployment details.
