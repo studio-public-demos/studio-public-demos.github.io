@@ -1,67 +1,67 @@
-# Nebula Thermal Studio — Electrical Enclosure Assessment
-
-**Nebula Cloud Studio public project showcase** · Engineering screening prototype v0.1 · Synthetic inputs
+# Solar DC Combiner Thermal Engineering — Real Reference Use Case
 
 > **Notice**  
 > This repository is a public project showcase created using NebulaCloud Studio.  
 > The proprietary source code, implementation details, prompts, workflows, datasets, infrastructure, and deployment configuration are intentionally not included.
 
 ## 1. Project Title
-**Nebula Thermal Studio — Electrical Enclosure Assessment**
+**Nebula Thermal Studio: Evidence-Led Solar String Combiner Thermal Engineering**
 
 ## 2. Overview
-A working private browser-based engineering-screening prototype for preliminary electrical enclosure heat-loss and indicative temperature assessment. This public page is a portfolio study, not an open-source application or public calculation service.
+A **working private engineering application** studies a publicly documented 16-input / 1-output solar string combiner box and constructs a traceable, preliminary heat-loss assessment. The public website provides curated, precomputed engineering results and source citations—not the proprietary calculation engine.
 
 ## 3. Business Problem
-Design teams work with device power-loss assumptions, enclosure geometry, ambient conditions, installation constraints and thermal-design limits. Fragmented spreadsheets and manual calculations can hinder initial comparison and review.
+Electrical engineering teams must quantify losses from PV fuse links, conductors, disconnects and auxiliary equipment, and evaluate enclosure heat rise subject to real manufacturer data and correct IEC methodologies. Attractive dashboards without evidence can mislead safety decisions.
 
 ## 4. Solution Overview
-The demonstration organizes enclosure conditions and component loss inputs, computes preliminary deterministic screening results, explores design alternatives and produces a documented engineering assessment.
+Our private application calculates what can reasonably be supported by published manufacturer fuse loss data and explicitly entered conductor geometry, while flagging rating conflicts and documenting missing thermal validation data.
 
 ## 5. Live Demo
-**Public showcase page:** [View the case study](https://studio-public-demos.github.io/showcase/nebula-thermal-studio/). The thermal calculation engine is available for **private demonstration only**, not for public interactive execution.
+[**Explore the published case study and five precomputed operating scenarios**](https://studio-public-demos.github.io/showcase/nebula-thermal-studio/). The public interface is a **results explorer**, not an interactive publicly hosted engineering engine. Private real-time demo by request.
 
 ## 6. Demo Video
-A recording exists within the private project package. Video publication is deferred to preserve the verified IP boundary and avoid linking unhosted files. [Request a guided private demo](https://nebulacloud.studio/).
+A private application walkthrough can be provided during a product demonstration. No public video is claimed or linked here.
 
 ## 7. Project Screenshots
-The public case-study page contains an **illustrative UI summary**, clearly labeled as such. A [reduced-resolution authentic browser capture](./assets/screenshots/assessment-preview.webp) is published in the showcase. Full-resolution captures remain in the private delivery package. No screenshots are presented as formal engineering-verification evidence.
+The published engineering case includes an original **conceptual circuit visualization** and interactive presentation of precomputed real calculation outputs. Authentic private-app screenshots remain in the internal delivery package and are not misrepresented as a public screenshot.
 
 ## 8. Generated Outputs
-Representative fictional screening values: **181.4 W** assumed loss; **67.5°C** indicative bulk-air temperature; **12.5 K** above an illustrative selected limit. These are demonstration values, not safety ratings. A [sample synthetic screening report (PDF)](./assets/outputs/synthetic-thermal-screening-report.pdf) is available publicly. The private demonstration package also includes an application recording.
+At an **assumed 15 A/string**, the real-source case produces **240 A combined input**, **51.733 W fuse loss**, **9.577 W branch copper**, **13.306 W output copper**, and **3.0 W monitoring allowance**, totaling **77.616 W of modeled but incomplete heat-loss contributions**. For **20 A/string**, the same assumptions yield **146.081 W incomplete modeled subtotal**. Real application can produce a PDF report listing assumptions and missing evidence; report is available during private demo.
 
 ## 9. Key Features
-Enclosure geometry and conditions; editable heat-loss BOM; CSV exchange; deterministic preliminary thermal screening; comparative design scenarios; sealed/IP-rated ventilation safeguards; local state; readable report output.
+Real product reference; manufacturer-linked fuse loss; conductor I²R; controllable voltage/current/branch geometry assumptions; what-if scenario comparisons; source/evidence classification; current/rating guards; blocked compliance gate; private PDF reporting.
 
 ## 10. Intended Users
-Industrial enclosure manufacturers, LV panel engineering teams, EPC engineers, electrical assembly designers and product application specialists.
+Solar PV OEMs, combiner-box designers, electrical equipment manufacturers, EPC engineers, LV panel designers, product engineering and quality teams.
 
 ## 11. Example Use Cases
-Preliminary evaluation of control cabinets, equipment enclosures and custom electrical assemblies; early design option comparisons; preparing questions for detailed design review.
+- Compare partial heat contributions at 14, 15, 16, 18 and 20 A per string.
+- Identify when 20 A example gPV fuses can no longer be modeled from available manufacturer data.
+- Prepare the missing-evidence checklist for an IEC design review.
+- Evaluate which cable cross-sections materially impact I²R losses before confirming actual installed configurations.
 
 ## 12. Technical Highlights (High-Level Only)
-A browser engineering workbench, structured inputs, deterministic screening results, CSV handling and report generation. Details of algorithms, source and software architecture are withheld.
+Deterministic private numerical computation, source-to-input traceability, documented scenario assumptions, source-linked component catalogue references, browser UX and PDF output.
 
 ## 13. Architecture Overview (Conceptual Only)
-**Design inputs → preliminary assessment → design review → documented output.** This is a user-facing conceptual flow, not an internal architecture diagram.
+Public reference product + assumed engineering scenario → traceable loss estimate → missing-evidence review → private documented output.
 
 ## 14. Technical Scope & Limitations
-Not IEC 61439 design verification, an IEC TR 60890 calculation implementation, an independently validated thermal calculation system, a manufacturer-approved catalog, device hot-spot prediction, CFD, or an agent-integrated production application. This preliminary estimator must not be used for electrical safety decisions.
+The cited Trinity Touch product, its precise internal BOM and actual operating circuit are **not** claimed to be identical to this example scenario. ETI fuses are **third-party evaluation components**, not confirmed as installed. Copper dimensions, temperature, polarity count and ambient are assumptions; the TRICHECK <3 W allowance is published for **another product variant**. The public enclosure external size includes a mounting clamp and cannot be used to infer effective UA. Disconnect, joint, busbar, fuse-holder, SPD and auxiliary losses are incomplete. **No enclosure temperature is calculated without calibrated heat transfer properties; there is no IEC TR 60890/IEC 61439 compliance or thermal certification.**
 
 ## 15. Performance Summary (Verified Only)
-The private prototype previously reported **11 numerical checks passed** and **Chromium browser smoke checks passed**. No external benchmark, laboratory correlation, calculation accuracy grade or runtime SLA is claimed.
+Private implementation passed **20 unit/integration checks**, plus Chromium desktop/mobile interaction testing on representative cases. No scientific accuracy benchmark, IEC validation, OEM endorsement or production uptime claim.
 
 ## 16. Attribution
-Original public showcase writing and presentation by Nebula Cloud Studio / GVB Geomatics Pvt. Ltd. SIMARIS therm was considered a functional benchmark only, not reused source code or proprietary data. See [ATTRIBUTIONS.md](./ATTRIBUTIONS.md).
+[Trinity Touch 16 In 1 Out product reference](https://www.trinitytouch.co.uk/backup/solution/16-in-1-out-combiner-box/), [ETI CH10x38 gPV fuse data](https://www.fuse.etigroup.eu/products-and-solutions/fuse-links-d-d0-c/photovoltaic-fuse-links-ch-gpv), [Trinity Touch TRICHECK monitoring reference](https://www.trinitytouch.com/solution/dc-scb-tricheck-16-input/), [IEC TR 60890 scope](https://webstore.iec.ch/en/publication/66007). Research references: [FreeCAD PanelWB](https://github.com/QuakeString/FreeCAD-PanelWB) (LGPL-2.1+), [ThermalPath](https://github.com/flash631/thermalpath) (MIT). No third-party code or IEC protected text distributed.
 
 ## 17. Built with NebulaCloud Studio
-This project is presented as part of Nebula Cloud Studio's engineering application portfolio. The computation engine, development workflows and internal platform components are deliberately not public.
+Part of Nebula Cloud Studio's IP-protected specialist engineering case-study portfolio. Original proprietary implementations remain private.
 
 ## 18. Related Project Showcases
-[Studio Public Demos portfolio](https://studio-public-demos.github.io/) · [Studio Public Demos GitHub](https://github.com/studio-public-demos).
+[Studio Public Demos](https://studio-public-demos.github.io/) · [Nebula Cloud Studio](https://nebulacloud.studio/).
 
 ## 19. Call to Action
-For a private technical demonstration or scoped proof of concept, [contact Nebula Cloud Studio](https://nebulacloud.studio/).
+[Request a private demonstration or discuss a manufacturer-specific engineering proof of concept](https://nebulacloud.studio/).
 
----
-**IP protection:** This is a case study only, not an implementation repository. All sample inputs are synthetic. No customer is named or implied to have approved or commissioned the work.
+**Legal and engineering notice:** Independent public-reference case study. No actual customer project data, and no implied manufacturer endorsement. The public case explorer is deliberately presentation-only and does not expose numerical calculation algorithms.
