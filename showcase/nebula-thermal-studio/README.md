@@ -28,7 +28,7 @@ A recording exists within the private project package. Video publication is defe
 The public case-study page contains an **illustrative UI summary**, clearly labeled as such. Authentic screenshots are maintained within the private delivery package. No screenshots are presented as formal engineering-verification evidence.
 
 ## 8. Generated Outputs
-Representative fictional screening values: **181.4 W** assumed loss; **67.5°C** indicative bulk-air temperature; **12.5 K** above an illustrative selected limit. These are demonstration values, not safety ratings. A sample report and screen recording exist in the private demonstration package.
+Representative fictional screening values: **181.4 W** assumed loss; **67.5°C** indicative bulk-air temperature; **12.5 K** above an illustrative selected limit. These are demonstration values, not safety ratings. A [sample synthetic screening report (PDF)](./assets/outputs/synthetic-thermal-screening-report.pdf) is available publicly. The private demonstration package also includes an application recording.
 
 ## 9. Key Features
 Enclosure geometry and conditions; editable heat-loss BOM; CSV exchange; deterministic preliminary thermal screening; comparative design scenarios; sealed/IP-rated ventilation safeguards; local state; readable report output.
