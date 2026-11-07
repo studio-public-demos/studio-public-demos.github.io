@@ -25,7 +25,7 @@ The demonstration organizes enclosure conditions and component loss inputs, comp
 A recording exists within the private project package. Video publication is deferred to preserve the verified IP boundary and avoid linking unhosted files. [Request a guided private demo](https://nebulacloud.studio/).
 
 ## 7. Project Screenshots
-The public case-study page contains an **illustrative UI summary**, clearly labeled as such. Authentic screenshots are maintained within the private delivery package. No screenshots are presented as formal engineering-verification evidence.
+The public case-study page contains an **illustrative UI summary**, clearly labeled as such. A [reduced-resolution authentic browser capture](./assets/screenshots/assessment-preview.webp) is published in the showcase. Full-resolution captures remain in the private delivery package. No screenshots are presented as formal engineering-verification evidence.
 
 ## 8. Generated Outputs
 Representative fictional screening values: **181.4 W** assumed loss; **67.5°C** indicative bulk-air temperature; **12.5 K** above an illustrative selected limit. These are demonstration values, not safety ratings. A [sample synthetic screening report (PDF)](./assets/outputs/synthetic-thermal-screening-report.pdf) is available publicly. The private demonstration package also includes an application recording.
