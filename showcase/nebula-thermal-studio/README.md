@@ -17,16 +17,16 @@ Electrical engineering teams must quantify losses from PV fuse links, conductors
 Our private application calculates what can reasonably be supported by published manufacturer fuse loss data and explicitly entered conductor geometry, while flagging rating conflicts and documenting missing thermal validation data.
 
 ## 5. Live Demo
-[**Explore the published case study and five precomputed operating scenarios**](https://studio-public-demos.github.io/showcase/nebula-thermal-studio/). The public interface is a **results explorer**, not an interactive publicly hosted engineering engine. Private real-time demo by request.
+[**Explore the published case study and five precomputed operating scenarios**](https://studio-public-demos.github.io/showcase/nebula-thermal-studio/). This is an **interactive presentation of selected verified outputs**, not an interactive publicly hosted engineering engine. Select a 14–20 A/string tab to review the documented partial heat-loss budget. The private real-time application is demonstrated by request.
 
 ## 6. Demo Video
 A private application walkthrough can be provided during a product demonstration. No public video is claimed or linked here.
 
-## 7. Project Screenshots
-The published engineering case includes an original **conceptual circuit visualization** and interactive presentation of precomputed real calculation outputs. Authentic private-app screenshots remain in the internal delivery package and are not misrepresented as a public screenshot.
+## 7. Project Screenshots and Design Preview
+The [public portfolio page](https://studio-public-demos.github.io/showcase/nebula-thermal-studio/) uses the **Studio Public Demos design system** (shared navigation, typography, blue/white palette, tags, provenance, business case, generated-output cards and calls to action). Its workbench previews and engineering screens are clearly labeled **presentation reconstructions**, not authentic screenshots. Actual desktop/mobile screenshots of the working private application are retained in the internal delivery package. [Public social preview](./assets/social-preview.svg).
 
 ## 8. Generated Outputs
-At an **assumed 15 A/string**, the real-source case produces **240 A combined input**, **51.733 W fuse loss**, **9.577 W branch copper**, **13.306 W output copper**, and **3.0 W monitoring allowance**, totaling **77.616 W of modeled but incomplete heat-loss contributions**. For **20 A/string**, the same assumptions yield **146.081 W incomplete modeled subtotal**. Real application can produce a PDF report listing assumptions and missing evidence; report is available during private demo.
+At an **assumed 15 A/string**, the real-source case produces **240 A combined input**, **51.733 W fuse loss**, **9.577 W branch copper**, **13.306 W output copper**, and **3.0 W monitoring allowance**, totaling **77.616 W of modeled but incomplete heat-loss contributions**. For **20 A/string**, the same assumptions yield **146.081 W incomplete modeled subtotal**. [Download five selected public-safe scenario outputs (CSV)](./assets/outputs/solar-combiner-precomputed-results.csv) or [view the public engineering summary](./assets/outputs/real-pv-combiner-screening.html). The private application can also generate a PDF listing assumptions and missing evidence; that full report is available during a guided demonstration.
 
 ## 9. Key Features
 Real product reference; manufacturer-linked fuse loss; conductor I²R; controllable voltage/current/branch geometry assumptions; what-if scenario comparisons; source/evidence classification; current/rating guards; blocked compliance gate; private PDF reporting.

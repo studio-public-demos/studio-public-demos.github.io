@@ -1,0 +1,6 @@
+current_per_string_A,combined_current_A,fuse_loss_W,branch_copper_loss_W,output_copper_loss_W,monitor_allowance_W,modeled_partial_subtotal_W,required_UA_for_partial_W_per_K,signoff
+14,224,41.600,8.342,11.591,3.000,64.533,4.302,BLOCKED
+15,240,51.733,9.577,13.306,3.000,77.616,5.174,BLOCKED
+16,256,61.867,10.896,15.140,3.000,90.903,6.060,BLOCKED
+18,288,82.133,13.790,19.161,3.000,118.084,7.872,BLOCKED
+20,320,102.400,17.025,23.656,3.000,146.081,9.739,BLOCKED
