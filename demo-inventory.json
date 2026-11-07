@@ -49,9 +49,9 @@
   "demos": [
     {
       "id": "nebula-thermal-studio",
-      "name": "Nebula Thermal Studio — Electrical Enclosure Screening",
-      "summary": "IP-protected project portfolio showing preliminary enclosure thermal screening, a synthetic assessment and a private-engine demo path.",
-      "description": "Working private thermal-screening prototype; published page documents synthetic engineering-screening workflow, representative sample outputs, limitations and private-demo CTA. No public calculation engine or customer content.",
+      "name": "Solar Combiner Thermal Engineering — Evidence-Led Case Study",
+      "summary": "Sourced 16-input PV combiner thermal-loss assessment with real fuse data, I²R losses, evidence gaps and interactive precomputed scenario exploration.",
+      "description": "Working private engineering application studies a real public product listing, published fuse loss values and explicitly assumed wiring. Partial heat losses: 77.616W at 15A/string, 146.081W at 20A/string. Correctly prevents unvalidated IEC temperature-rise claims.",
       "primaryCategory": "physical-ai-engineering",
       "industry": "manufacturing",
       "secondaryCollections": [
@@ -59,15 +59,16 @@
         "enterprise-applications-decision-intelligence"
       ],
       "tags": [
-        "Electrical Engineering",
-        "Thermal Screening",
-        "Enclosures",
-        "Engineering Reports",
-        "Synthetic Data"
+        "Solar PV",
+        "DC Combiner Box",
+        "Thermal Engineering",
+        "I²R",
+        "Evidence Traceability",
+        "Design Verification Gaps"
       ],
       "technologyStack": [
-        "Deterministic Engineering Screening",
-        "Browser Workbench",
+        "Private Python Engineering Service",
+        "Electrical Screening",
         "Nebula Cloud Studio"
       ],
       "maturity": "prototype",
@@ -75,7 +76,7 @@
       "accessMode": "request",
       "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/nebula-thermal-studio",
       "liveUrl": "https://studio-public-demos.github.io/showcase/nebula-thermal-studio/",
-      "dataProvenance": "Original synthetic engineering-screening sample; all customer and proprietary calculation data excluded.",
+      "dataProvenance": "Trinity Touch public product sheet, ETI public component-loss data, explicit non-OEM assumptions, no confidential customer content.",
       "screenshots": []
     },
     {

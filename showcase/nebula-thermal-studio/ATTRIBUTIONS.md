@@ -1,9 +1,19 @@
-# Attribution & Provenance
+# Attribution and Evidence Provenance
 
-- **Publisher:** GVB Geomatics Pvt. Ltd. / Nebula Cloud Studio.
-- **Scope:** Original, presentation-only HTML, illustrative visual summary, an authentic reduced-resolution cropped screenshot of the synthetic prototype, synthetic results and descriptive case-study content.
-- **Customer privacy:** No names, communications, real BOMs, plant data, supplier-licensed thermal catalogs or confidential specifications.
-- **Functional benchmark:** Siemens SIMARIS therm is a third-party engineering tool reviewed as domain context; Siemens trademarks, screenshots, copyrighted data and implementations are not redistributed.
-- **Standards:** IEC 61439 and IEC TR 60890 are referred to for context only. No standard text or protected calculation examples have been reproduced, and no compliance claim is made.
-- **Interactive status:** Public page is static case-study HTML; the private application and all engine logic remain unpublished.
-- **License:** Refer to [LICENSE](./LICENSE) for showcase-only rights.
+The project is an **independent engineering research demonstration**, not a delivered customer project, a finished standards-certified tool, or an endorsement by any manufacturer.
+
+## Primary manufacturer and standard references
+
+- Trinity Touch, [16 In 1 Out Combiner Box](https://www.trinitytouch.co.uk/backup/solution/16-in-1-out-combiner-box/) — 16 strings, 1000 V DC, 26 A maximum monitoring-channel current, 400 A maximum disconnector rating and exterior dimensions 1210 × 748 × 250 mm including mounting clamp. These published specifications do **not** constitute an actual populated BOM.
+- ETI, [Photovoltaic CH gPV 20 A 1000 V fuse family](https://www.fuse.etigroup.eu/products-and-solutions/fuse-links-d-d0-c/photovoltaic-fuse-links-ch-gpv) — 1.3 W at 0.7 × 20A (14 A), 3.2 W at 20 A; interpolation is used only within 14–20 A in private calculations. These are **candidate third-party parts**, not the manufacturer's declared installed fuses.
+- Trinity Touch, [DC SCB TRICHECK 16 Input](https://www.trinitytouch.com/solution/dc-scb-tricheck-16-input/) — a different product variant with monitoring electronics consuming **less than 3 W**; used only as an explicitly labeled illustrative allowance, not evidence of a BOM item fitted in the selected product.
+- [IEC TR 60890:2022 official publication page](https://webstore.iec.ch/en/publication/66007) — descriptive scope only; no paid standard text or algorithms reproduced.
+
+## Open-source research references (no copied implementation)
+
+- [FreeCAD PanelWB](https://github.com/QuakeString/FreeCAD-PanelWB), LGPL-2.1-or-later: electrical cabinet CAD, BOM and preliminary thermal workflow. The repository's roadmap identifies a full IEC 60890 curve method as future work.
+- [ThermalPath](https://github.com/flash631/thermalpath), MIT: thermal-resistance/network solver research reference.
+
+The public presentation contains only original text, HTML/CSS and **precomputed displayed output values** from an internal calculation engine. It includes no proprietary calculation engine, APIs, runtime architecture, internal prompts, customer datasets, licensed libraries, or deployment configuration.
+
+**Operating scenarios are author-defined, not customer supplied:** 14–20 A/string, two fused polarities, copper conductor lengths/sizes, 40°C ambient and 55°C illustrative limit. No claim of certified temperature rise, compliance or enclosure rating.
