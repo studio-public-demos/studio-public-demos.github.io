@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-11-07",
-    "total_demos": 28,
-    "live_demos": 25,
+    "last_updated": "2026-11-09",
+    "total_demos": 29,
+    "live_demos": 26,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -48,6 +48,38 @@
       "repoUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/nebula-thermal-studio",
       "pagesUrl": "https://studio-public-demos.github.io/showcase/nebula-thermal-studio/",
       "dataProvenance": "Public Trinity Touch 16 In 1 Out Combiner Box specification; public ETI CH10x38 20A fuse dissipation at 14A/20A; conductor geometry and currents are explicitly stated author assumptions. Monitoring allowance from another product variant is explicitly qualified. No customer BOM."
+    },
+    {
+      "repo_name": "thermal-verification-workbench",
+      "name": "Thermal Verification Workbench — Enclosure Temperature-Rise by Calculation",
+      "title": "Thermal Verification Workbench | IEC TR 60890 / IEC 61439-1 | Nebula Cloud Studio",
+      "summary": "Runnable, vendor-neutral browser tool that calculates enclosure temperature rise from a bill of materials and blocks a verified verdict when evidence is missing.",
+      "description": "A fully client-side companion to the solar-combiner case study: import a CSV or Excel bill of materials, tag each power-loss value as published, assumed or missing, and compute the IEC TR 60890 temperature rise at mid-height and top of the enclosure. Design-verification gates block a 'verified' result when the BOM is incomplete or insufficiently datasheet-backed, and the cooling suggestion is a labelled engineering aid. Verification is by calculation, not a laboratory type-test certificate. No backend; no bill-of-materials data leaves the browser.",
+      "primaryCategory": "physical-ai-engineering",
+      "industry": [
+        "manufacturing",
+        "energy-utilities",
+        "construction-infrastructure"
+      ],
+      "tags": [
+        "Switchgear Enclosure",
+        "Temperature Rise",
+        "IEC TR 60890",
+        "IEC 61439-1",
+        "Evidence Traceability",
+        "Design Verification Gates",
+        "Vendor-Neutral"
+      ],
+      "technologyStack": [
+        "Vanilla JavaScript (ES Modules)",
+        "Static Web",
+        "Nebula Cloud Studio"
+      ],
+      "maturity": "prototype",
+      "accessMode": "public",
+      "repoUrl": "https://github.com/studio-public-demos/thermal-verification-workbench",
+      "pagesUrl": "https://studio-public-demos.github.io/thermal-verification-workbench/",
+      "dataProvenance": "Ships a synthetic, illustrative solar-combiner sample BOM. IEC TR 60890 / IEC 61439-1 are referenced, not reproduced; tabulated factors follow the published method structure and must be reconciled against the licensed standard for certified use. SheetJS (Apache-2.0) is loaded from a CDN for optional Excel import."
     },
     {
       "repo_name": "nepal-flash-flood-digital-twin",
