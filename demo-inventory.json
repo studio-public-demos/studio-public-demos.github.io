@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2026-11-07",
-    "total_demos": 54,
+    "last_updated": "2026-11-09",
+    "total_demos": 55,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -44,7 +44,7 @@
       "concept",
       "planned"
     ],
-    "total_count": 54
+    "total_count": 55
   },
   "demos": [
     {
@@ -77,6 +77,39 @@
       "repositoryUrl": "https://github.com/studio-public-demos/studio-public-demos.github.io/tree/main/showcase/nebula-thermal-studio",
       "liveUrl": "https://studio-public-demos.github.io/showcase/nebula-thermal-studio/",
       "dataProvenance": "Trinity Touch public product sheet, ETI public component-loss data, explicit non-OEM assumptions, no confidential customer content.",
+      "screenshots": []
+    },
+    {
+      "id": "thermal-verification-workbench",
+      "name": "Thermal Verification Workbench — Enclosure Temperature-Rise by Calculation",
+      "summary": "Runnable, vendor-neutral browser tool that calculates enclosure temperature rise from a bill of materials and blocks a verified verdict when evidence is missing.",
+      "description": "A fully client-side companion to the solar-combiner case study: import a CSV or Excel BOM, tag each power-loss value as published, assumed or missing, and compute the IEC TR 60890 temperature rise at mid-height and top of the enclosure. Design-verification gates block a verified result when the BOM is incomplete or insufficiently datasheet-backed. Verification is by calculation, not a laboratory type-test certificate. No backend.",
+      "primaryCategory": "physical-ai-engineering",
+      "industry": "manufacturing",
+      "secondaryCollections": [
+        "industrial-ai-predictive-operations",
+        "enterprise-applications-decision-intelligence"
+      ],
+      "tags": [
+        "Switchgear Enclosure",
+        "Temperature Rise",
+        "IEC TR 60890",
+        "IEC 61439-1",
+        "Evidence Traceability",
+        "Design Verification Gates",
+        "Vendor-Neutral"
+      ],
+      "technologyStack": [
+        "Vanilla JavaScript (ES Modules)",
+        "Static Web",
+        "Nebula Cloud Studio"
+      ],
+      "maturity": "prototype",
+      "status": "active",
+      "accessMode": "public",
+      "repositoryUrl": "https://github.com/studio-public-demos/thermal-verification-workbench",
+      "liveUrl": "https://studio-public-demos.github.io/thermal-verification-workbench/",
+      "dataProvenance": "Synthetic, illustrative solar-combiner sample BOM. IEC TR 60890 / IEC 61439-1 referenced, not reproduced. SheetJS (Apache-2.0) loaded from CDN for optional Excel import.",
       "screenshots": []
     },
     {
@@ -976,7 +1009,7 @@
     {
       "id": "autonomous-project-execution",
       "name": "Autonomous Project Execution",
-      "summary": "Demonstration of Studio's core autonomous execution capability — planning, building, and verifying software projects end-to-end.",
+      "summary": "Demonstration of Studio's core autonomous execution capability �� planning, building, and verifying software projects end-to-end.",
       "description": "A showcase of autonomous software engineering workflows where AI agents plan architecture, write code, run tests, fix issues, and deploy applications without human intervention.",
       "primaryCategory": "agentic-ai-autonomous-workflows",
       "industry": "enterprise",
