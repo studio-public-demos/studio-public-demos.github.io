@@ -111,7 +111,9 @@
       "accessMode": "public",
       "repoUrl": "https://github.com/studio-public-demos/solar-combiner-thermal-verification",
       "pagesUrl": "https://studio-public-demos.github.io/solar-combiner-thermal-verification/",
-      "dataProvenance": "Sample solar-combiner BOM; IEC TR 60890 / IEC 61439-1 referenced (not reproduced); ETI gPV fuse dissipation endpoints; Trinity Touch 16-in-1 combiner reference product; Three.js (MIT)."
+      "dataProvenance": "Sample solar-combiner BOM; IEC TR 60890 / IEC 61439-1 referenced (not reproduced); ETI gPV fuse dissipation endpoints; Trinity Touch 16-in-1 combiner reference product; Three.js (MIT).",
+      "videoUrl": "https://studio-public-demos.github.io/solar-combiner-thermal-verification/assets/videos/demo.mp4",
+      "posterUrl": "https://studio-public-demos.github.io/solar-combiner-thermal-verification/assets/poster.png"
     },
     {
       "repo_name": "nepal-flash-flood-digital-twin",
