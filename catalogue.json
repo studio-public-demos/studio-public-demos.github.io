@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "2.0",
-    "last_updated": "2026-11-09",
-    "total_demos": 29,
-    "live_demos": 26,
+    "last_updated": "2026-11-10",
+    "total_demos": 30,
+    "live_demos": 27,
     "categories": [
       "agentic-ai-autonomous-workflows",
       "physical-ai-engineering",
@@ -80,6 +80,38 @@
       "repoUrl": "https://github.com/studio-public-demos/thermal-verification-workbench",
       "pagesUrl": "https://studio-public-demos.github.io/thermal-verification-workbench/",
       "dataProvenance": "Ships a synthetic, illustrative solar-combiner sample BOM. IEC TR 60890 / IEC 61439-1 are referenced, not reproduced; tabulated factors follow the published method structure and must be reconciled against the licensed standard for certified use. SheetJS (Apache-2.0) is loaded from a CDN for optional Excel import."
+    },
+    {
+      "repo_name": "solar-combiner-thermal-verification",
+      "name": "Solar Combiner Box — Thermal Verification & 3D Thermal Map",
+      "title": "Solar DC Combiner Box Thermal Verification | IEC TR 60890 | NebulaCloud Studio",
+      "summary": "Evidence-led enclosure temperature-rise verification (IEC TR 60890 / IEC 61439-1) for a 16-input IP66 FRP solar combiner box, delivered as an interactive report and a 3D thermal map.",
+      "description": "A vendor-neutral thermal verification workflow for a solar DC string combiner box: an evidence-tagged loss register, IEC TR 60890 internal-air temperature-rise calculation with an FRP material correction, first-order component self-heating, design-verification gates, and an interactive 3D thermal map. The verdict is correctly blocked when losses are not datasheet-backed. No backend; all computation runs in the browser.",
+      "primaryCategory": "physical-ai-engineering",
+      "industry": [
+        "manufacturing",
+        "energy-utilities",
+        "construction-infrastructure"
+      ],
+      "tags": [
+        "Solar PV",
+        "DC Combiner Box",
+        "Thermal Engineering",
+        "IEC TR 60890",
+        "3D Visualization",
+        "Evidence Traceability"
+      ],
+      "technologyStack": [
+        "JavaScript",
+        "Three.js",
+        "Static Web",
+        "NebulaCloud Studio"
+      ],
+      "maturity": "prototype",
+      "accessMode": "public",
+      "repoUrl": "https://github.com/studio-public-demos/solar-combiner-thermal-verification",
+      "pagesUrl": "https://studio-public-demos.github.io/solar-combiner-thermal-verification/",
+      "dataProvenance": "Sample solar-combiner BOM; IEC TR 60890 / IEC 61439-1 referenced (not reproduced); ETI gPV fuse dissipation endpoints; Trinity Touch 16-in-1 combiner reference product; Three.js (MIT)."
     },
     {
       "repo_name": "nepal-flash-flood-digital-twin",
